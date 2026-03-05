@@ -1,0 +1,20 @@
+:root {
+    --primary-green: #2E7D32;    /* Forest Green */
+    --light-green: #A5D6A7;      /* Leaf Green */
+    --accent-glow: #00FF41;      /* Neon Green Glow */
+    --earth-brown: #5D4037;      /* Soil Brown */
+    --bg-light: #F1F8E9;         /* Light Green Wash */
+    --font-main: 'Poppins', sans-serif;
+}
+
+/* Glowing Button Class */
+.btn-glow {
+    background: var(--primary-green);
+    color: white;
+    box-shadow: 0 0 10px var(--light-green);
+    transition: 0.3s;
+}
+.btn-glow:hover {
+    box-shadow: 0 0 20px var(--accent-glow);
+    transform: scale(1.05);
+}

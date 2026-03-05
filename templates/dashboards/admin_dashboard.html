@@ -1,0 +1,126 @@
+{% extends 'base2.html' %}
+{% load i18n %}
+
+{% block title %}{% translate "Admin Command Center | AgriTech AI" %}{% endblock %}
+{% block page_title %}{% translate "MASTER_COMMAND_CENTER" %}{% endblock %}
+
+{% block content %}
+<div class="animate-in fade-in slide-in-from-bottom-4 duration-700">
+
+    <div class="mb-10">
+        <h2 class="text-3xl font-black text-green-900 uppercase tracking-tight">
+            {% translate "Command" %} <span class="text-green-600">{% translate "Center" %}</span>
+        </h2>
+        <p class="text-gray-400 text-[10px] font-bold uppercase tracking-[0.3em]">
+            {% translate "Global oversight of Agri-ML pipelines and regional farmer node clusters." %}
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div class="bg-white border border-green-100 p-6 rounded-[2rem] shadow-sm">
+            <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2">{% translate "Active Farmer Nodes" %}</p>
+            <div class="flex items-end justify-between">
+                <h3 class="text-3xl font-black text-green-900">{{ total_users }}</h3>
+                <i class="fa-solid fa-network-wired text-green-600 opacity-20 text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="bg-white border border-green-100 p-6 rounded-[2rem] shadow-sm">
+            <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2">{% translate "Soil Analysis Logs" %}</p>
+            <div class="flex items-end justify-between">
+                <h3 class="text-3xl font-black text-green-900">{{ total_logs }}</h3>
+                <i class="fa-solid fa-flask-vial text-green-600 opacity-20 text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="bg-white border border-green-100 p-6 rounded-[2rem] shadow-sm">
+            <p class="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2">{% translate "Yield Predictions" %}</p>
+            <div class="flex items-end justify-between">
+                <h3 class="text-3xl font-black text-green-900">{{ total_yields }}</h3>
+                <i class="fa-solid fa-microchip text-green-600 opacity-20 text-2xl"></i>
+            </div>
+        </div>
+
+        <div class="bg-white border border-green-100 p-6 rounded-[2rem] shadow-sm border-l-4 border-l-green-600">
+            <p class="text-[10px] font-black text-green-700 uppercase tracking-widest mb-2">{% translate "System Integrity" %}</p>
+            <div class="flex items-center gap-3">
+                <span class="relative flex h-3 w-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                </span>
+                <h3 class="text-xl font-black text-green-900 uppercase italic">{% translate "Secure" %}</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-8 mb-12">
+        <div class="lg:col-span-2 bg-white border border-green-100 p-8 rounded-[3rem] shadow-sm">
+            <h4 class="text-xs font-black text-green-900 tracking-widest uppercase mb-8">{% translate "INFERENCE_LOAD_BALANCING" %}</h4>
+            <div class="h-48 flex items-end gap-2 px-2">
+                {% for i in "12345678901234567890" %}
+                <div class="flex-1 bg-gradient-to-t from-green-50 to-green-600 rounded-t-lg opacity-60 hover:opacity-100 transition-all"
+                     style="height: {% cycle '40' '70' '55' '90' '65' %}%"></div>
+                {% endfor %}
+            </div>
+            <p class="text-[10px] font-bold text-gray-400 mt-6 uppercase tracking-[0.3em]">{% translate "Real-time AI request distribution across clusters" %}</p>
+        </div>
+
+        <div class="bg-white border border-green-100 p-8 rounded-[3rem] shadow-sm">
+            <h4 class="text-xs font-black text-green-900 tracking-widest mb-8 uppercase">{% translate "REGIONAL_DEMAND" %}</h4>
+            <div class="space-y-6">
+                {% include "partials/progress_bars.html" with label="Hindi" val=regional_stats.hindi %}
+                {% include "partials/progress_bars.html" with label="Telugu" val=regional_stats.telugu %}
+                {% include "partials/progress_bars.html" with label="English" val=regional_stats.english %}
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 bg-white p-8 rounded-[3rem] shadow-xl border border-green-50">
+            <h4 class="font-black text-green-900 uppercase text-[10px] tracking-widest mb-10">{% translate "Recent AI Inferences" %}</h4>
+            <div class="space-y-4">
+                {% for log in recent_logs %}
+                <div class="flex items-center justify-between p-4 bg-green-50/30 rounded-2xl border border-green-100">
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm text-green-700">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-green-900 text-sm">{{ log.recommended_crop }}</p>
+                            <p class="text-[9px] text-green-600 font-black uppercase">{{ log.user.email }}</p>
+                        </div>
+                    </div>
+                    <p class="text-xs font-black text-gray-400 uppercase">{{ log.timestamp|date:"d M, H:i" }}</p>
+                </div>
+                {% empty %}
+                <p class="text-center py-10 text-gray-400 text-xs">{% translate "No Inference Data Yet" %}</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="bg-green-900 p-8 rounded-[3rem] shadow-2xl text-white">
+            <h4 class="font-black uppercase text-[10px] tracking-widest mb-8 text-green-400">{% translate "Admin Services" %}</h4>
+            <div class="grid grid-cols-1 gap-4">
+                <a href="{% url 'accounts:user_directory' %}" class="flex items-center justify-between p-5 bg-white/5 rounded-2xl hover:bg-white/10 transition-all border border-white/5">
+                    <span class="text-xs font-bold">{% translate "Farmer Management" %}</span>
+                    <i class="fa-solid fa-users text-green-400"></i>
+                </a>
+                <a href="{% url 'schemes:bulk_upload' %}" class="flex items-center justify-between p-5 bg-white/5 rounded-2xl hover:bg-white/10 transition-all border border-white/5">
+                    <span class="text-xs font-bold">{% translate "Scheme Bulk Upload" %}</span>
+                    <i class="fa-solid fa-file-import text-green-400"></i>
+                </a>
+
+                <a href="/admin/"
+                   class="flex items-center justify-between p-5 bg-green-700/20 rounded-2xl hover:bg-green-700/40 transition-all border border-green-700/20">
+                    <span class="text-xs font-bold text-green-300">
+                        {% translate "Django Database" %}
+                    </span>
+                    <i class="fa-solid fa-database text-green-300"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

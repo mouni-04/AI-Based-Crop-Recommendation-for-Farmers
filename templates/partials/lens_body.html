@@ -1,0 +1,147 @@
+{% load i18n %}
+{% block ai_lens_body %}
+<section class="py-16 agri-bg min-h-screen animate-in fade-in duration-700">
+    <div class="max-w-4xl mx-auto px-4">
+        
+        <div class="text-center mb-12">
+            <div class="inline-block p-5 bg-white rounded-3xl shadow-xl mb-6 border-2 border-green-500">
+                <i class="fa-solid fa-microscope text-4xl text-green-700 animate-pulse"></i>
+            </div>
+            <h2 class="text-4xl font-black text-green-900 mb-2">{% translate "Agri" %}<span class="text-green-600">{% translate "Lens" %}</span></h2>
+            <p class="text-[11px] font-bold text-gray-400 uppercase tracking-[0.3em]">{% translate "AI-Powered Plant Disease Diagnosis" %}</p>
+        </div>
+
+        <div class="bg-white rounded-[3.5rem] shadow-2xl border border-green-50 p-8 md:p-16 text-center">
+            <div id="drop-zone" class="border-4 border-dashed border-green-100 rounded-[2.5rem] p-12 hover:border-green-600 transition-all cursor-pointer bg-green-50/20 group relative overflow-hidden">
+                <input type="file" id="file-input" class="hidden" accept="image/*">
+                
+                <div id="preview-container" class="hidden mb-6">
+                    <img id="image-preview" class="mx-auto h-72 rounded-[2rem] border-4 border-white shadow-2xl object-cover">
+                </div>
+
+                <div id="upload-prompt" class="py-10">
+                    <i class="fa-solid fa-leaf text-5xl text-green-200 group-hover:text-green-600 transition-all duration-500 mb-4 transform group-hover:rotate-12"></i>
+                    <p class="font-black text-green-900 uppercase tracking-widest text-sm">{% translate "Upload Crop Photo" %}</p>
+                    <p class="text-[10px] text-gray-400 mt-2">{% translate "Snap a photo of a leaf or plant to identify issues" %}</p>
+                </div>
+            </div>
+
+            <div id="result-card" class="hidden mt-10 p-8 bg-green-50 rounded-[2.5rem] border border-green-100 animate-in zoom-in-95">
+                <p class="text-[10px] font-black text-green-700 uppercase mb-2 tracking-widest">{% translate "AI Diagnosis Complete" %}</p>
+                <h3 id="detected-name" class="text-2xl font-black text-green-900 mb-6"></h3>
+                
+                <div id="treatment-plan-box" class="hidden mb-8 text-left bg-white p-6 rounded-3xl border border-green-200 shadow-inner overflow-hidden">
+                    <div class="flex items-center gap-2 mb-4 border-b border-green-50 pb-2">
+                        <i class="fa-solid fa-kit-medical text-green-600"></i>
+                        <span class="text-[10px] font-black uppercase tracking-widest text-green-800">{% translate "Expert Treatment Plan" %}</span>
+                    </div>
+                    <div id="plan-details" class="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap"></div>
+                </div>
+
+                <div class="flex justify-center gap-4">
+                    <button onclick="location.reload()" class="bg-white text-green-800 border-2 border-green-700 px-8 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-green-50 transition-all">
+                        {% translate "Scan Another" %}
+                    </button>
+                    <button id="view-details-btn" class="btn-glow text-white px-8 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest shadow-lg">
+                        {% translate "Get Treatment Plan" %}
+                    </button>
+                </div>
+            </div>
+
+            <div id="lens-loader" class="hidden mt-8">
+                <div class="inline-block animate-spin text-green-600 mb-4">
+                    <i class="fa-solid fa-spinner-third text-4xl"></i>
+                </div>
+                <p class="text-xs font-black text-green-800 animate-pulse uppercase tracking-[0.2em]">{% translate "Analyzing Cellular Structure..." %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const zone = document.getElementById('drop-zone');
+    const input = document.getElementById('file-input');
+    const loader = document.getElementById('lens-loader');
+    const resultCard = document.getElementById('result-card');
+    const previewContainer = document.getElementById('preview-container');
+    const uploadPrompt = document.getElementById('upload-prompt');
+    const imagePreview = document.getElementById('image-preview');
+    const planBox = document.getElementById('treatment-plan-box');
+    const planDetails = document.getElementById('plan-details');
+    const viewDetailsBtn = document.getElementById('view-details-btn');
+
+    zone.onclick = () => input.click();
+
+    input.onchange = async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        imagePreview.src = URL.createObjectURL(file);
+        previewContainer.classList.remove('hidden');
+        uploadPrompt.classList.add('hidden');
+        resultCard.classList.add('hidden');
+        loader.classList.remove('hidden');
+
+        const formData = new FormData();
+        formData.append('image', file);
+
+        try {
+            const res = await fetch('{% url "api_agri_lens_analyze" %}', {
+                method: 'POST',
+                headers: { 'X-CSRFToken': '{{ csrf_token }}' },
+                body: formData
+            });
+
+            const data = await res.json();
+            loader.classList.add('hidden');
+
+            if (data.status === 'success') {
+                resultCard.classList.remove('hidden');
+                
+                // 1. Extract the Title (First line)
+                const lines = data.diagnosis.split("\n");
+                // Find the line that comes after "CROP:"
+                let cropName = "Unknown";
+
+                for (let i = 0; i < lines.length; i++) {
+                    if (lines[i].trim().toUpperCase() === "CROP:") {
+                        cropName = lines[i + 1]?.trim() || "Unknown";
+                        break;
+                    }
+                }
+                // FINAL OUTPUT FORMAT
+                document.getElementById('detected-name').innerText = `CROP: ${cropName}`;
+
+
+                // 2. Store the full diagnosis for the "Get Treatment Plan" click
+                viewDetailsBtn.onclick = () => {
+                    planDetails.innerText = data.diagnosis;
+                    planBox.classList.remove('hidden');
+                    planBox.classList.add('animate-in', 'slide-in-from-top-4');
+                    viewDetailsBtn.classList.add('hidden'); // Hide button after showing plan
+                };
+
+            } else {
+                throw new Error(data.error || "Analysis failed");
+            }
+
+        } catch (err) {
+            loader.innerHTML = `<p class='text-red-600 font-bold uppercase text-xs'>${err.message}</p>`;
+        }
+    };
+</script>
+
+<style>
+    .agri-bg {
+        background-color: #F1F8E9;
+        background-image: radial-gradient(circle at 2px 2px, rgba(46, 125, 50, 0.05) 1px, transparent 0);
+        background-size: 30px 30px;
+    }
+    .btn-glow {
+        background: linear-gradient(135deg, #2E7D32, #1B5E20);
+        box-shadow: 0 10px 20px rgba(46, 125, 50, 0.3);
+        transition: all 0.3s ease;
+    }
+    .btn-glow:hover { transform: translateY(-2px); box-shadow: 0 15px 25px rgba(46, 125, 50, 0.4); }
+</style>
+{% endblock %}

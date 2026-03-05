@@ -1,0 +1,111 @@
+{% extends 'base2.html' %}
+{% load i18n %}
+{% block content %}
+
+{% block dashboard_content %}
+<div class="max-w-7xl mx-auto space-y-8 animate-in fade-in duration-700">
+    <div class="bg-green-800 p-10 rounded-[3rem] text-white flex justify-between items-center shadow-2xl relative overflow-hidden border border-white/5">
+        <div class="relative z-10">
+            <h1 class="text-3xl font-black uppercase tracking-tight">{% translate "Farmer Node Directory" %}</h1>
+            <p class="text-green-300 text-[10px] font-bold uppercase tracking-[0.3em] mt-2">{% translate "Manage Regional Agricultural Identity & System Access" %}</p>
+        </div>
+        <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center border border-white/10">
+            <i class="fa-solid fa-users-gear text-green-300 text-2xl"></i>
+        </div>
+        <i class="fa-solid fa-leaf absolute -bottom-10 -right-10 text-[200px] opacity-10 rotate-12"></i>
+    </div>
+
+    <div class="bg-white rounded-[3.5rem] border border-green-100 shadow-sm overflow-hidden">
+        <div class="p-8 border-b border-green-50 flex items-center justify-between bg-green-50/20">
+            <h3 class="text-sm font-black text-green-900 uppercase tracking-widest">{% translate "Registered Farmer Nodes" %}</h3>
+            <span class="bg-green-100 text-green-800 px-4 py-1 rounded-full text-[10px] font-black uppercase border border-green-200">
+                {{ users.count }} {% translate "Active Nodes" %}
+            </span>
+        </div>
+
+        <div class="overflow-x-auto">
+            <table class="w-full text-left">
+                <thead class="bg-gray-50 border-b border-green-50">
+                    <tr>
+                        <th class="px-8 py-5 text-[10px] font-black text-gray-400 uppercase tracking-widest">{% translate "Farmer Identity" %}</th>
+                        <th class="px-8 py-5 text-[10px] font-black text-gray-400 uppercase tracking-widest">{% translate "Auth Level" %}</th>
+                        <th class="px-8 py-5 text-[10px] font-black text-gray-400 uppercase tracking-widest">{% translate "Enrollment" %}</th>
+                        <th class="px-8 py-5 text-[10px] font-black text-gray-400 uppercase tracking-widest">{% translate "Node Status" %}</th>
+                        <th class="px-8 py-5 text-[10px] font-black text-gray-400 uppercase tracking-widest text-right">{% translate "Management" %}</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-50">
+                    {% for u in users %}
+                    <tr class="hover:bg-green-50/30 transition-all group">
+                        <td class="px-8 py-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center text-white font-black text-xs border-2 border-green-100 shadow-sm">
+                                    {{ u.email|first|upper }}
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-green-900">{{ u.email|truncatechars:25 }}</p>
+                                    <p class="text-[9px] text-gray-400 uppercase font-black tracking-tighter">NODE_ID: #{{ u.id }}</p>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td class="px-8 py-6">
+                            {% if u.is_superuser %}
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-lg text-[9px] font-black uppercase tracking-tighter border border-green-200">
+                                    <i class="fa-solid fa-server mr-1"></i> {% translate "Global Admin" %}
+                                </span>
+                            {% else %}
+                                <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-lg text-[9px] font-black uppercase tracking-tighter border border-gray-200">
+                                    <i class="fa-solid fa-tractor mr-1"></i> {% translate "Farmer" %}
+                                </span>
+                            {% endif %}
+                        </td>
+
+                        <td class="px-8 py-6 text-xs text-gray-400 font-bold">
+                            {{ u.date_joined|date:"d M, Y" }}
+                        </td>
+
+                        <td class="px-8 py-6">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 {% if u.is_active %}bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.4)]{% else %}bg-gray-300{% endif %} rounded-full"></div>
+                                <span class="text-[10px] font-black uppercase {% if u.is_active %}text-green-600{% else %}text-gray-400{% endif %}">
+                                    {% if u.is_active %}{% translate "Active" %}{% else %}{% translate "Deactivated" %}{% endif %}
+                                </span>
+                            </div>
+                        </td>
+
+                        <td class="px-8 py-6 text-right">
+                            <div class="flex justify-end gap-2">
+                                {% if u != request.user %}
+                                    <a href="{% url 'toggle_user_status' u.id %}" 
+                                       title="{% if u.is_active %}{% translate 'Deactivate Node' %}{% else %}{% translate 'Activate Node' %}{% endif %}"
+                                       class="w-9 h-9 rounded-xl flex items-center justify-center transition-all 
+                                                {% if u.is_active %}bg-red-50 text-red-600 hover:bg-red-600 hover:text-white{% else %}bg-green-50 text-green-600 hover:bg-green-600 hover:text-white{% endif %}">
+                                        <i class="fa-solid {% if u.is_active %}fa-user-lock{% else %}fa-user-check{% endif %} text-xs"></i>
+                                    </a>
+                                    <a href="#" 
+                                       onclick="return confirm('{% translate "Permanently wipe this farmer node data?" %}')"
+                                       class="w-9 h-9 bg-gray-50 text-gray-400 rounded-xl flex items-center justify-center hover:bg-red-600 hover:text-white transition-all">
+                                        <i class="fa-solid fa-trash-can text-xs"></i>
+                                    </a>
+                                {% else %}
+                                    <span class="text-[8px] font-black text-gray-300 uppercase tracking-widest">{% translate "Current Session" %}</span>
+                                {% endif %}
+                            </div>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="5" class="px-10 py-20 text-center text-gray-300 font-black uppercase tracking-widest">
+                            <i class="fa-solid fa-network-wired block text-4xl mb-4 opacity-20"></i>
+                            {% translate "No Farmer Nodes Connected" %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% endblock %}

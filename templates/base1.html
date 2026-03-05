@@ -1,0 +1,267 @@
+{% load i18n %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% translate "AgriTech | Smart Farming Assistant" %}</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-green: #2E7D32;    
+            --light-green: #A5D6A7;      
+            --accent-glow: #00FF41;      
+            --earth-brown: #5D4037;      
+            --bg-wash: #F1F8E9;         
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-wash);
+            color: var(--earth-brown);
+            overflow-x: hidden;
+        }
+
+        .agri-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(46, 125, 50, 0.05) 1px, transparent 0);
+            background-size: 30px 30px;
+        }
+
+        .btn-glow {
+            background: linear-gradient(135deg, var(--primary-green) 0%, #1B5E20 100%);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+            border: none;
+            color: white !important;
+        }
+
+        .btn-glow:hover {
+            box-shadow: 0 0 20px var(--accent-glow);
+            transform: translateY(-2px);
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 3px solid var(--primary-green);
+        }
+
+        #chat-window {
+            border-top: 4px solid var(--primary-green);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .ai-bubble {
+            background: white;
+            border-left: 4px solid var(--primary-green);
+            border-radius: 0 15px 15px 15px;
+        }
+    </style>
+</head>
+
+<body class="agri-bg min-h-screen flex flex-col">
+    <div class="h-1.5 w-full bg-gradient-to-r from-green-800 via-green-400 to-green-800"></div>
+
+    <nav class="glass-nav sticky top-0 z-[1000] px-6 py-3 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-seedling text-3xl text-green-700"></i>
+            <span class="text-2xl font-bold tracking-tight text-green-900">{% translate "Agri" %}<span class="text-green-600">{% translate "Tech" %}</span></span>
+        </div>
+
+        <div class="hidden md:flex items-center gap-8 font-semibold text-green-800">
+            <a href="{% url 'landing' %}" class="hover:text-green-600 transition-colors">{% translate "Home" %}</a>
+            <a href="#smart-modules" class="hover:text-green-600 transition-colors">{% translate "About" %}</a>
+
+            <!-- LANGUAGE SWITCH BUTTONS -->
+            <form action="{% url 'set_language' %}" method="post" class="flex gap-2 items-center">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.path }}">
+                <button type="submit" name="language" value="en" class="px-3 py-1 border rounded border-green-700 hover:bg-green-100">{% translate "EN" %}</button>
+                <button type="submit" name="language" value="hi" class="px-3 py-1 border rounded border-green-700 hover:bg-green-100">{% translate "HI" %}</button>
+                <button type="submit" name="language" value="te" class="px-3 py-1 border rounded border-green-700 hover:bg-green-100">{% translate "TE" %}</button>
+            </form>
+
+            <a href="{% url 'accounts:login' %}" class="px-5 py-2 rounded-full border-2 border-green-700 hover:bg-green-50 transition-all">{% translate "Login" %}</a>
+            <a href="{% url 'accounts:signup' %}" class="btn-glow px-6 py-2 rounded-full font-bold">{% translate "Sign Up" %}</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        {% block content %}{% endblock %}
+    </main>
+
+    <div id="chat-wrapper" class="fixed bottom-6 right-6 z-[1000]">
+        <button onclick="toggleChat()" 
+                class="w-16 h-16 bg-green-700 text-white rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all border-4 border-white">
+            <i class="fa-solid fa-robot text-2xl"></i>
+        </button>
+
+        <div id="chat-window" class="hidden absolute bottom-20 right-0 w-80 sm:w-96 h-[500px] bg-white rounded-2xl flex flex-col overflow-hidden animate-in slide-in-from-bottom-5">
+            <div class="bg-green-800 p-4 text-white flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-leaf text-lg text-green-300"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-black uppercase tracking-widest">{% translate "AgriExpert AI" %}</h4>
+                        <span class="text-[10px] text-green-200">{% translate "24/7 Farming Support" %}</span>
+                    </div>
+                </div>
+                <button onclick="toggleChat()" class="hover:bg-white/10 p-2 rounded-full"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div id="chat-content" class="flex-1 p-4 overflow-y-auto space-y-4 bg-gray-50">
+                <div class="ai-bubble p-3 text-xs font-medium text-gray-700 shadow-sm max-w-[85%]">
+                    {% translate "Welcome to AgriTech! I can help you with crop disease detection, soil nutrition, and smart farming advice." %}
+                </div>
+            </div>
+
+        <div class="p-3 border-t bg-white">
+            <input type="file" id="chat-image-input" accept="image/*" class="hidden" onchange="handleImageUpload(this)">
+            
+            <div class="flex gap-2 items-center bg-gray-100 rounded-xl px-3 py-1">
+                <button id="mic-btn" onclick="startVoiceRecognition()" class="text-green-700 hover:text-green-900 transition-colors">
+                    <i class="fa-solid fa-microphone"></i>
+                </button>
+                
+                <input id="chat-input" type="text" placeholder="{% translate 'Type your query...' %}" 
+                    class="flex-1 text-xs p-2 bg-transparent outline-none font-medium"
+                    onkeypress="if(event.key === 'Enter') sendMsg()">
+                
+                <button onclick="document.getElementById('chat-image-input').click()" class="text-gray-500 hover:text-green-700 transition-colors">
+                    <i class="fa-solid fa-image"></i>
+                </button>
+                
+                <button onclick="sendMsg()" class="text-green-700 font-bold px-2">{% translate "Send" %}</button>
+            </div>
+            <div id="image-preview-container" class="hidden mt-2 p-2 bg-green-50 rounded-lg flex items-center justify-between">
+                <span class="text-[10px] text-green-700 font-bold italic">{% translate "Image ready for analysis..." %}</span>
+                <button onclick="clearImagePreview()" class="text-red-500 text-xs"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-green-100 p-6 text-center text-sm text-green-900 font-medium">
+        <p>&copy; 2026 {% translate "AgriTech - Smart Solutions for Sustainable Farming" %}</p>
+    </footer>
+
+    <script>
+        let selectedImageBase64 = null;
+
+    // --- 1. TOGGLE CHAT ---
+    function toggleChat() {
+        const win = document.getElementById('chat-window');
+        win.classList.toggle('hidden');
+    }
+
+    // --- 2. IMAGE HANDLING ---
+    function handleImageUpload(input) {
+        const file = input.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                selectedImageBase64 = e.target.result;
+                document.getElementById('image-preview-container').classList.remove('hidden');
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+
+    function clearImagePreview() {
+        selectedImageBase64 = null;
+        document.getElementById('chat-image-input').value = "";
+        document.getElementById('image-preview-container').classList.add('hidden');
+    }
+
+    // --- 3. VOICE RECOGNITION (Web Speech API) ---
+    function startVoiceRecognition() {
+        const micBtn = document.getElementById('mic-btn');
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+        if (!SpeechRecognition) {
+            alert("Your browser does not support voice recognition. Please try Chrome.");
+            return;
+        }
+
+        const recognition = new SpeechRecognition();
+        recognition.lang = '{{ LANGUAGE_CODE }}' === 'en' ? 'en-US' : ('{{ LANGUAGE_CODE }}' === 'hi' ? 'hi-IN' : 'te-IN');
+        
+        recognition.onstart = () => {
+            micBtn.classList.add('text-red-500', 'animate-pulse');
+        };
+
+        recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript;
+            document.getElementById('chat-input').value = transcript;
+        };
+
+        recognition.onend = () => {
+            micBtn.classList.remove('text-red-500', 'animate-pulse');
+        };
+
+        recognition.start();
+    }
+
+    // --- 4. SEND MESSAGE (AJAX TO BACKEND) ---
+    async function sendMsg() {
+        const input = document.getElementById('chat-input');
+        const content = document.getElementById('chat-content');
+        const msg = input.value.trim();
+        
+        if (!msg && !selectedImageBase64) return;
+
+        // Display User Message
+        const userDiv = document.createElement('div');
+        userDiv.className = "bg-green-700 text-white p-3 rounded-2xl rounded-tr-none text-xs font-semibold self-end max-w-[80%] ml-auto shadow-sm mb-4";
+        userDiv.innerText = msg || "{% translate '[Image Sent]' %}";
+        content.appendChild(userDiv);
+
+        // Reset Inputs
+        input.value = "";
+        const currentImg = selectedImageBase64; // Capture for sending
+        clearImagePreview();
+        content.scrollTop = content.scrollHeight;
+
+        // Loading State
+        const loadingId = "loader-" + Date.now();
+        content.innerHTML += `<div id="${loadingId}" class="flex gap-1 p-2"><div class="w-1.5 h-1.5 bg-green-400 rounded-full animate-bounce"></div><div class="w-1.5 h-1.5 bg-green-400 rounded-full animate-bounce delay-75"></div><div class="w-1.5 h-1.5 bg-green-400 rounded-full animate-bounce delay-150"></div></div>`;
+
+        try {
+            const response = await fetch("{% url 'chatbot:chatbot_query' %}", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRFToken": "{{ csrf_token }}"
+                },
+                body: JSON.stringify({
+                    msg: msg,
+                    image: currentImg
+                })
+            });
+
+            const data = await response.json();
+            document.getElementById(loadingId).remove();
+
+            // Display AI Response
+            content.innerHTML += `
+                <div class="ai-bubble p-3 text-xs font-medium text-gray-700 shadow-sm max-w-[85%] mb-4">
+                    ${data.reply.replace(/\n/g, '<br>')}
+                </div>`;
+            
+            content.scrollTop = content.scrollHeight;
+
+        } catch (error) {
+            document.getElementById(loadingId).innerText = "{% translate 'Connection Error' %}";
+        }
+    }
+    </script>
+</body>
+</html>

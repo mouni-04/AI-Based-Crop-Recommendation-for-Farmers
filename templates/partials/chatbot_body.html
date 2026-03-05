@@ -1,0 +1,199 @@
+{% load i18n %}
+
+{% block content %}
+<style>
+    /* Agri-Tech Typing Animation */
+    .typing-dot {
+        width: 6px; height: 6px;
+        background: var(--primary-green);
+        border-radius: 50%;
+        animation: typing 1.4s infinite ease-in-out;
+    }
+    .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+    .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes typing {
+        0%, 80%, 100% { transform: translateY(0); }
+        40% { transform: translateY(-6px); }
+    }
+
+    /* Structured AI Output Styling */
+    .ai-response-box h3 { color: #1B5E20; font-weight: 900; margin-bottom: 0.5rem; font-size: 1.1rem; }
+    .ai-response-box strong { color: #2E7D32; font-weight: 700; }
+    
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #A5D6A7; border-radius: 10px; }
+</style>
+
+<div class="max-w-6xl mx-auto py-6 px-4 h-[88vh] flex flex-col animate-in fade-in duration-700">
+    <div class="bg-white rounded-[3rem] shadow-2xl flex-1 flex flex-col overflow-hidden border border-green-50 shadow-green-900/5">
+        
+        <div class="bg-green-800 p-6 text-white flex items-center justify-between shadow-lg">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-white/20 rounded-2xl flex items-center justify-center animate-pulse">
+                    <i class="fa-solid fa-robot text-2xl text-green-300"></i>
+                </div>
+                <div>
+                    <h2 class="text-lg font-black tracking-widest uppercase">{% translate "AgriExpert AI Advisor" %}</h2>
+                    <p class="text-[10px] text-green-200 uppercase font-bold tracking-[0.2em]">{% translate "Precision Agriculture Core" %}</p>
+                </div>
+            </div>
+            <a href="{% url 'landing' %}" class="bg-white/10 hover:bg-white/20 px-6 py-2 rounded-full text-xs font-black uppercase tracking-widest transition-all">
+                {% translate "Close Terminal" %}
+            </a>
+        </div>
+
+        <div id="full-chat-content" class="flex-1 p-8 overflow-y-auto space-y-6 bg-[#F1F8E9]/30 flex flex-col custom-scrollbar">
+            <div class="bg-white p-6 rounded-[2.5rem] rounded-tl-none font-medium text-gray-700 self-start max-w-[75%] shadow-sm border border-green-100">
+                {% translate "System Ready. Please describe your crop concern or upload a photo of a leaf/plant for immediate disease diagnosis." %}
+            </div>
+        </div>
+
+        <div id="image-preview-container" class="hidden px-10 py-4 bg-white border-t border-green-50">
+            <div class="relative inline-block">
+                <img id="image-preview" src="#" class="h-32 rounded-2xl border-4 border-green-500 shadow-lg">
+                <button onclick="clearImage()" class="absolute -top-3 -right-3 bg-red-600 text-white rounded-full w-8 h-8 flex items-center justify-center shadow-md hover:scale-110 transition-transform border-2 border-white">
+                    <i class="fa-solid fa-xmark text-xs"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border-t border-green-100">
+            <div class="flex items-center gap-4 bg-gray-50 p-2 rounded-[3.5rem] border border-green-200 shadow-inner focus-within:ring-4 focus-within:ring-green-500/10 transition-all">
+                <label for="ai-image-upload" class="w-14 h-14 flex items-center justify-center bg-white rounded-full shadow-md cursor-pointer hover:bg-green-50 transition-all text-green-700">
+                    <i class="fa-solid fa-camera text-xl"></i>
+                    <input type="file" id="ai-image-upload" accept="image/*" class="hidden" onchange="previewImage(this)">
+                </label>
+
+                <input id="full-chat-input" type="text" placeholder="{% translate 'Describe soil conditions or ask about fertilizers...' %}" 
+                       class="flex-1 bg-transparent text-lg p-3 outline-none font-medium placeholder:text-gray-400"
+                       onkeypress="if(event.key === 'Enter') sendFullMsg()">
+                <button id="mic-btn" type="button"
+                        class="w-14 h-14 flex items-center justify-center rounded-full
+                            bg-white hover:bg-green-50
+                            text-green-700 shadow-md
+                            transition-all"
+                        title="Speak">
+                    <i class="fa-solid fa-microphone text-xl"></i>
+                </button>
+
+                <button id="send-btn" onclick="sendFullMsg()"
+                        class="w-14 h-14 flex items-center justify-center rounded-full
+                            bg-green-700 hover:bg-green-800
+                            text-white shadow-xl
+                            active:scale-90 transition-all
+                            disabled:opacity-50 disabled:cursor-not-allowed">
+                    <i class="fa-solid fa-paper-plane text-xl"></i>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let selectedImageBase64 = null;
+    const csrftoken = "{{ csrf_token }}";
+
+    function previewImage(input) {
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                document.getElementById('image-preview').src = e.target.result;
+                document.getElementById('image-preview-container').classList.remove('hidden');
+                selectedImageBase64 = e.target.result.split(',')[1];
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function clearImage() {
+        selectedImageBase64 = null;
+        document.getElementById('ai-image-upload').value = "";
+        document.getElementById('image-preview-container').classList.add('hidden');
+    }
+
+    async function sendFullMsg() {
+        const input = document.getElementById('full-chat-input');
+        const content = document.getElementById('full-chat-content');
+        const userText = input.value.trim();
+        if (!userText && !selectedImageBase64) return;
+
+        // User Bubble
+        let userHTML = `<div class="bg-green-700 text-white p-5 rounded-[2.5rem] rounded-tr-none font-bold self-end max-w-[75%] shadow-md ml-auto animate-in slide-in-from-right-2 mb-4">`;
+        if (selectedImageBase64) {
+            userHTML += `<img src="data:image/jpeg;base64,${selectedImageBase64}" class="w-48 rounded-xl mb-3 shadow-sm border-2 border-white/20">`;
+        }
+        userHTML += `<span>${userText || "{% translate 'Analyzing Crop Image...' %}"}</span></div>`;
+        content.innerHTML += userHTML;
+        
+        const currentImage = selectedImageBase64;
+        input.value = "";
+        clearImage();
+        content.scrollTop = content.scrollHeight;
+
+        // Typing State
+        const typingId = "t-" + Date.now();
+        content.innerHTML += `
+            <div id="${typingId}" class="self-start flex gap-1 p-5 bg-white rounded-3xl border border-green-50 shadow-sm mb-4">
+                <div class="typing-dot"></div><div class="typing-dot"></div><div class="typing-dot"></div>
+            </div>`;
+
+        try {
+            const response = await fetch('{% url "chatbot:chatbot_query" %}', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'X-CSRFToken': csrftoken },
+                body: JSON.stringify({ msg: userText, image: currentImage })
+            });
+            const data = await response.json();
+            document.getElementById(typingId).remove();
+
+            // AI Response Bubble
+            content.innerHTML += `
+                <div class="bg-white border border-green-100 p-6 rounded-[2.5rem] rounded-tl-none shadow-sm self-start max-w-[85%] animate-in zoom-in-95 ai-response-box mb-4">
+                    <div class="text-[9px] uppercase font-black text-green-700 mb-2 border-b border-green-50 pb-1 flex items-center gap-2">
+                        <i class="fa-solid fa-microchip"></i> {% translate "AI Agricultural Insight" %}
+                    </div>
+                    <div class="text-sm leading-relaxed text-gray-700 font-medium">${data.reply.replace(/\n/g, '<br>')}</div>
+                </div>`;
+            
+            content.scrollTop = content.scrollHeight;
+        } catch(e) {
+            document.getElementById(typingId).innerHTML = "<span class='text-red-500 text-xs font-bold uppercase'>{% translate 'Satellite link interrupted. Try again.' %}</span>";
+        }
+    }
+
+    let recognition;
+const micBtn = document.getElementById('mic-btn');
+const chatInput = document.getElementById('full-chat-input');
+
+if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    recognition = new SpeechRecognition();
+
+    recognition.lang = 'en-IN'; // You can change to hi-IN, te-IN later
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    recognition.onstart = () => {
+        micBtn.classList.add('bg-green-700', 'text-white');
+    };
+
+    recognition.onend = () => {
+        micBtn.classList.remove('bg-green-700', 'text-white');
+    };
+
+    recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        chatInput.value = transcript;
+        chatInput.focus();
+    };
+
+    micBtn.onclick = () => {
+        recognition.start();
+    };
+} else {
+    micBtn.disabled = true;
+    micBtn.title = "Voice input not supported in this browser";
+}
+</script>
+{% endblock %}

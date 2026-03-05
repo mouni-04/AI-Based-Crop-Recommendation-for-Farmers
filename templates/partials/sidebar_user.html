@@ -1,0 +1,94 @@
+{% load i18n %}
+
+{% load i18n %}
+
+<p class="text-[9px] font-black text-green-800/50 uppercase tracking-[0.3em] ml-4 mb-3 mt-6">
+    {% translate "Farming Operations" %}
+</p>
+
+<a href="{% url 'user_dashboard' %}" 
+   class="nav-item {% if request.resolver_match.url_name == 'user_dashboard' %}active{% endif %}">
+    <i class="fa-solid fa-house-chimney-window"></i> 
+    <span class="text-[10px] font-bold tracking-widest uppercase">{% translate "Farmer Dashboard" %}</span>
+</a>
+
+<a href="{% url 'ml:crop_recommend' %}" 
+   class="nav-item {% if request.resolver_match.url_name == 'crop_recommend' %}active{% endif %}">
+    <i class="fa-solid fa-seedling"></i> 
+    <span class="text-[10px] font-bold tracking-widest uppercase">{% translate "Crop Suggestion" %}</span>
+</a>
+
+<a href="{% url 'ml:yield_predict' %}" 
+   class="nav-item {% if request.resolver_match.url_name == 'yield_predict' %}active{% endif %}">
+    <i class="fa-solid fa-chart-column"></i>
+    <span class="text-[10px] font-bold tracking-widest uppercase">{% translate "Yield Forecast" %}</span>
+</a>
+
+<p class="text-[9px] font-black text-green-800/50 uppercase tracking-[0.3em] ml-4 mb-3 mt-8">
+    {% translate "AI Assistance" %}
+</p>
+
+<a href="{% url 'chatbot:chat_home' %}" 
+   class="nav-item {% if request.resolver_match.url_name == 'chat_home' %}active{% endif %}">
+    <i class="fa-solid fa-robot"></i> 
+    <span class="text-[10px] font-bold tracking-widest uppercase">{% translate "AgriExpert AI" %}</span>
+</a>
+
+<a href="{% url 'ai_lens' %}" 
+   class="nav-item {% if request.resolver_match.url_name == 'ai_lens' %}active{% endif %}">
+    <i class="fa-solid fa-camera-retro"></i> 
+    <span class="text-[10px] font-bold tracking-widest uppercase">{% translate "Agri-Lens Scan" %}</span>
+</a>
+
+<a href="{% url 'weather:weather_dashboard' %}" 
+   class="nav-item {% if request.resolver_match.url_name == 'weather_dashboard' %}active{% endif %}">
+    <i class="fa-solid fa-temperature-empty"></i> 
+    <span class="text-[10px] font-bold tracking-widest uppercase">{% translate "Climate Heatmap" %}</span>
+</a>
+
+<p class="text-[9px] font-black text-green-800/50 uppercase tracking-[0.3em] ml-4 mb-3 mt-8">
+    {% translate "Support & Policy" %}
+</p>
+
+<a href="{% url 'schemes:scheme_list' %}" 
+   class="nav-item {% if request.resolver_match.url_name == 'scheme_list' %}active{% endif %}">
+    <i class="fa-solid fa-landmark"></i> 
+    <span class="text-[10px] font-bold tracking-widest uppercase">{% translate "Govt Schemes" %}</span>
+</a>
+
+<style>
+    /* Styling for the Navigation Items to match Forest Green theme */
+    .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.85rem 1.25rem;
+        margin: 0.25rem 0.75rem;
+        border-radius: 1rem;
+        color: #5D4037; /* Earth Brown text */
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
+    }
+
+    .nav-item i {
+        font-size: 1.1rem;
+        width: 20px;
+        text-align: center;
+        color: #2E7D32; /* Primary Green icons */
+    }
+
+    .nav-item:hover {
+        background: rgba(46, 125, 50, 0.05);
+        transform: translateX(5px);
+    }
+
+    .nav-item.active {
+        background: #2E7D32; /* Primary Green background */
+        color: white !important;
+        box-shadow: 0 10px 20px rgba(46, 125, 50, 0.2);
+    }
+
+    .nav-item.active i {
+        color: white !important;
+    }
+</style>

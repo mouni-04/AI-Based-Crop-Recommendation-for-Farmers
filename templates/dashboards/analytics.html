@@ -1,0 +1,119 @@
+{% extends 'base2.html' %}
+{% load i18n %}
+
+{% block content %}
+{% block dashboard_content %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="animate-in fade-in slide-in-from-bottom-4 duration-700">
+    <div class="mb-10">
+        <h2 class="text-3xl font-black text-green-900 uppercase tracking-tight">
+            {% translate "Platform" %} <span class="text-green-600">{% translate "Intelligence" %}</span>
+        </h2>
+        <p class="text-gray-400 text-[10px] font-bold uppercase tracking-[0.3em]">
+            {% translate "Data-Driven Insights into Regional Agricultural Trends" %}
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <div class="bg-white p-8 rounded-[3rem] shadow-xl border border-green-50 hover:shadow-green-900/5 transition-shadow">
+            <h4 class="text-[10px] font-black uppercase text-gray-400 tracking-widest mb-8 flex items-center gap-2">
+                <i class="fa-solid fa-chart-simple text-green-600"></i>
+                {% translate "Most Recommended Crops" %}
+            </h4>
+            <div class="relative">
+                <canvas id="popularityChart" height="250"></canvas>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-[3rem] shadow-xl border border-green-50 hover:shadow-green-900/5 transition-shadow">
+            <h4 class="text-[10px] font-black uppercase text-gray-400 tracking-widest mb-8 flex items-center gap-2">
+                <i class="fa-solid fa-pie-chart text-green-600"></i>
+                {% translate "Soil Category Distribution" %}
+            </h4>
+            <div class="relative">
+                <canvas id="categoryChart" height="250"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    // Config for Poppins Font compatibility in Charts
+    Chart.defaults.font.family = "'Poppins', sans-serif";
+    Chart.defaults.color = '#9ca3af';
+
+    // Popularity Bar Chart (Crop Recommendations)
+    new Chart(document.getElementById('popularityChart'), {
+        type: 'bar',
+        data: {
+            labels: {{ place_labels|safe }}, // e.g., ['Rice', 'Maize', 'Wheat']
+            datasets: [{
+                label: '{% translate "Total Inferences" %}',
+                data: {{ place_views|safe }},
+                backgroundColor: '#2E7D32', // Forest Green
+                hoverBackgroundColor: '#1B5E20',
+                borderRadius: 12,
+                barThickness: 24
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { 
+                legend: { display: false },
+                tooltip: {
+                    backgroundColor: '#1B5E20',
+                    titleFont: { size: 12, weight: 'bold' },
+                    bodyFont: { size: 11 },
+                    padding: 12,
+                    cornerRadius: 10
+                }
+            },
+            scales: { 
+                y: { 
+                    beginAtZero: true, 
+                    grid: { color: '#f3f4f6' },
+                    ticks: { font: { weight: 'bold' } }
+                }, 
+                x: { 
+                    grid: { display: false },
+                    ticks: { font: { weight: 'bold' }, color: '#374151' }
+                } 
+            }
+        }
+    });
+
+    // Category Doughnut Chart (Soil/Crop Categories)
+    new Chart(document.getElementById('categoryChart'), {
+        type: 'doughnut',
+        data: {
+            labels: {{ cat_labels|safe }},
+            datasets: [{
+                data: {{ cat_counts|safe }},
+                backgroundColor: ['#2E7D32', '#A5D6A7', '#1B5E20', '#F1F8E9', '#5D4037'],
+                borderWidth: 4,
+                borderColor: '#ffffff',
+                hoverOffset: 15
+            }]
+        },
+        options: {
+            cutout: '72%',
+            plugins: { 
+                legend: { 
+                    position: 'bottom', 
+                    labels: { 
+                        font: { size: 10, weight: 'bold' }, 
+                        padding: 25,
+                        usePointStyle: true,
+                        pointStyle: 'circle'
+                    } 
+                } 
+            }
+        }
+    });
+</script>
+{% endblock %}
+{% endblock %}

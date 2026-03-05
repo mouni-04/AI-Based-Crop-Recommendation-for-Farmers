@@ -1,0 +1,7 @@
+{% extends user.is_authenticated|yesno:"base2.html,base1.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+    {% include "partials/lens_body.html" %}
+{% endblock %}

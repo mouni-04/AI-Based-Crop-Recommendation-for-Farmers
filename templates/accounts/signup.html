@@ -1,0 +1,56 @@
+{% extends base_template %}
+{% load i18n %}
+{% block title %}{% trans "Farmer Registration | AgriTech" %}{% endblock %}
+
+{% block content %}
+<div class="flex items-center justify-center py-24 px-4 agri-bg">
+    <div class="max-w-md w-full space-y-8 bg-white/80 backdrop-blur-xl p-10 rounded-[3rem] border border-green-100 shadow-[0_20px_50px_rgba(46,125,50,0.1)] hover:shadow-[0_0_30px_rgba(0,255,65,0.2)] transition-shadow duration-500">
+        
+        <div class="text-center">
+            <div class="w-20 h-20 bg-green-50 border-2 border-green-500 rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-[0_0_15px_rgba(46,125,50,0.1)] transition-transform hover:rotate-12">
+                <i class="fa-solid fa-user-plus text-3xl text-green-700"></i>
+            </div>
+            <h2 class="text-3xl font-black text-green-900 tracking-tight">
+                {% trans "Join" %} <span class="text-green-600">{% trans "AgriTech" %}</span>
+            </h2>
+            <p class="mt-3 text-[11px] font-bold text-gray-400 uppercase tracking-[0.25em]">
+                {% trans "Create Your Farmer Identity" %}
+            </p>
+        </div>
+
+        <form class="mt-8 space-y-6" method="POST">
+            {% csrf_token %}
+            <div class="space-y-4">
+                <div class="relative group">
+                    <i class="fa-solid fa-at absolute left-5 top-5 text-gray-400 group-focus-within:text-green-600 transition-colors"></i>
+                    <input name="email" type="email" required placeholder="{% trans 'Farmer Email Address' %}"
+                        class="w-full pl-14 pr-6 py-4 bg-gray-50/50 border border-gray-200 rounded-2xl focus:border-green-500/50 focus:ring-4 focus:ring-green-500/5 outline-none font-semibold text-gray-800 placeholder-gray-400 transition-all">
+                </div>
+                
+                <div class="relative group">
+                    <i class="fa-solid fa-key absolute left-5 top-5 text-gray-400 group-focus-within:text-green-600 transition-colors"></i>
+                    <input name="password" type="password" required placeholder="{% trans 'Security Password' %}"
+                        class="w-full pl-14 pr-6 py-4 bg-gray-50/50 border border-gray-200 rounded-2xl focus:border-green-500/50 focus:ring-4 focus:ring-green-500/5 outline-none font-semibold text-gray-800 placeholder-gray-400 transition-all">
+                </div>
+            </div>
+
+            <div class="bg-green-50/50 p-5 rounded-3xl border border-green-100 flex items-start gap-4">
+                <i class="fa-solid fa-circle-info text-green-600 mt-1"></i>
+                <p class="text-[10px] text-green-800 font-bold uppercase tracking-widest leading-relaxed">
+                    {% trans "A secure verification code will be sent via email to activate your account." %} [cite: 1141]
+                </p>
+            </div>
+
+            <div class="flex items-center justify-between text-[10px] font-black uppercase tracking-widest px-1">
+                <a href="{% url 'accounts:password_reset' %}" class="text-gray-400 hover:text-green-700 transition-colors">{% trans "Need Help?" %}</a>
+                <a href="{% url 'accounts:login' %}" class="text-green-700 hover:underline">{% trans "Existing Account" %}</a>
+            </div>
+
+            <button type="submit"
+                class="btn-glow w-full text-white font-black py-4 rounded-2xl uppercase tracking-[0.3em] text-[11px] flex items-center justify-center gap-3 transition-all active:scale-95">
+                <i class="fa-solid fa-seedling text-xs"></i> {% trans "Initialize Registration" %}
+            </button>
+        </form>
+    </div>
+</div>
+{% endblock %}

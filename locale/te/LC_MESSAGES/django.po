@@ -1,0 +1,2712 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-18 22:26+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\settings.py:95
+msgid "English"
+msgstr "ఇంగ్లీష్"
+
+#: .\core\settings.py:96
+msgid "Hindi"
+msgstr "లేదు"
+
+#: .\core\settings.py:97
+msgid "Telugu"
+msgstr "Telugu"
+
+#: .\templates\accounts\login.html:3
+msgid "Farmer Login | AgriTech"
+msgstr "రైతు లాగిన్ | అగ్రిటెక్"
+
+#: .\templates\accounts\login.html:14
+msgid "Welcome"
+msgstr "స్వాగతం"
+
+#: .\templates\accounts\login.html:14
+msgid "Back"
+msgstr "వెనుకకు"
+
+#: .\templates\accounts\login.html:17
+msgid "Secure Farmer Authentication"
+msgstr "సురక్షిత రైతు ప్రమాణీకరణ"
+
+#: .\templates\accounts\login.html:42 .\templates\accounts\signup.html:26
+msgid "Farmer Email Address"
+msgstr "రైతు ఇమెయిల్ చిరునామా"
+
+#: .\templates\accounts\login.html:48
+msgid "Secure Password"
+msgstr "సురక్షిత పాస్వర్డ్"
+
+#: .\templates\accounts\login.html:54
+msgid "Forgot Access?"
+msgstr "యాక్సెస్ మర్చిపోయారా?"
+
+#: .\templates\accounts\login.html:55
+msgid "Register Profile"
+msgstr "రిజిస్టర్ ప్రొఫైల్"
+
+#: .\templates\accounts\login.html:59
+msgid "Authorize Entry"
+msgstr "ప్రవేశానికి అధికారం ఇవ్వండి"
+
+#: .\templates\accounts\signup.html:3
+msgid "Farmer Registration | AgriTech"
+msgstr "రైతు నమోదు | అగ్రిటెక్"
+
+#: .\templates\accounts\signup.html:14
+msgid "Join"
+msgstr "చేరండి"
+
+#: .\templates\accounts\signup.html:14
+msgid "AgriTech"
+msgstr "అగ్రిటెక్"
+
+#: .\templates\accounts\signup.html:17
+msgid "Create Your Farmer Identity"
+msgstr "మీ రైతు గుర్తింపును సృష్టించండి"
+
+#: .\templates\accounts\signup.html:32
+msgid "Security Password"
+msgstr "భద్రతా పాస్వర్డ్"
+
+#: .\templates\accounts\signup.html:40
+msgid ""
+"A secure verification code will be sent via email to activate your account."
+msgstr ""
+"మీ ఖాతాను సక్రియం చేయడానికి సురక్షిత ధృవీకరణ కోడ్ ఇమెయిల్ ద్వారా "
+"పంపబడుతుంది."
+
+#: .\templates\accounts\signup.html:45
+msgid "Need Help?"
+msgstr "సహాయం కావాలా?"
+
+#: .\templates\accounts\signup.html:46
+msgid "Existing Account"
+msgstr "ఇప్పటికే ఉన్న ఖాతా"
+
+#: .\templates\accounts\signup.html:51
+msgid "Initialize Registration"
+msgstr "నమోదు ప్రారంభించండి"
+
+#: .\templates\accounts\verify_failed.html:3
+msgid "Verification Failed | AgriTech"
+msgstr "ధృవీకరణ విఫలమైంది | అగ్రిటెక్"
+
+#: .\templates\accounts\verify_failed.html:14
+#: .\templates\registration\password_reset_done.html:14
+msgid "Link"
+msgstr "లింక్"
+
+#: .\templates\accounts\verify_failed.html:14
+msgid "Expired"
+msgstr "గడువు ముగిసింది"
+
+#: .\templates\accounts\verify_failed.html:18
+msgid ""
+"The verification token is either invalid or has reached its expiration "
+"threshold."
+msgstr "ధృవీకరణ టోకెన్ చెల్లదు లేదా దాని గడువు థ్రెషోల్డ్‌కు చేరుకుంది."
+
+#: .\templates\accounts\verify_failed.html:19
+msgid "Security protocols require you to restart your registration process."
+msgstr "భద్రతా ప్రోటోకాల్‌లు మీ నమోదు ప్రక్రియను పునఃప్రారంభించవలసి ఉంటుంది."
+
+#: .\templates\accounts\verify_failed.html:24
+msgid "Restart Registration"
+msgstr "రిజిస్ట్రేషన్ పునఃప్రారంభించండి"
+
+#: .\templates\accounts\verify_failed.html:29
+msgid "Back to Login"
+msgstr "తిరిగి లాగిన్‌కి"
+
+#: .\templates\accounts\verify_otp.html:3
+msgid "Verify Identity | AgriTech"
+msgstr "గుర్తింపును ధృవీకరించండి | అగ్రిటెక్"
+
+#: .\templates\accounts\verify_otp.html:14
+msgid "Verify"
+msgstr "ధృవీకరించండి"
+
+#: .\templates\accounts\verify_otp.html:14
+msgid "Identity"
+msgstr "గుర్తింపు"
+
+#: .\templates\accounts\verify_otp.html:17
+msgid "Check your email for the 6-digit secure access code"
+msgstr "6-అంకెల సురక్షిత యాక్సెస్ కోడ్ కోసం మీ ఇమెయిల్‌ను తనిఖీ చేయండి"
+
+#: .\templates\accounts\verify_otp.html:28
+msgid "Activate Profile"
+msgstr "ప్రొఫైల్‌ని సక్రియం చేయండి"
+
+#: .\templates\accounts\verify_otp.html:34
+msgid "Didn't receive the code?"
+msgstr "కోడ్ అందలేదా?"
+
+#: .\templates\accounts\verify_otp.html:35
+msgid "Resend Transmitted Code"
+msgstr "బదిలీ చేయబడిన కోడ్‌ని మళ్లీ పంపండి"
+
+#: .\templates\accounts\verify_success.html:3
+msgid "Account Verified | AgriTech"
+msgstr "ఖాతా ధృవీకరించబడింది | అగ్రిటెక్"
+
+#: .\templates\accounts\verify_success.html:14
+msgid "Profile"
+msgstr "ప్రొఫైల్"
+
+#: .\templates\accounts\verify_success.html:14
+msgid "Activated"
+msgstr "యాక్టివేట్ చేయబడింది"
+
+#: .\templates\accounts\verify_success.html:18
+msgid "Your identity has been successfully verified."
+msgstr "మీ గుర్తింపు విజయవంతంగా ధృవీకరించబడింది."
+
+#: .\templates\accounts\verify_success.html:19
+msgid "Welcome to the AgriTech smart farming community."
+msgstr "అగ్రిటెక్ స్మార్ట్ ఫార్మింగ్ కమ్యూనిటీకి స్వాగతం."
+
+#: .\templates\accounts\verify_success.html:24
+msgid "Proceed to Login"
+msgstr "లాగిన్ చేయడానికి కొనసాగండి"
+
+#: .\templates\base1.html:10
+msgid "AgriTech | Smart Farming Assistant"
+msgstr "అగ్రిటెక్ | స్మార్ట్ ఫార్మింగ్ అసిస్టెంట్"
+
+#: .\templates\base1.html:75 .\templates\partials\lens_body.html:10
+msgid "Agri"
+msgstr "అగ్రి"
+
+#: .\templates\base1.html:75
+msgid "Tech"
+msgstr "టెక్"
+
+#: .\templates\base1.html:79
+msgid "Home"
+msgstr "హోమ్"
+
+#: .\templates\base1.html:80
+msgid "About"
+msgstr "గురించి"
+
+#: .\templates\base1.html:86
+msgid "EN"
+msgstr "IN"
+
+#: .\templates\base1.html:87
+msgid "HI"
+msgstr "HI"
+
+#: .\templates\base1.html:88
+msgid "TE"
+msgstr "ది"
+
+#: .\templates\base1.html:91
+msgid "Login"
+msgstr "లాగిన్ చేయండి"
+
+#: .\templates\base1.html:92
+msgid "Sign Up"
+msgstr "సైన్ అప్ చేయండి"
+
+#: .\templates\base1.html:113 .\templates\landing.html:92
+#: .\templates\partials\sidebar_user.html:34
+msgid "AgriExpert AI"
+msgstr "అగ్రి ఎక్స్‌పర్ట్ AI"
+
+#: .\templates\base1.html:114
+msgid "24/7 Farming Support"
+msgstr "24/7 వ్యవసాయ మద్దతు"
+
+#: .\templates\base1.html:122
+msgid ""
+"Welcome to AgriTech! I can help you with crop disease detection, soil "
+"nutrition, and smart farming advice."
+msgstr ""
+"అగ్రిటెక్‌కి స్వాగతం! పంటల వ్యాధిని గుర్తించడం, నేల పోషణ మరియు తెలివైన "
+"వ్యవసాయ సలహాతో నేను మీకు సహాయం చేయగలను."
+
+#: .\templates\base1.html:134
+msgid "Type your query..."
+msgstr "మీ ప్రశ్నను టైప్ చేయండి..."
+
+#: .\templates\base1.html:142
+msgid "Send"
+msgstr "పంపండి"
+
+#: .\templates\base1.html:145
+msgid "Image ready for analysis..."
+msgstr "చిత్రం విశ్లేషణకు సిద్ధంగా ఉంది..."
+
+#: .\templates\base1.html:153
+msgid "AgriTech - Smart Solutions for Sustainable Farming"
+msgstr "అగ్రిటెక్ - స్థిరమైన వ్యవసాయం కోసం స్మార్ట్ సొల్యూషన్స్"
+
+#: .\templates\base1.html:224
+msgid "[Image Sent]"
+msgstr "[చిత్రం పంపబడింది]"
+
+#: .\templates\base1.html:262
+msgid "Connection Error"
+msgstr "కనెక్షన్ లోపం"
+
+#: .\templates\base2.html:7
+msgid "Farmer Dashboard | AgriTech"
+msgstr "రైతు డ్యాష్‌బోర్డ్ | అగ్రిటెక్"
+
+#: .\templates\base2.html:78
+msgid "Smart Farming"
+msgstr "స్మార్ట్ ఫార్మింగ్"
+
+#: .\templates\base2.html:90
+msgid "Preferences"
+msgstr "ప్రాధాన్యతలు"
+
+#: .\templates\base2.html:93
+msgid "Account Settings"
+msgstr "ఖాతా సెట్టింగ్‌లు"
+
+#: .\templates\base2.html:103
+msgid "Logout"
+msgstr "లాగ్అవుట్"
+
+#: .\templates\base2.html:123
+msgid "ROOT ADMIN ACCESS"
+msgstr "రూట్ అడ్మిన్ యాక్సెస్"
+
+#: .\templates\base2.html:123
+msgid "VERIFIED FARMER"
+msgstr "ధృవీకరించబడిన రైతు"
+
+#: .\templates\base2.html:144
+msgid "Ask AgriExpert AI"
+msgstr "AgriExpert AIని అడగండి"
+
+#: .\templates\dashboards\admin_chat_logs.html:10
+msgid "AI Interaction Logs"
+msgstr "AI ఇంటరాక్షన్ లాగ్‌లు"
+
+#: .\templates\dashboards\admin_chat_logs.html:13
+msgid "Auditing AgriExpert AI Conversations & Advice Quality"
+msgstr "AgriExpert AI సంభాషణలు & సలహా నాణ్యత ఆడిటింగ్"
+
+#: .\templates\dashboards\admin_chat_logs.html:18
+msgid "Live Feed"
+msgstr "ప్రత్యక్ష ఫీడ్"
+
+#: .\templates\dashboards\admin_chat_logs.html:37
+msgid "ANONYMOUS_FARMER"
+msgstr "ANONYMOUS_FARMER"
+
+#: .\templates\dashboards\admin_chat_logs.html:43
+msgid "ago"
+msgstr "క్రితం"
+
+#: .\templates\dashboards\admin_chat_logs.html:55
+msgid "AgriExpert AI Response"
+msgstr "AgriExpert AI ప్రతిస్పందన"
+
+#: .\templates\dashboards\admin_chat_logs.html:65
+msgid "LOG_ID"
+msgstr "LOG_ID"
+
+#: .\templates\dashboards\admin_chat_logs.html:78
+msgid "No recent farmer conversations detected in the neural pipeline."
+msgstr "నాడీ పైప్‌లైన్‌లో ఇటీవలి రైతు సంభాషణలు ఏవీ కనుగొనబడలేదు."
+
+#: .\templates\dashboards\admin_dashboard.html:4
+msgid "Admin Command Center | AgriTech AI"
+msgstr "అడ్మిన్ కమాండ్ సెంటర్ | అగ్రిటెక్ AI"
+
+#: .\templates\dashboards\admin_dashboard.html:5
+msgid "MASTER_COMMAND_CENTER"
+msgstr "MASTER_COMMAND_CENTER"
+
+#: .\templates\dashboards\admin_dashboard.html:12
+msgid "Command"
+msgstr "ఆదేశం"
+
+#: .\templates\dashboards\admin_dashboard.html:12
+msgid "Center"
+msgstr "కేంద్రం"
+
+#: .\templates\dashboards\admin_dashboard.html:15
+msgid ""
+"Global oversight of Agri-ML pipelines and regional farmer node clusters."
+msgstr ""
+"అగ్రి-ML పైప్‌లైన్‌లు మరియు ప్రాంతీయ రైతు నోడ్ క్లస్టర్‌ల ప్రపంచ పర్యవేక్షణ."
+
+#: .\templates\dashboards\admin_dashboard.html:21
+msgid "Active Farmer Nodes"
+msgstr "క్రియాశీల రైతు నోడ్స్"
+
+#: .\templates\dashboards\admin_dashboard.html:29
+msgid "Soil Analysis Logs"
+msgstr "నేల విశ్లేషణ లాగ్‌లు"
+
+#: .\templates\dashboards\admin_dashboard.html:37
+msgid "Yield Predictions"
+msgstr "దిగుబడి అంచనాలు"
+
+#: .\templates\dashboards\admin_dashboard.html:45
+msgid "System Integrity"
+msgstr "సిస్టమ్ సమగ్రత"
+
+#: .\templates\dashboards\admin_dashboard.html:51
+msgid "Secure"
+msgstr "సురక్షితం"
+
+#: .\templates\dashboards\admin_dashboard.html:58
+msgid "INFERENCE_LOAD_BALANCING"
+msgstr "INFERENCE_LOAD_BALANCING"
+
+#: .\templates\dashboards\admin_dashboard.html:65
+msgid "Real-time AI request distribution across clusters"
+msgstr "క్లస్టర్‌ల అంతటా నిజ-సమయ AI అభ్యర్థన పంపిణీ"
+
+#: .\templates\dashboards\admin_dashboard.html:69
+msgid "REGIONAL_DEMAND"
+msgstr "REGIONAL_DEMAND"
+
+#: .\templates\dashboards\admin_dashboard.html:80
+msgid "Recent AI Inferences"
+msgstr "ఇటీవలి AI అనుమితులు"
+
+#: .\templates\dashboards\admin_dashboard.html:96
+msgid "No Inference Data Yet"
+msgstr "ఇంకా అనుమితి డేటా లేదు"
+
+#: .\templates\dashboards\admin_dashboard.html:102
+msgid "Admin Services"
+msgstr "నిర్వాహక సేవలు"
+
+#: .\templates\dashboards\admin_dashboard.html:105
+msgid "Farmer Management"
+msgstr "రైతు నిర్వహణ"
+
+#: .\templates\dashboards\admin_dashboard.html:109
+#: .\templates\partials\sidebar_admin.html:22
+msgid "Scheme Bulk Upload"
+msgstr "స్కీమ్ బల్క్ అప్‌లోడ్"
+
+#: .\templates\dashboards\admin_dashboard.html:116
+msgid "Django Database"
+msgstr "జంగో డేటాబేస్"
+
+#: .\templates\dashboards\ai_monitor.html:11
+msgid "AI Neural"
+msgstr "న్యూరల్ AI"
+
+#: .\templates\dashboards\ai_monitor.html:11
+msgid "Monitor"
+msgstr "మానిటర్"
+
+#: .\templates\dashboards\ai_monitor.html:14
+msgid "Real-time Gemini Performance & System Integrity"
+msgstr "నిజ-సమయ జెమిని పనితీరు & సిస్టమ్ సమగ్రత"
+
+#: .\templates\dashboards\ai_monitor.html:28
+msgid "Intelligence Core"
+msgstr "ఇంటెలిజెన్స్ కోర్"
+
+#: .\templates\dashboards\ai_monitor.html:36
+msgid "Inference Latency"
+msgstr "అనుమితి జాప్యం"
+
+#: .\templates\dashboards\ai_monitor.html:44
+msgid "API Total Requests"
+msgstr "API మొత్తం అభ్యర్థనలు"
+
+#: .\templates\dashboards\ai_monitor.html:53
+msgid "Active AI Services"
+msgstr "క్రియాశీల AI సేవలు"
+
+#: .\templates\dashboards\ai_monitor.html:72
+msgid "Neural Health"
+msgstr "నరాల ఆరోగ్యం"
+
+#: .\templates\dashboards\ai_monitor.html:76
+msgid "Model Load"
+msgstr "మోడల్ లోడ్"
+
+#: .\templates\dashboards\ai_monitor.html:80
+msgid "Token Quota"
+msgstr "టోకెన్ కోటా"
+
+#: .\templates\dashboards\ai_monitor.html:81
+msgid "Free"
+msgstr "ఉచిత"
+
+#: .\templates\dashboards\ai_monitor.html:84
+msgid "Node Sync"
+msgstr "నోడ్ సమకాలీకరణ"
+
+#: .\templates\dashboards\ai_monitor.html:85
+#: .\templates\dashboards\user_directory.html:72
+msgid "Active"
+msgstr "చురుకుగా"
+
+#: .\templates\dashboards\analytics.html:11
+msgid "Platform"
+msgstr "వేదిక"
+
+#: .\templates\dashboards\analytics.html:11
+msgid "Intelligence"
+msgstr "ఇంటెలిజెన్స్"
+
+#: .\templates\dashboards\analytics.html:14
+msgid "Data-Driven Insights into Regional Agricultural Trends"
+msgstr "ప్రాంతీయ వ్యవసాయ ధోరణులకు డేటా-ఆధారిత అంతర్దృష్టులు"
+
+#: .\templates\dashboards\analytics.html:23
+msgid "Most Recommended Crops"
+msgstr "అత్యంత సిఫార్సు చేయబడిన పంటలు"
+
+#: .\templates\dashboards\analytics.html:33
+msgid "Soil Category Distribution"
+msgstr "నేల వర్గం పంపిణీ"
+
+#: .\templates\dashboards\analytics.html:55
+msgid "Total Inferences"
+msgstr "మొత్తం అనుమితులు"
+
+#: .\templates\dashboards\bulk_upload.html:12
+msgid "Bulk Data Import"
+msgstr "బల్క్ డేటా దిగుమతి"
+
+#: .\templates\dashboards\bulk_upload.html:16
+msgid "Technical Instructions"
+msgstr "సాంకేతిక సూచనలు"
+
+#: .\templates\dashboards\bulk_upload.html:20
+msgid "Upload a standard"
+msgstr "ప్రమాణాన్ని అప్‌లోడ్ చేయండి"
+
+#: .\templates\dashboards\bulk_upload.html:20
+msgid "file containing an array of objects."
+msgstr "వస్తువుల శ్రేణిని కలిగి ఉన్న ఫైల్."
+
+#: .\templates\dashboards\bulk_upload.html:24
+msgid ""
+"Ensure schema includes required fields: name, category, and technical "
+"parameters."
+msgstr ""
+"స్కీమాలో అవసరమైన ఫీల్డ్‌లు ఉన్నాయని నిర్ధారించుకోండి: పేరు, వర్గం మరియు "
+"సాంకేతిక పారామితులు."
+
+#: .\templates\dashboards\bulk_upload.html:39
+msgid "Select JSON Dataset"
+msgstr "JSON డేటాసెట్‌ని ఎంచుకోండి"
+
+#: .\templates\dashboards\bulk_upload.html:40
+msgid "Max file size: 10MB"
+msgstr "గరిష్ట ఫైల్ పరిమాణం: 10MB"
+
+#: .\templates\dashboards\bulk_upload.html:47
+msgid "Execute Bulk Import"
+msgstr "బల్క్ దిగుమతిని అమలు చేయండి"
+
+#: .\templates\dashboards\bulk_upload.html:51
+msgid "Cancel"
+msgstr "రద్దు చేయి"
+
+#: .\templates\dashboards\profile.html:7
+msgid "Farmer Profile"
+msgstr "రైతు ప్రొఫైల్"
+
+#: .\templates\dashboards\profile.html:8
+msgid "Manage your personal details and agricultural preferences."
+msgstr "మీ వ్యక్తిగత వివరాలు మరియు వ్యవసాయ ప్రాధాన్యతలను నిర్వహించండి."
+
+#: .\templates\dashboards\profile.html:14
+msgid "Account Information"
+msgstr "ఖాతా సమాచారం"
+
+#: .\templates\dashboards\profile.html:22
+msgid "System Role"
+msgstr "సిస్టమ్ పాత్ర"
+
+#: .\templates\dashboards\profile.html:29
+msgid "Account Identity (Email)"
+msgstr "ఖాతా గుర్తింపు (ఇమెయిల్)"
+
+#: .\templates\dashboards\profile.html:37
+msgid "Save Changes"
+msgstr "మార్పులను సేవ్ చేయండి"
+
+#: .\templates\dashboards\profile.html:45
+msgid "System Preferences"
+msgstr "సిస్టమ్ ప్రాధాన్యతలు"
+
+#: .\templates\dashboards\profile.html:52
+msgid "Interface Language"
+msgstr "ఇంటర్ఫేస్ భాష"
+
+#: .\templates\dashboards\profile.html:54
+msgid "Preferred language for AI advice and crop analysis."
+msgstr "AI సలహా మరియు పంట విశ్లేషణ కోసం ప్రాధాన్య భాష."
+
+#: .\templates\dashboards\profile.html:80
+msgid "Climate & Yield Alerts"
+msgstr "వాతావరణం & దిగుబడి హెచ్చరికలు"
+
+#: .\templates\dashboards\profile.html:82
+msgid "Get real-time updates on weather risks."
+msgstr "వాతావరణ ప్రమాదాలపై నిజ-సమయ నవీకరణలను పొందండి."
+
+#: .\templates\dashboards\user_dashboard.html:9
+#: .\templates\dashboards\user_directory.html:59
+msgid "Farmer"
+msgstr "రైతు"
+
+#: .\templates\dashboards\user_dashboard.html:9
+msgid "Hub"
+msgstr "హబ్"
+
+#: .\templates\dashboards\user_dashboard.html:12
+msgid "Your Smart Farming Analytics At A Glance"
+msgstr "మీ స్మార్ట్ ఫార్మింగ్ అనలిటిక్స్ ఒక చూపులో"
+
+#: .\templates\dashboards\user_dashboard.html:22
+msgid "Total Logs"
+msgstr "మొత్తం లాగ్‌లు"
+
+#: .\templates\dashboards\user_dashboard.html:32
+msgid "Agri Lens"
+msgstr "అగ్రి లెన్స్"
+
+#: .\templates\dashboards\user_dashboard.html:33
+msgid "Diagnose Crop"
+msgstr "పంట నిర్ధారణ"
+
+#: .\templates\dashboards\user_dashboard.html:42
+msgid "AI Advisor"
+msgstr "AI సలహాదారు"
+
+#: .\templates\dashboards\user_dashboard.html:43
+msgid "Talk to Expert"
+msgstr "నిపుణులతో మాట్లాడండి"
+
+#: .\templates\dashboards\user_dashboard.html:52
+#: .\templates\weather\weather_dashboard.html:14
+msgid "Climate"
+msgstr "వాతావరణం"
+
+#: .\templates\dashboards\user_dashboard.html:53
+msgid "Weather Heatmap"
+msgstr "వాతావరణ హీట్‌మ్యాప్"
+
+#: .\templates\dashboards\user_dashboard.html:61
+msgid "Recent Crop Recommendations"
+msgstr "ఇటీవలి పంట సిఫార్సులు"
+
+#: .\templates\dashboards\user_dashboard.html:62
+msgid "New Analysis +"
+msgstr "కొత్త విశ్లేషణ +"
+
+#: .\templates\dashboards\user_dashboard.html:74
+msgid "Recommendation"
+msgstr "సిఫార్సు"
+
+#: .\templates\dashboards\user_dashboard.html:87
+msgid "No soil analysis history yet"
+msgstr "మట్టి విశ్లేషణ చరిత్ర ఇంకా లేదు"
+
+#: .\templates\dashboards\user_dashboard.html:88
+msgid "Start First Analysis"
+msgstr "మొదటి విశ్లేషణ ప్రారంభించండి"
+
+#: .\templates\dashboards\user_dashboard.html:98
+msgid "Climate Alert"
+msgstr "వాతావరణ హెచ్చరిక"
+
+#: .\templates\dashboards\user_dashboard.html:100
+msgid "Optimal conditions for Rice planting detected in your region."
+msgstr "మీ ప్రాంతంలో వరి నాటడానికి అనుకూలమైన పరిస్థితులు కనుగొనబడ్డాయి."
+
+#: .\templates\dashboards\user_dashboard.html:102
+msgid "View Heatmap"
+msgstr "హీట్‌మ్యాప్‌ని వీక్షించండి"
+
+#: .\templates\dashboards\user_dashboard.html:107
+msgid "Active Schemes"
+msgstr "క్రియాశీల పథకాలు"
+
+#: .\templates\dashboards\user_dashboard.html:111
+msgid "Update"
+msgstr "నవీకరించు"
+
+#: .\templates\dashboards\user_dashboard.html:114
+msgid "View All Schemes"
+msgstr "అన్ని పథకాలను వీక్షించండి"
+
+#: .\templates\dashboards\user_dashboard.html:124
+msgid "Farming Records"
+msgstr "వ్యవసాయ రికార్డులు"
+
+#: .\templates\dashboards\user_dashboard.html:127
+msgid "Items Logged"
+msgstr "అంశాలు లాగ్ చేయబడ్డాయి"
+
+#: .\templates\dashboards\user_dashboard.html:137 .\templates\landing.html:78
+#: .\templates\ml\yield_predict.html:11
+#: .\templates\partials\sidebar_user.html:24
+msgid "Yield Forecast"
+msgstr "దిగుబడి సూచన"
+
+#: .\templates\dashboards\user_dashboard.html:140
+msgid "View Report"
+msgstr "నివేదికను వీక్షించండి"
+
+#: .\templates\dashboards\user_dashboard.html:151
+msgid "No Records"
+msgstr "రికార్డులు లేవు"
+
+#: .\templates\dashboards\user_directory.html:9
+msgid "Farmer Node Directory"
+msgstr "రైతు నోడ్ డైరెక్టరీ"
+
+#: .\templates\dashboards\user_directory.html:10
+msgid "Manage Regional Agricultural Identity & System Access"
+msgstr "ప్రాంతీయ వ్యవసాయ గుర్తింపు & సిస్టమ్ యాక్సెస్‌ని నిర్వహించండి"
+
+#: .\templates\dashboards\user_directory.html:20
+msgid "Registered Farmer Nodes"
+msgstr "నమోదిత రైతు నోడ్స్"
+
+#: .\templates\dashboards\user_directory.html:22
+msgid "Active Nodes"
+msgstr "క్రియాశీల నోడ్స్"
+
+#: .\templates\dashboards\user_directory.html:30
+msgid "Farmer Identity"
+msgstr "రైతు గుర్తింపు"
+
+#: .\templates\dashboards\user_directory.html:31
+msgid "Auth Level"
+msgstr "ప్రమాణ స్థాయి"
+
+#: .\templates\dashboards\user_directory.html:32
+msgid "Enrollment"
+msgstr "నమోదు"
+
+#: .\templates\dashboards\user_directory.html:33
+msgid "Node Status"
+msgstr "నోడ్ స్థితి"
+
+#: .\templates\dashboards\user_directory.html:34
+msgid "Management"
+msgstr "నిర్వహణ"
+
+#: .\templates\dashboards\user_directory.html:55
+msgid "Global Admin"
+msgstr "గ్లోబల్ అడ్మిన్"
+
+#: .\templates\dashboards\user_directory.html:72
+msgid "Deactivated"
+msgstr "డియాక్టివేట్ చేయబడింది"
+
+#: .\templates\dashboards\user_directory.html:81
+msgid "Deactivate Node"
+msgstr "నోడ్‌ని నిష్క్రియం చేయండి"
+
+#: .\templates\dashboards\user_directory.html:81
+msgid "Activate Node"
+msgstr "నోడ్‌ని యాక్టివేట్ చేయండి"
+
+#: .\templates\dashboards\user_directory.html:87
+msgid "Permanently wipe this farmer node data?"
+msgstr "ఈ రైతు నోడ్ డేటాను శాశ్వతంగా తుడిచిపెట్టాలా?"
+
+#: .\templates\dashboards\user_directory.html:92
+msgid "Current Session"
+msgstr "ప్రస్తుత సెషన్"
+
+#: .\templates\dashboards\user_directory.html:101
+msgid "No Farmer Nodes Connected"
+msgstr "రైతు నోడ్‌లు ఏవీ కనెక్ట్ కాలేదు"
+
+#: .\templates\landing.html:5
+msgid "AgriTech | Smart AI-Powered Farming Solutions"
+msgstr "అగ్రిటెక్ | స్మార్ట్ AI-ఆధారిత వ్యవసాయ పరిష్కారాలు"
+
+#: .\templates\landing.html:18
+msgid "Next Generation Precision Agriculture"
+msgstr "తదుపరి తరం ఖచ్చితమైన వ్యవసాయం"
+
+#: .\templates\landing.html:22
+msgid "Cultivating the Future with"
+msgstr "తో భవిష్యత్తును పండించడం"
+
+#: .\templates\landing.html:23
+msgid "Artificial Intelligence"
+msgstr "కృత్రిమ మేధస్సు"
+
+#: .\templates\landing.html:27
+msgid ""
+"Empowering farmers with data-driven crop recommendations, yield forecasting,"
+" and real-time AI guidance to ensure sustainable productivity and reduced "
+"risk."
+msgstr ""
+"సుస్థిర ఉత్పాదకత మరియు తగ్గిన నష్టాన్ని నిర్ధారించడానికి డేటా ఆధారిత పంట "
+"సిఫార్సులు, దిగుబడి అంచనా మరియు నిజ-సమయ AI మార్గదర్శకాలతో రైతులకు సాధికారత "
+"కల్పించడం."
+
+#: .\templates\landing.html:33
+msgid "Get Crop Advice"
+msgstr "పంట సలహా పొందండి"
+
+#: .\templates\landing.html:38
+msgid "Ask AgriExpert"
+msgstr "అగ్రి ఎక్స్‌పర్ట్‌ని అడగండి"
+
+#: .\templates\landing.html:53
+msgid "Smart Agriculture Modules"
+msgstr "స్మార్ట్ అగ్రికల్చర్ మాడ్యూల్స్"
+
+#: .\templates\landing.html:54
+msgid ""
+"Leverage our advanced machine learning engines designed for modern soil "
+"science."
+msgstr ""
+"ఆధునిక నేల శాస్త్రం కోసం రూపొందించిన మా అధునాతన యంత్ర అభ్యాస ఇంజిన్‌లను "
+"ఉపయోగించుకోండి."
+
+#: .\templates\landing.html:64
+msgid "Crop Advice"
+msgstr "పంట సలహా"
+
+#: .\templates\landing.html:66
+msgid ""
+"AI analysis of N-P-K levels, pH, and climate to suggest the most profitable "
+"crop for your soil."
+msgstr ""
+"మీ మట్టికి అత్యంత లాభదాయకమైన పంటను సూచించడానికి N-P-K స్థాయిలు, pH మరియు "
+"వాతావరణం యొక్క AI విశ్లేషణ."
+
+#: .\templates\landing.html:70 .\templates\landing.html:84
+msgid "Open Tool"
+msgstr "సాధనాన్ని తెరవండి"
+
+#: .\templates\landing.html:80
+msgid ""
+"Predict harvest quantity using historical weather data and current soil "
+"conditions."
+msgstr ""
+"చారిత్రక వాతావరణ డేటా మరియు ప్రస్తుత నేల పరిస్థితులను ఉపయోగించి పంట "
+"పరిమాణాన్ని అంచనా వేయండి."
+
+#: .\templates\landing.html:94
+msgid ""
+"Upload leaf images or ask questions in your local language to identify "
+"diseases instantly."
+msgstr ""
+"వ్యాధులను తక్షణమే గుర్తించడానికి ఆకు చిత్రాలను అప్‌లోడ్ చేయండి లేదా మీ "
+"స్థానిక భాషలో ప్రశ్నలు అడగండి."
+
+#: .\templates\landing.html:98
+msgid "Talk to AI"
+msgstr "AIతో మాట్లాడండి"
+
+#: .\templates\landing.html:112
+msgid "Bilingual & Smart"
+msgstr "ద్విభాషా & స్మార్ట్"
+
+#: .\templates\landing.html:115
+msgid "Language is no longer a"
+msgstr "భాష ఇకపై a"
+
+#: .\templates\landing.html:115
+msgid "Barrier"
+msgstr "అడ్డంకి"
+
+#: .\templates\landing.html:118
+msgid ""
+"Our platform supports Hindi, Telugu, and English, allowing you to interact "
+"with advanced AI through text or voice in the language you know best."
+msgstr ""
+"మా ప్లాట్‌ఫారమ్ హిందీ, తెలుగు మరియు ఇంగ్లీషుకు మద్దతు ఇస్తుంది, మీకు బాగా "
+"తెలిసిన భాషలో టెక్స్ట్ లేదా వాయిస్ ద్వారా అధునాతన AIతో పరస్పర చర్య చేయడానికి"
+" మిమ్మల్ని అనుమతిస్తుంది."
+
+#: .\templates\landing.html:124
+msgid "Create Free Account"
+msgstr "ఉచిత ఖాతాను సృష్టించండి"
+
+#: .\templates\landing.html:147
+msgid "Model Accuracy"
+msgstr "మోడల్ ఖచ్చితత్వం"
+
+#: .\templates\landing.html:151
+msgid "Crop Varieties"
+msgstr "పంట రకాలు"
+
+#: .\templates\landing.html:155
+msgid "AI Support"
+msgstr "AI మద్దతు"
+
+#: .\templates\landing.html:159
+msgid "Regional Languages"
+msgstr "ప్రాంతీయ భాషలు"
+
+#: .\templates\ml\crop_recommend.html:4
+msgid "Crop Recommendation | AgriTech"
+msgstr "పంట సిఫార్సు | అగ్రిటెక్"
+
+#: .\templates\ml\crop_recommend.html:11
+msgid "Soil Analysis"
+msgstr "నేల విశ్లేషణ"
+
+#: .\templates\ml\crop_recommend.html:11
+msgid "Suggestion"
+msgstr "సూచన"
+
+#: .\templates\ml\crop_recommend.html:14
+msgid "Input soil parameters to receive AI-driven crop recommendations"
+msgstr ""
+"AI-ఆధారిత పంట సిఫార్సులను స్వీకరించడానికి నేల పారామితులను ఇన్‌పుట్ చేయండి"
+
+#: .\templates\ml\crop_recommend.html:27
+msgid "Macronutrients (mg/kg)"
+msgstr "మాక్రోన్యూట్రియెంట్స్ (mg/kg)"
+
+#: .\templates\ml\crop_recommend.html:31
+msgid "Nitrogen (N)"
+msgstr "నైట్రోజన్ (N)"
+
+#: .\templates\ml\crop_recommend.html:36
+msgid "Phosphorus (P)"
+msgstr "భాస్వరం (P)"
+
+#: .\templates\ml\crop_recommend.html:41
+msgid "Potassium (K)"
+msgstr "పొటాషియం (కె)"
+
+#: .\templates\ml\crop_recommend.html:50
+msgid "Environmental Factors"
+msgstr "పర్యావరణ కారకాలు"
+
+#: .\templates\ml\crop_recommend.html:54
+msgid "Soil pH Level"
+msgstr "నేల pH స్థాయి"
+
+#: .\templates\ml\crop_recommend.html:59
+msgid "Avg Rainfall (mm)"
+msgstr "సగటు వర్షపాతం (మి.మీ)"
+
+#: .\templates\ml\crop_recommend.html:67
+msgid "Generate Recommendation"
+msgstr "సిఫార్సును రూపొందించండి"
+
+#: .\templates\ml\crop_recommend.html:75
+msgid "Why these values?"
+msgstr "ఈ విలువలు ఎందుకు?"
+
+#: .\templates\ml\crop_recommend.html:77
+msgid ""
+"Our ML model analyzes the chemical composition of your soil to predict which"
+" crop will thrive most efficiently in these specific conditions."
+msgstr ""
+"ఈ నిర్దిష్ట పరిస్థితుల్లో ఏ పంట అత్యంత సమర్ధవంతంగా వృద్ధి చెందుతుందో అంచనా "
+"వేయడానికి మా ML మోడల్ మీ నేల యొక్క రసాయన కూర్పును విశ్లేషిస్తుంది."
+
+#: .\templates\ml\crop_recommend.html:80
+msgid "Pro Tip"
+msgstr "చిట్కా కోసం"
+
+#: .\templates\ml\crop_recommend.html:81
+msgid ""
+"Use a soil testing kit for accurate N-P-K readings to get the best results."
+msgstr ""
+"ఉత్తమ ఫలితాలను పొందడానికి ఖచ్చితమైన N-P-K రీడింగ్‌ల కోసం మట్టి పరీక్ష "
+"కిట్‌ని ఉపయోగించండి."
+
+#: .\templates\ml\crop_recommend.html:87
+msgid "Processing Soil Data..."
+msgstr "నేల డేటాను ప్రాసెస్ చేస్తోంది..."
+
+#: .\templates\ml\crop_recommend_result.html:4
+msgid "Recommendation Result | AgriTech"
+msgstr "సిఫార్సు ఫలితం | అగ్రిటెక్"
+
+#: .\templates\ml\crop_recommend_result.html:17
+msgid "AI Analysis Complete"
+msgstr "AI విశ్లేషణ పూర్తయింది"
+
+#: .\templates\ml\crop_recommend_result.html:19
+msgid "Is the most suitable crop for your soil conditions"
+msgstr "మీ నేల పరిస్థితులకు అత్యంత అనుకూలమైన పంట"
+
+#: .\templates\ml\crop_recommend_result.html:44
+msgid "Cultivation Guidance"
+msgstr "సాగు మార్గదర్శకత్వం"
+
+#: .\templates\ml\crop_recommend_result.html:53
+msgid "Download Analysis Report"
+msgstr "విశ్లేషణ నివేదికను డౌన్‌లోడ్ చేయండి"
+
+#: .\templates\ml\crop_recommend_result.html:56
+msgid "New Analysis"
+msgstr "కొత్త విశ్లేషణ"
+
+#: .\templates\ml\crop_recommend_result.html:64
+msgid ""
+"Caution: This is an AI-generated prediction based on Machine Learning "
+"models. Please cross-verify with local agricultural experts before making "
+"financial investments."
+msgstr ""
+"జాగ్రత్త: ఇది మెషిన్ లెర్నింగ్ మోడల్‌ల ఆధారంగా AI రూపొందించిన అంచనా. దయచేసి "
+"ఆర్థిక పెట్టుబడులు పెట్టడానికి ముందు స్థానిక వ్యవసాయ నిపుణులతో క్రాస్ వెరిఫై"
+" చేయండి."
+
+#: .\templates\ml\yield_predict.html:4 .\templates\ml\yield_result.html:4
+msgid "Yield Forecast | AgriTech"
+msgstr "దిగుబడి సూచన | అగ్రిటెక్"
+
+#: .\templates\ml\yield_predict.html:14
+msgid "Estimate crop yield using AI regression model"
+msgstr "AI రిగ్రెషన్ మోడల్‌ని ఉపయోగించి పంట దిగుబడిని అంచనా వేయండి"
+
+#: .\templates\ml\yield_predict.html:32 .\templates\ml\yield_result.html:42
+msgid "Crop Type"
+msgstr "పంట రకం"
+
+#: .\templates\ml\yield_predict.html:45 .\templates\ml\yield_result.html:48
+msgid "Season"
+msgstr "సీజన్"
+
+#: .\templates\ml\yield_predict.html:58
+msgid "Area (Hectares)"
+msgstr "విస్తీర్ణం (హెక్టార్లు)"
+
+#: .\templates\ml\yield_predict.html:70
+msgid "Predict Yield"
+msgstr "దిగుబడిని అంచనా వేయండి"
+
+#: .\templates\ml\yield_result.html:21
+msgid "Estimated Production"
+msgstr "అంచనా వేసిన ఉత్పత్తి"
+
+#: .\templates\ml\yield_result.html:27
+msgid "Forecast for"
+msgstr "కోసం సూచన"
+
+#: .\templates\ml\yield_result.html:28
+msgid "Hectares of"
+msgstr "హెక్టార్ల"
+
+#: .\templates\ml\yield_result.html:37
+msgid "Forecast Parameters"
+msgstr "సూచన పారామితులు"
+
+#: .\templates\ml\yield_result.html:59
+msgid "Download Yield Report"
+msgstr "దిగుబడి నివేదికను డౌన్‌లోడ్ చేయండి"
+
+#: .\templates\ml\yield_result.html:64
+msgid "Recalculate"
+msgstr "తిరిగి లెక్కించు"
+
+#: .\templates\ml\yield_result.html:72
+msgid ""
+"Generated by AgriTech AI Regression Engine • Caution: Historical data "
+"patterns may vary with climate shifts."
+msgstr ""
+"AgriTech AI రిగ్రెషన్ ఇంజిన్ ద్వారా రూపొందించబడింది • జాగ్రత్త: వాతావరణ "
+"మార్పులతో చారిత్రక డేటా నమూనాలు మారవచ్చు."
+
+#: .\templates\partials\chatbot_body.html:36
+msgid "AgriExpert AI Advisor"
+msgstr "అగ్రిఎక్స్‌పర్ట్ AI సలహాదారు"
+
+#: .\templates\partials\chatbot_body.html:37
+msgid "Precision Agriculture Core"
+msgstr "ప్రెసిషన్ అగ్రికల్చర్ కోర్"
+
+#: .\templates\partials\chatbot_body.html:41
+msgid "Close Terminal"
+msgstr "టెర్మినల్‌ను మూసివేయండి"
+
+#: .\templates\partials\chatbot_body.html:47
+msgid ""
+"System Ready. Please describe your crop concern or upload a photo of a "
+"leaf/plant for immediate disease diagnosis."
+msgstr ""
+"సిస్టమ్ సిద్ధంగా ఉంది. దయచేసి మీ పంట ఆందోళనను వివరించండి లేదా తక్షణ వ్యాధి "
+"నిర్ధారణ కోసం ఆకు/మొక్క ఫోటోను అప్‌లోడ్ చేయండి."
+
+#: .\templates\partials\chatbot_body.html:67
+msgid "Describe soil conditions or ask about fertilizers..."
+msgstr "నేల పరిస్థితులను వివరించండి లేదా ఎరువుల గురించి అడగండి..."
+
+#: .\templates\partials\chatbot_body.html:126
+msgid "Analyzing Crop Image..."
+msgstr "క్రాప్ ఇమేజ్‌ని విశ్లేషిస్తోంది..."
+
+#: .\templates\partials\chatbot_body.html:154
+msgid "AI Agricultural Insight"
+msgstr "AI అగ్రికల్చరల్ ఇన్‌సైట్"
+
+#: .\templates\partials\chatbot_body.html:161
+msgid "Satellite link interrupted. Try again."
+msgstr "ఉపగ్రహ లింక్ అంతరాయం కలిగింది. మళ్లీ ప్రయత్నించండి."
+
+#: .\templates\partials\lens_body.html:10
+msgid "Lens"
+msgstr "లెన్స్"
+
+#: .\templates\partials\lens_body.html:11
+msgid "AI-Powered Plant Disease Diagnosis"
+msgstr "AI-ఆధారిత మొక్కల వ్యాధి నిర్ధారణ"
+
+#: .\templates\partials\lens_body.html:24
+msgid "Upload Crop Photo"
+msgstr "క్రాప్ ఫోటోను అప్‌లోడ్ చేయండి"
+
+#: .\templates\partials\lens_body.html:25
+msgid "Snap a photo of a leaf or plant to identify issues"
+msgstr "సమస్యలను గుర్తించడానికి ఆకు లేదా మొక్క యొక్క ఫోటోను తీయండి"
+
+#: .\templates\partials\lens_body.html:30
+msgid "AI Diagnosis Complete"
+msgstr "AI నిర్ధారణ పూర్తయింది"
+
+#: .\templates\partials\lens_body.html:36
+msgid "Expert Treatment Plan"
+msgstr "నిపుణుల చికిత్స ప్రణాళిక"
+
+#: .\templates\partials\lens_body.html:43
+msgid "Scan Another"
+msgstr "మరొకటి స్కాన్ చేయండి"
+
+#: .\templates\partials\lens_body.html:46
+msgid "Get Treatment Plan"
+msgstr "చికిత్స ప్రణాళిక పొందండి"
+
+#: .\templates\partials\lens_body.html:55
+msgid "Analyzing Cellular Structure..."
+msgstr "సెల్యులార్ నిర్మాణాన్ని విశ్లేషిస్తోంది..."
+
+#: .\templates\partials\sidebar_admin.html:4
+msgid "Core Operations"
+msgstr "కోర్ కార్యకలాపాలు"
+
+#: .\templates\partials\sidebar_admin.html:10
+msgid "Command Center"
+msgstr "కమాండ్ సెంటర్"
+
+#: .\templates\partials\sidebar_admin.html:16
+msgid "Farmer Nodes"
+msgstr "రైతు నోడ్స్"
+
+#: .\templates\partials\sidebar_admin.html:28
+msgid "AI Chat Logs"
+msgstr "AI చాట్ లాగ్‌లు"
+
+#: .\templates\partials\sidebar_admin.html:34
+msgid "System Database"
+msgstr "సిస్టమ్ డేటాబేస్"
+
+#: .\templates\partials\sidebar_user.html:6
+msgid "Farming Operations"
+msgstr "వ్యవసాయ కార్యకలాపాలు"
+
+#: .\templates\partials\sidebar_user.html:12
+msgid "Farmer Dashboard"
+msgstr "రైతు డాష్‌బోర్డ్"
+
+#: .\templates\partials\sidebar_user.html:18
+msgid "Crop Suggestion"
+msgstr "పంట సూచన"
+
+#: .\templates\partials\sidebar_user.html:28
+msgid "AI Assistance"
+msgstr "AI సహాయం"
+
+#: .\templates\partials\sidebar_user.html:40
+msgid "Agri-Lens Scan"
+msgstr "అగ్రి-లెన్స్ స్కాన్"
+
+#: .\templates\partials\sidebar_user.html:46
+msgid "Climate Heatmap"
+msgstr "వాతావరణ హీట్‌మ్యాప్"
+
+#: .\templates\partials\sidebar_user.html:50
+msgid "Support & Policy"
+msgstr "మద్దతు & విధానం"
+
+#: .\templates\partials\sidebar_user.html:56
+msgid "Govt Schemes"
+msgstr "ప్రభుత్వ పథకాలు"
+
+#: .\templates\registration\password_reset_complete.html:3
+msgid "Password Updated | AgriTech"
+msgstr "పాస్‌వర్డ్ నవీకరించబడింది | అగ్రిటెక్"
+
+#: .\templates\registration\password_reset_complete.html:14
+#: .\templates\registration\password_reset_confirm.html:14
+msgid "Password"
+msgstr "పాస్వర్డ్"
+
+#: .\templates\registration\password_reset_complete.html:14
+msgid "Updated"
+msgstr "నవీకరించబడింది"
+
+#: .\templates\registration\password_reset_complete.html:18
+msgid ""
+"Your account security has been successfully updated. You can now log in with"
+" your new credentials."
+msgstr ""
+"మీ ఖాతా భద్రత విజయవంతంగా నవీకరించబడింది. మీరు ఇప్పుడు మీ కొత్త ఆధారాలతో "
+"లాగిన్ చేయవచ్చు."
+
+#: .\templates\registration\password_reset_complete.html:22
+msgid "Login Now"
+msgstr "ఇప్పుడు లాగిన్ చేయండి"
+
+#: .\templates\registration\password_reset_confirm.html:3
+msgid "New Password | AgriTech"
+msgstr "కొత్త పాస్‌వర్డ్ | అగ్రిటెక్"
+
+#: .\templates\registration\password_reset_confirm.html:14
+msgid "New"
+msgstr "కొత్తది"
+
+#: .\templates\registration\password_reset_confirm.html:17
+msgid "Update your account security"
+msgstr "మీ ఖాతా భద్రతను నవీకరించండి"
+
+#: .\templates\registration\password_reset_confirm.html:26
+msgid "New Password"
+msgstr "కొత్త పాస్‌వర్డ్"
+
+#: .\templates\registration\password_reset_confirm.html:31
+msgid "Security Check"
+msgstr "భద్రతా తనిఖీ"
+
+#: .\templates\registration\password_reset_confirm.html:33
+msgid "8+ Characters"
+msgstr "8+ అక్షరాలు"
+
+#: .\templates\registration\password_reset_confirm.html:34
+msgid "1 Uppercase Letter"
+msgstr "1 పెద్ద అక్షరం"
+
+#: .\templates\registration\password_reset_confirm.html:40
+msgid "Confirm New Password"
+msgstr "కొత్త పాస్‌వర్డ్‌ని నిర్ధారించండి"
+
+#: .\templates\registration\password_reset_confirm.html:46
+msgid "Update Password"
+msgstr "పాస్‌వర్డ్‌ని నవీకరించండి"
+
+#: .\templates\registration\password_reset_done.html:3
+msgid "Link Sent | AgriTech"
+msgstr "లింక్ పంపబడింది | అగ్రిటెక్"
+
+#: .\templates\registration\password_reset_done.html:14
+msgid "Dispatched"
+msgstr "పంపబడింది"
+
+#: .\templates\registration\password_reset_done.html:18
+msgid ""
+"Check your inbox. We have sent a secure link to reset your password to your "
+"registered email address."
+msgstr ""
+"మీ ఇన్‌బాక్స్‌ని తనిఖీ చేయండి. మీ పాస్‌వర్డ్‌ని రీసెట్ చేయడానికి మేము మీ "
+"నమోదిత ఇమెయిల్ చిరునామాకు సురక్షిత లింక్‌ను పంపాము."
+
+#: .\templates\registration\password_reset_done.html:23
+msgid "Back to Homepage"
+msgstr "హోమ్‌పేజీకి తిరిగి వెళ్ళు"
+
+#: .\templates\registration\password_reset_email.html:9
+msgid "Hello,"
+msgstr "హలో,"
+
+#: .\templates\registration\password_reset_email.html:10
+msgid "We received a request to reset the password for your AgriTech account."
+msgstr ""
+"మీ అగ్రిటెక్ ఖాతా కోసం పాస్‌వర్డ్‌ను రీసెట్ చేయమని మేము అభ్యర్థనను "
+"స్వీకరించాము."
+
+#: .\templates\registration\password_reset_email.html:14
+msgid "Reset My Password"
+msgstr "నా పాస్‌వర్డ్‌ని రీసెట్ చేయండి"
+
+#: .\templates\registration\password_reset_email.html:17
+msgid "If you did not request this, please ignore this email."
+msgstr "మీరు దీన్ని అభ్యర్థించకపోతే, దయచేసి ఈ ఇమెయిల్‌ను విస్మరించండి."
+
+#: .\templates\registration\password_reset_form.html:3
+msgid "Account Recovery | AgriTech"
+msgstr "ఖాతా రికవరీ | అగ్రిటెక్"
+
+#: .\templates\registration\password_reset_form.html:14
+msgid "Reset"
+msgstr "రీసెట్ చేయండి"
+
+#: .\templates\registration\password_reset_form.html:14
+msgid "Access"
+msgstr "యాక్సెస్"
+
+#: .\templates\registration\password_reset_form.html:17
+msgid "Initialize Secure Account Recovery"
+msgstr "సురక్షిత ఖాతా రికవరీని ప్రారంభించండి"
+
+#: .\templates\registration\password_reset_form.html:25
+msgid "Registered Farmer Email"
+msgstr "నమోదిత రైతు ఇమెయిల్"
+
+#: .\templates\registration\password_reset_form.html:35
+msgid "Send Recovery Link"
+msgstr "రికవరీ లింక్‌ని పంపండి"
+
+#: .\templates\registration\password_reset_form.html:41
+msgid "Return to Login"
+msgstr "లాగిన్‌కి తిరిగి వెళ్ళు"
+
+#: .\templates\registration\password_reset_subject.txt:1
+msgid "AgriTech Security: Reset Your Password"
+msgstr "అగ్రిటెక్ సెక్యూరిటీ: మీ పాస్‌వర్డ్‌ని రీసెట్ చేయండి"
+
+#: .\templates\schemes\scheme_list.html:4
+msgid "Government Schemes | AgriTech"
+msgstr "ప్రభుత్వ పథకాలు | అగ్రిటెక్"
+
+#: .\templates\schemes\scheme_list.html:6
+msgid "AGRICULTURAL_POLICY_HUB"
+msgstr "వ్యవసాయ విధాన కేంద్రం"
+
+#: .\templates\schemes\scheme_list.html:14
+msgid "Welfare"
+msgstr "సంక్షేమం"
+
+#: .\templates\schemes\scheme_list.html:14
+msgid "Schemes"
+msgstr "పథకాలు"
+
+#: .\templates\schemes\scheme_list.html:17
+msgid "Empowering Farmers through Central & State Support"
+msgstr "కేంద్ర & రాష్ట్ర మద్దతు ద్వారా రైతులకు సాధికారత"
+
+#: .\templates\schemes\scheme_list.html:22
+msgid "Search schemes..."
+msgstr "శోధన పథకాలు..."
+
+#: .\templates\schemes\scheme_list.html:46
+msgid "Official Scheme"
+msgstr "అధికారిక పథకం"
+
+#: .\templates\schemes\scheme_list.html:60
+msgid "Eligibility"
+msgstr "అర్హత"
+
+#: .\templates\schemes\scheme_list.html:69
+msgid "Key Benefits"
+msgstr "కీ ప్రయోజనాలు"
+
+#: .\templates\schemes\scheme_list.html:80
+msgid "Visit Official Portal"
+msgstr "అధికారిక పోర్టల్‌ని సందర్శించండి"
+
+#: .\templates\schemes\scheme_list.html:91
+msgid "No Schemes Logged"
+msgstr "ఏ పథకాలు లాగిన్ చేయబడలేదు"
+
+#: .\templates\schemes\scheme_list.html:92
+msgid "We are currently syncing with the Ministry database."
+msgstr "మేము ప్రస్తుతం మంత్రిత్వ శాఖ డేటాబేస్‌తో సమకాలీకరిస్తున్నాము."
+
+#: .\templates\weather\weather_dashboard.html:4
+msgid "Climate Monitor | AgriTech"
+msgstr "క్లైమేట్ మానిటర్ | అగ్రిటెక్"
+
+#: .\templates\weather\weather_dashboard.html:6
+msgid "ENVIRONMENTAL_SENSORS"
+msgstr "ఎన్విరాన్‌మెంటల్ సెన్సార్లు"
+
+#: .\templates\weather\weather_dashboard.html:14
+msgid "Heatmap"
+msgstr "హీట్‌మ్యాప్"
+
+#: .\templates\weather\weather_dashboard.html:17
+msgid "Atmospheric data ingestion for optimal irrigation"
+msgstr "సరైన నీటిపారుదల కోసం వాతావరణ డేటా ఇంజెక్షన్"
+
+#: .\templates\weather\weather_dashboard.html:24
+msgid "Search City..."
+msgstr "నగరాన్ని వెతకండి..."
+
+#: .\templates\weather\weather_dashboard.html:44
+msgid "Live Node"
+msgstr "ప్రత్యక్ష నోడ్"
+
+#: .\templates\weather\weather_dashboard.html:52
+msgid "Humidity"
+msgstr "తేమ"
+
+#: .\templates\weather\weather_dashboard.html:56
+msgid "Wind"
+msgstr "గాలి"
+
+#: .\templates\weather\weather_dashboard.html:66
+msgid "Heat Intensity"
+msgstr "వేడి తీవ్రత"
+
+#: .\templates\weather\weather_dashboard.html:79
+msgid "Current temperature is in the"
+msgstr "ప్రస్తుత ఉష్ణోగ్రత లో ఉంది"
+
+#: .\templates\weather\weather_dashboard.html:80
+msgid "Optimal Range"
+msgstr "ఆప్టిమల్ పరిధి"
+
+#: .\templates\weather\weather_dashboard.html:81
+msgid "for photosynthesis."
+msgstr "కిరణజన్య సంయోగక్రియ కోసం."
+
+#: .\templates\weather\weather_dashboard.html:88
+msgid "Rainfall (1h)"
+msgstr "వర్షపాతం (1గం)"
+
+#: .\templates\weather\weather_dashboard.html:93
+msgid "UV Index"
+msgstr "UV సూచిక"
+
+#: .\templates\weather\weather_dashboard.html:98
+msgid "Visibility"
+msgstr "దృశ్యమానత"
+
+#: .\templates\weather\weather_dashboard.html:103
+msgid "Dew Point"
+msgstr "డ్యూ పాయింట్"
+
+#: .\templates\weather\weather_dashboard.html:112
+msgid "Atmospheric Link Failure"
+msgstr "వాతావరణ లింక్ వైఫల్యం"
+
+#: .\templates\weather\weather_dashboard.html:113
+msgid "Check API key or city name."
+msgstr "API కీ లేదా నగరం పేరును తనిఖీ చేయండి."
+
+#: .\templates\weather\weather_dashboard.html:115
+msgid "Retry Handshake"
+msgstr "హ్యాండ్‌షేక్‌ని మళ్లీ ప్రయత్నించండి"
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
+msgid "Messages"
+msgstr "సందేశాలు"
+
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr "సైట్ మ్యాప్స్"
+
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr "స్టాటిక్ ఫైల్స్"
+
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr "సిండికేషన్"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:32
+msgid "That page number is not an integer"
+msgstr "ఆ పేజీ సంఖ్య పూర్ణాంకం కాదు"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:33
+msgid "That page number is less than 1"
+msgstr "ఆ పేజీ సంఖ్య 1 కంటే తక్కువ"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:34
+msgid "That page contains no results"
+msgstr "ఆ పేజీలో ఫలితాలు లేవు"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr "చెల్లుబాటు అయ్యే విలువను నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:70
+msgid "Enter a valid domain name."
+msgstr "చెల్లుబాటు అయ్యే డొమైన్ పేరును నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:153
+#: .\venv\Lib\site-packages\django\forms\fields.py:775
+msgid "Enter a valid URL."
+msgstr "చెల్లుబాటు అయ్యే URLని నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:200
+msgid "Enter a valid integer."
+msgstr "చెల్లుబాటు అయ్యే పూర్ణాంకాన్ని నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:211
+msgid "Enter a valid email address."
+msgstr "చెల్లుబాటు అయ్యే ఇమెయిల్ చిరునామాను నమోదు చేయండి."
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\venv\Lib\site-packages\django\core\validators.py:289
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"అక్షరాలు, సంఖ్యలు, అండర్‌స్కోర్‌లు లేదా హైఫన్‌లతో కూడిన చెల్లుబాటు అయ్యే "
+"“స్లగ్”ని నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:297
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
+msgstr ""
+"యూనికోడ్ అక్షరాలు, సంఖ్యలు, అండర్‌స్కోర్‌లు లేదా హైఫన్‌లతో కూడిన చెల్లుబాటు "
+"అయ్యే “స్లగ్”ని నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:309
+#: .\venv\Lib\site-packages\django\core\validators.py:318
+#: .\venv\Lib\site-packages\django\core\validators.py:332
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr "చెల్లుబాటు అయ్యే %(protocol)s చిరునామాను నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:311
+msgid "IPv4"
+msgstr "Ipvch"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:320
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:43
+msgid "IPv6"
+msgstr "Ipvsh"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:334
+msgid "IPv4 or IPv6"
+msgstr "IPv4 లేదా IPv6"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:375
+msgid "Enter only digits separated by commas."
+msgstr "కామాలతో వేరు చేయబడిన అంకెలను మాత్రమే నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:381
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "ఈ విలువ %(limit_value)s (ఇది %(show_value)s) అని నిర్ధారించుకోండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:416
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr ""
+"ఈ విలువ %(limit_value)s కంటే తక్కువగా లేదా సమానంగా ఉందని నిర్ధారించుకోండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:425
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr ""
+"ఈ విలువ %(limit_value)s కంటే ఎక్కువగా లేదా సమానంగా ఉందని నిర్ధారించుకోండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:434
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "ఈ విలువ దశల పరిమాణం %(limit_value)s యొక్క గుణకం అని నిర్ధారించుకోండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+"ఈ విలువ %(offset)s నుండి ప్రారంభమయ్యే దశల పరిమాణం %(limit_value)s యొక్క "
+"బహుళంగా ఉందని నిర్ధారించుకోండి, ఉదా. %(offset)s, %(valid_value1)s, "
+"%(valid_value2)s, మరియు మొదలైనవి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:473
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:514
+#: .\venv\Lib\site-packages\django\forms\fields.py:366
+#: .\venv\Lib\site-packages\django\forms\fields.py:405
+msgid "Enter a number."
+msgstr "సంఖ్యను నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:516
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:521
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:526
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:597
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"“%(extension)s” ఫైల్ పొడిగింపు అనుమతించబడదు. అనుమతించబడిన పొడిగింపులు: "
+"%(allowed_extensions)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:659
+msgid "Null characters are not allowed."
+msgstr "శూన్య అక్షరాలు అనుమతించబడవు."
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1600
+#: .\venv\Lib\site-packages\django\forms\models.py:908
+msgid "and"
+msgstr "మరియు"
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1602
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "ఈ %(field_labels)sతో %(model_name)s ఇప్పటికే ఉంది."
+
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "“%(name)s” పరిమితి ఉల్లంఘించబడింది."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "విలువ %(విలువ)r చెల్లుబాటు అయ్యే ఎంపిక కాదు."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+msgid "This field cannot be null."
+msgstr "ఈ ఫీల్డ్ శూన్యం కాదు."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:136
+msgid "This field cannot be blank."
+msgstr "ఈ ఫీల్డ్ ఖాళీగా ఉండకూడదు."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "ఈ %(field_label)sతో %(model_name)s ఇప్పటికే ఉంది."
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(field_label)s తప్పనిసరిగా %(date_field_label)s %(lookup_type)sకి "
+"ప్రత్యేకంగా ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "ఫీల్డ్ రకం: %(field_type)s"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "“%(value)s” విలువ తప్పక ఒప్పు లేదా తప్పు అయి ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1163
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "“%(value)s” విలువ తప్పనిసరిగా నిజం, తప్పు లేదా ఏదీ కాదు."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1165
+msgid "Boolean (Either True or False)"
+msgstr "బూలియన్ (నిజం లేదా తప్పు)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1215
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "స్ట్రింగ్ (గరిష్టంగా _ PLACEHOLDER_0 _)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1217
+msgid "String (unlimited)"
+msgstr "స్ట్రింగ్ (అపరిమిత)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1326
+msgid "Comma-separated integers"
+msgstr "కామాతో వేరు చేయబడిన పూర్ణాంకాలు"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1427
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+"“%(value)s” విలువ చెల్లని తేదీ ఆకృతిని కలిగి ఉంది. ఇది తప్పనిసరిగా YYYY-MM-"
+"DD ఆకృతిలో ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1431
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1566
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"“%(value)s” విలువ సరైన ఆకృతిని కలిగి ఉంది (YYYY-MM-DD) కానీ ఇది చెల్లని "
+"తేదీ."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1435
+msgid "Date (without time)"
+msgstr "తేదీ (సమయం లేకుండా)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1562
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+"“%(value)s” విలువ చెల్లని ఆకృతిని కలిగి ఉంది. ఇది తప్పనిసరిగా YYYY-MM-DD "
+"HH:MM[:ss[.uuuuu]][TZ] ఆకృతిలో ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1570
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+msgstr ""
+"“%(value)s” విలువ సరైన ఆకృతిని కలిగి ఉంది (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuu]][TZ]) కానీ ఇది చెల్లని తేదీ/సమయం."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1575
+msgid "Date (with time)"
+msgstr "తేదీ (సమయంతో పాటు)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1702
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "“%(value)s” విలువ తప్పనిసరిగా దశాంశ సంఖ్య అయి ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1704
+msgid "Decimal number"
+msgstr "దశాంశ సంఖ్య"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+"“%(value)s” విలువ చెల్లని ఆకృతిని కలిగి ఉంది. ఇది తప్పనిసరిగా [DD] "
+"[[HH:]MM:]ss[.uuuuu] ఆకృతిలో ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1868
+msgid "Duration"
+msgstr "వ్యవధి"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1920
+msgid "Email address"
+msgstr "ఇమెయిల్ చిరునామా"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1945
+msgid "File path"
+msgstr "ఫైల్ మార్గం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2023
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "“%(value)s” విలువ తప్పనిసరిగా ఫ్లోట్ అయి ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2025
+msgid "Floating point number"
+msgstr "ఫ్లోటింగ్ పాయింట్ సంఖ్య"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2065
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "“%(value)s” విలువ తప్పనిసరిగా పూర్ణాంకం అయి ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2067
+msgid "Integer"
+msgstr "పూర్ణాంకం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2163
+msgid "Big (8 byte) integer"
+msgstr "పెద్ద (8 బైట్) పూర్ణాంకం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2180
+msgid "Small integer"
+msgstr "చిన్న పూర్ణాంకం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2188
+msgid "IPv4 address"
+msgstr "IPv4 చిరునామా"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2219
+msgid "IP address"
+msgstr "IP చిరునామా"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2310
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2311
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "“%(value)s” విలువ తప్పనిసరిగా ఏదీ కాదు, నిజం లేదా తప్పు."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2313
+msgid "Boolean (Either True, False or None)"
+msgstr "బూలియన్ (నిజం, తప్పు లేదా ఏదీ కాదు)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2364
+msgid "Positive big integer"
+msgstr "ధనాత్మక పెద్ద పూర్ణాంకం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2379
+msgid "Positive integer"
+msgstr "సానుకూల పూర్ణాంకం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2394
+msgid "Positive small integer"
+msgstr "సానుకూల చిన్న పూర్ణాంకం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2410
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "స్లగ్ (గరిష్టంగా _ ప్లేస్‌హోల్డర్ _0 _)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2446
+msgid "Text"
+msgstr "వచనం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2526
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"“%(value)s” విలువ చెల్లని ఆకృతిని కలిగి ఉంది. ఇది తప్పనిసరిగా "
+"HH:MM[:ss[.uuuuu]] ఆకృతిలో ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2530
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"“%(value)s” విలువ సరైన ఆకృతిని కలిగి ఉంది (HH:MM[:ss[.uuuuu]]) కానీ ఇది "
+"చెల్లని సమయం."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2534
+msgid "Time"
+msgstr "సమయం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2642
+msgid "URL"
+msgstr "URL"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2666
+msgid "Raw binary data"
+msgstr "ముడి బైనరీ డేటా"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2731
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "“%(value)s” చెల్లుబాటు అయ్యే UUID కాదు."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2733
+msgid "Universally unique identifier"
+msgstr "విశ్వవ్యాప్తంగా ప్రత్యేకమైన ఐడెంటిఫైయర్"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:244
+msgid "File"
+msgstr "ఫైల్"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:420
+msgid "Image"
+msgstr "చిత్రం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:24
+msgid "A JSON object"
+msgstr "JSON వస్తువు"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "Value must be valid JSON."
+msgstr "విలువ తప్పనిసరిగా చెల్లుబాటు అయ్యే JSON అయి ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:979
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr ""
+"%(field)s %(value)rతో ఉన్న %(model)s ఉదాహరణ చెల్లుబాటు అయ్యే ఎంపిక కాదు."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:982
+msgid "Foreign Key (type determined by related field)"
+msgstr "విదేశీ కీ (సంబంధిత ఫీల్డ్ ద్వారా నిర్ణయించబడిన రకం)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1276
+msgid "One-to-one relationship"
+msgstr "ఒకరితో ఒకరు సంబంధం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1333
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "%(from)s-%(to)s సంబంధం"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1335
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "%(from)s-%(to)s సంబంధాలు"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1383
+msgid "Many-to-many relationship"
+msgstr "అనేక నుండి అనేక సంబంధాలు"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the
+#. label
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:185
+msgid ":?.!"
+msgstr ":?.!"
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:95
+msgid "This field is required."
+msgstr "ఈ ఫీల్డ్ అవసరం."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:315
+msgid "Enter a whole number."
+msgstr "పూర్తి సంఖ్యను నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:486
+#: .\venv\Lib\site-packages\django\forms\fields.py:1267
+msgid "Enter a valid date."
+msgstr "చెల్లుబాటు అయ్యే తేదీని నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:509
+#: .\venv\Lib\site-packages\django\forms\fields.py:1268
+msgid "Enter a valid time."
+msgstr "చెల్లుబాటు అయ్యే సమయాన్ని నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:536
+msgid "Enter a valid date/time."
+msgstr "చెల్లుబాటు అయ్యే తేదీ/సమయాన్ని నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:570
+msgid "Enter a valid duration."
+msgstr "చెల్లుబాటు అయ్యే వ్యవధిని నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:571
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "రోజుల సంఖ్య తప్పనిసరిగా {min_days} మరియు {max_days} మధ్య ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:640
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+"ఎలాంటి ఫైల్‌ను సమర్పించలేదు. ఫారమ్‌లో ఎన్‌కోడింగ్ రకాన్ని తనిఖీ చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:641
+msgid "No file was submitted."
+msgstr "ఎలాంటి ఫైల్‌ను సమర్పించలేదు."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:642
+msgid "The submitted file is empty."
+msgstr "సమర్పించిన ఫైల్ ఖాళీగా ఉంది."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:644
+#, python-format
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:649
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr ""
+"దయచేసి ఫైల్‌ను సమర్పించండి లేదా క్లియర్ చెక్‌బాక్స్‌ని తనిఖీ చేయండి, రెండూ "
+"కాదు."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:717
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+"చెల్లుబాటు అయ్యే చిత్రాన్ని అప్‌లోడ్ చేయండి. మీరు అప్‌లోడ్ చేసిన ఫైల్ చిత్రం"
+" లేదా పాడైన చిత్రం కాదు."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:889
+#: .\venv\Lib\site-packages\django\forms\fields.py:975
+#: .\venv\Lib\site-packages\django\forms\models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr ""
+"చెల్లుబాటు అయ్యే ఎంపికను ఎంచుకోండి. %(value)s అందుబాటులో ఉన్న ఎంపికలలో ఒకటి "
+"కాదు."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:977
+#: .\venv\Lib\site-packages\django\forms\fields.py:1096
+#: .\venv\Lib\site-packages\django\forms\models.py:1590
+msgid "Enter a list of values."
+msgstr "విలువల జాబితాను నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1097
+msgid "Enter a complete value."
+msgstr "పూర్తి విలువను నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1339
+msgid "Enter a valid UUID."
+msgstr "చెల్లుబాటు అయ్యే UUIDని నమోదు చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1369
+msgid "Enter a valid JSON."
+msgstr "చెల్లుబాటు అయ్యే JSONని నమోదు చేయండి."
+
+#. Translators: This is the default suffix added to form field labels
+#: .\venv\Lib\site-packages\django\forms\forms.py:97
+msgid ":"
+msgstr ":"
+
+#: .\venv\Lib\site-packages\django\forms\forms.py:239
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(దాచిన ఫీల్డ్ %(name)s) %(error)s"
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+"మేనేజ్‌మెంట్ ఫారమ్ డేటా లేదు లేదా తారుమారు చేయబడింది. ఖాళీగా ఉన్న ఫీల్డ్‌లు:"
+" %(field_names)s. సమస్య కొనసాగితే మీరు బగ్ నివేదికను ఫైల్ చేయాల్సి రావచ్చు."
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr "ఆర్డర్ చేయండి"
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:499
+msgid "Delete"
+msgstr "తొలగించు"
+
+#: .\venv\Lib\site-packages\django\forms\models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "దయచేసి %(field)s కోసం నకిలీ డేటాను సరి చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+"దయచేసి %(field)s కోసం నకిలీ డేటాను సరి చేయండి, ఇది తప్పనిసరిగా ప్రత్యేకంగా "
+"ఉండాలి."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+"దయచేసి %(date_field)sలోని %(lookup)sకి ప్రత్యేకంగా ఉండే %(field_name)s కోసం "
+"నకిలీ డేటాను సరి చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:922
+msgid "Please correct the duplicate values below."
+msgstr "దయచేసి దిగువన ఉన్న నకిలీ విలువలను సరి చేయండి."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr "ఇన్‌లైన్ విలువ మాతృ ఉదాహరణతో సరిపోలలేదు."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1450
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
+msgstr ""
+"చెల్లుబాటు అయ్యే ఎంపికను ఎంచుకోండి. ఆ ఎంపిక అందుబాటులో ఉన్న ఎంపికలలో ఒకటి "
+"కాదు."
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "“%(pk)s” చెల్లుబాటు అయ్యే విలువ కాదు."
+
+#: .\venv\Lib\site-packages\django\forms\utils.py:229
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+"%(datetime)s టైమ్ జోన్ %(current_timezone)sలో అన్వయించబడలేదు; అది అస్పష్టంగా"
+" ఉండవచ్చు లేదా ఉనికిలో ఉండకపోవచ్చు."
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:527
+msgid "Clear"
+msgstr "క్లియర్"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:528
+msgid "Currently"
+msgstr "ప్రస్తుతం"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:529
+msgid "Change"
+msgstr "మార్చండి"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:866
+msgid "Unknown"
+msgstr "తెలియదు"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:867
+msgid "Yes"
+msgstr "అవును"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:868
+msgid "No"
+msgstr "నం"
+
+#. Translators: Please do not add spaces around commas.
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr "అవును, లేదు, ఉండవచ్చు"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:903
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr "%s MB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr "%s GB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr "%s TB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr "%s PB"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:74
+msgid "p.m."
+msgstr "p.m."
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:75
+msgid "a.m."
+msgstr "a.m."
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:80
+msgid "PM"
+msgstr "PM"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:81
+msgid "AM"
+msgstr "ఉదయం"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:153
+msgid "midnight"
+msgstr "అర్ధరాత్రి"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:155
+msgid "noon"
+msgstr "మధ్యాహ్నం"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr "సోమవారం"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr "మంగళవారం"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr "బుధవారం"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr "గురువారం"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr "శుక్రవారం"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr "శనివారం"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr "ఆదివారం"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr "నా"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr "మంగళ"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr "బుధ"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr "సేకరించండి"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr "శుక్ర"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:21
+msgid "Sat"
+msgstr "శని"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:22
+msgid "Sun"
+msgstr "సూర్యుడు"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr "జనవరి"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr "ఫిబ్రవరి"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
+msgid "March"
+msgstr "మార్చి"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr "ఏప్రిల్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr "మే"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr "జూన్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr "జూలై"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr "ఆగస్టు"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
+msgid "September"
+msgstr "సెప్టెంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr "అక్టోబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr "నవంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:36
+msgid "December"
+msgstr "డిసెంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr "జనవరి"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr "ఫిబ్రవరి"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr "మార్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr "ఏప్రిల్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr "మే"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr "జూన్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr "జూలై"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr "ఆగస్ట్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr "సెప్టెంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr "అక్టోబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr "నవంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr "డిసెంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "జనవరి"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "ఫిబ్రవరి."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "మార్చి"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "ఏప్రిల్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "మే"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "జూన్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "జూలై"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "ఆగస్ట్."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "సెప్టెంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "అక్టోబర్."
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "నవంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "డిసెంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "జనవరి"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "ఫిబ్రవరి"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "మార్చి"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "ఏప్రిల్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "మే"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "జూన్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "జూలై"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "ఆగస్టు"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "సెప్టెంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "అక్టోబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "నవంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "డిసెంబర్"
+
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr "ఇది చెల్లుబాటు అయ్యే IPv6 చిరునామా కాదు."
+
+#: .\venv\Lib\site-packages\django\utils\text.py:76
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "__ప్లేస్‌హోల్డర్_0__…"
+
+#: .\venv\Lib\site-packages\django\utils\text.py:288
+msgid "or"
+msgstr "లేదా"
+
+#. Translators: This string is used as a separator between list elements
+#: .\venv\Lib\site-packages\django\utils\text.py:307
+#: .\venv\Lib\site-packages\django\utils\timesince.py:135
+msgid ", "
+msgstr ","
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:29
+msgid "Forbidden"
+msgstr "నిషేధించబడింది"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr "CSRF ధృవీకరణ విఫలమైంది. అభ్యర్థన రద్దు చేయబడింది."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+"మీరు ఈ సందేశాన్ని చూస్తున్నారు ఎందుకంటే ఈ HTTPS సైట్‌కి మీ వెబ్ బ్రౌజర్ "
+"ద్వారా పంపవలసిన “రిఫరర్ హెడర్” అవసరం, కానీ ఏదీ పంపబడలేదు. మీ బ్రౌజర్‌ని మూడవ"
+" పక్షాలు హైజాక్ చేయడం లేదని నిర్ధారించుకోవడానికి భద్రతా కారణాల దృష్ట్యా ఈ "
+"హెడర్ అవసరం."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+"\"రిఫరర్\" హెడర్‌లను నిలిపివేయడానికి మీరు మీ బ్రౌజర్‌ని కాన్ఫిగర్ చేసి ఉంటే,"
+" దయచేసి కనీసం ఈ సైట్ కోసం లేదా HTTPS కనెక్షన్‌ల కోసం లేదా \"ఒకే-మూలం\" "
+"అభ్యర్థనల కోసం వాటిని మళ్లీ ప్రారంభించండి."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+"మీరు <meta name=\"referrer\" content=\"no-referrer\"> ట్యాగ్‌ని "
+"ఉపయోగిస్తుంటే లేదా “Referrer-Policy: no-referrer” హెడర్‌తో సహా ఉంటే, దయచేసి "
+"వాటిని తీసివేయండి. CSRF రక్షణకు కఠినమైన రెఫరర్ చెకింగ్ చేయడానికి “రిఫరర్” "
+"హెడర్ అవసరం. మీరు గోప్యత గురించి ఆందోళన చెందుతుంటే, మూడవ పక్షం సైట్‌లకు "
+"లింక్‌ల కోసం <a rel=\"noreferrer\" …> వంటి ప్రత్యామ్నాయాలను ఉపయోగించండి."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+"ఫారమ్‌లను సమర్పించేటప్పుడు ఈ సైట్‌కి CSRF కుక్కీ అవసరం కాబట్టి మీరు ఈ "
+"సందేశాన్ని చూస్తున్నారు. మీ బ్రౌజర్‌ని మూడవ పక్షాలు హైజాక్ చేయడం లేదని "
+"నిర్ధారించుకోవడానికి భద్రతా కారణాల దృష్ట్యా ఈ కుక్కీ అవసరం."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+"మీరు కుక్కీలను నిలిపివేయడానికి మీ బ్రౌజర్‌ని కాన్ఫిగర్ చేసి ఉంటే, దయచేసి "
+"కనీసం ఈ సైట్ కోసం లేదా “ఒకే మూలం” అభ్యర్థనల కోసం వాటిని మళ్లీ ప్రారంభించండి."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr "DEBUG=Trueతో మరింత సమాచారం అందుబాటులో ఉంది."
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr "ఏ సంవత్సరం పేర్కొనబడలేదు"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:64
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
+msgid "Date out of range"
+msgstr "తేదీ పరిధి దాటిపోయింది"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr "నెల పేర్కొనబడలేదు"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr "ఏ రోజు పేర్కొనబడలేదు"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr "ఏ వారం పేర్కొనబడలేదు"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:353
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:384
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr "%(verbose_name_plural)s అందుబాటులో లేదు"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:680
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr ""
+"ఫ్యూచర్ %(verbose_name_plural)s అందుబాటులో లేదు ఎందుకంటే "
+"%(class_name)s.allow_future తప్పు."
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:720
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "చెల్లని తేదీ స్ట్రింగ్ “%(datestr)s” అందించిన ఫార్మాట్ “%(format)s”"
+
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "ప్రశ్నకు సరిపోలే %(verbose_name)s ఏదీ కనుగొనబడలేదు"
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr "పేజీ \"చివరిది\" కాదు, లేదా దానిని పూర్ణాంకానికి మార్చలేరు."
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "చెల్లని పేజీ (%(page_number)s): %(message)s"
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:173
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "ఖాళీ జాబితా మరియు “%(class_name)s.allow_empty” తప్పు."
+
+#: .\venv\Lib\site-packages\django\views\static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr "డైరెక్టరీ సూచికలు ఇక్కడ అనుమతించబడవు."
+
+#: .\venv\Lib\site-packages\django\views\static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "“%(path)s” ఉనికిలో లేదు"
+
+#: .\venv\Lib\site-packages\django\views\static.py:68
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:8
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "%(directory)s సూచిక"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr "ఇన్‌స్టాల్ విజయవంతంగా పని చేసింది! అభినందనలు!"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+"జంగో %(version)s కోసం <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">విడుదల గమనికలను</a> వీక్షించండి"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
+msgstr ""
+"<a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> మీ సెట్టింగ్‌ల ఫైల్‌లో "
+"ఉన్నందున మీరు ఈ పేజీని చూస్తున్నారు మరియు మీరు ఏ URLలను కాన్ఫిగర్ చేయలేదు."
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:217
+msgid "Django Documentation"
+msgstr "జంగో డాక్యుమెంటేషన్"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr "అంశం, సూచనలు మరియు ఎలా చేయాలి"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr "ట్యుటోరియల్: ఒక పోలింగ్ యాప్"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:227
+msgid "Get started with Django"
+msgstr "జంగోతో ప్రారంభించండి"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:235
+msgid "Django Community"
+msgstr "జాంగో సంఘం"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr "కనెక్ట్ చేయండి, సహాయం పొందండి లేదా సహకరించండి"

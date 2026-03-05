@@ -1,0 +1,82 @@
+{% extends 'base2.html' %}
+{% load i18n %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto py-12 px-4 animate-in fade-in slide-in-from-bottom-4 duration-700">
+    <div class="bg-white rounded-[3rem] shadow-xl p-8 md:p-12 border border-green-50">
+        
+        <h2 class="text-3xl font-black text-green-900 mb-8 flex items-center gap-4">
+            <div class="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center">
+                <i class="fa-solid fa-file-import text-green-700"></i>
+            </div>
+            {% translate "Bulk Data Import" %}
+        </h2>
+
+        <div class="bg-green-50/50 border-l-4 border-green-600 p-6 rounded-r-2xl mb-10 text-sm text-green-900">
+            <p class="font-black uppercase tracking-widest text-[10px] mb-3 text-green-700">{% translate "Technical Instructions" %}:</p>
+            <ul class="space-y-2 font-medium">
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check mt-1 text-green-600 text-[10px]"></i>
+                    {% translate "Upload a standard" %} <strong>.json</strong> {% translate "file containing an array of objects." %}
+                </li>
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check mt-1 text-green-600 text-[10px]"></i>
+                    {% translate "Ensure schema includes required fields: name, category, and technical parameters." %}
+                </li>
+            </ul>
+        </div>
+
+        <form method="POST" enctype="multipart/form-data" class="space-y-8">
+            {% csrf_token %}
+            
+            <div id="drop-zone" class="border-4 border-dashed border-green-100 rounded-[2.5rem] p-16 text-center hover:border-green-600 transition-all bg-gray-50/50 group cursor-pointer">
+                <input type="file" name="json_file" id="json_file" accept=".json" class="hidden" required>
+                
+                <label for="json_file" class="cursor-pointer">
+                    <div class="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cloud-arrow-up text-4xl text-green-200 group-hover:text-green-600 transition-colors"></i>
+                    </div>
+                    <span class="text-green-900 font-black uppercase tracking-widest text-sm">{% translate "Select JSON Dataset" %}</span>
+                    <p class="text-[10px] text-gray-400 mt-2 font-bold uppercase tracking-tighter">{% translate "Max file size: 10MB" %}</p>
+                    <p id="file-name" class="text-xs text-green-700 mt-4 font-black bg-green-100/50 inline-block px-4 py-1 rounded-full empty:hidden"></p>
+                </label>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button type="submit" class="btn-glow flex-1 text-white py-5 rounded-2xl text-[11px] font-black uppercase tracking-[0.3em] shadow-lg">
+                    <i class="fa-solid fa-rocket mr-2"></i> {% translate "Execute Bulk Import" %}
+                </button>
+                
+                <a href="{% url 'admin_dashboard' %}" class="px-10 py-5 bg-gray-100 text-gray-500 rounded-2xl text-[11px] font-black uppercase tracking-[0.2em] text-center hover:bg-gray-200 transition-colors">
+                    {% translate "Cancel" %}
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<script>
+    // Visual feedback for file selection
+    const fileInput = document.getElementById('json_file');
+    const fileNameDisplay = document.getElementById('file-name');
+    const dropZone = document.getElementById('drop-zone');
+
+    fileInput.onchange = function() {
+        if (this.files.length > 0) {
+            fileNameDisplay.textContent = "✓ " + this.files[0].name;
+            dropZone.classList.add('border-green-600', 'bg-green-50/20');
+        }
+    };
+
+    // Simple Drag & Drop visual handling
+    dropZone.ondragover = (e) => { e.preventDefault(); dropZone.classList.add('border-green-600'); };
+    dropZone.ondragleave = () => { dropZone.classList.remove('border-green-600'); };
+    dropZone.ondrop = (e) => {
+        e.preventDefault();
+        fileInput.files = e.dataTransfer.files;
+        fileInput.onchange();
+    };
+</script>
+{% endblock %}

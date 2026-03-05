@@ -1,0 +1,2703 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-18 22:26+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\core\settings.py:95
+msgid "English"
+msgstr "अंग्रेज़ी"
+
+#: .\core\settings.py:96
+msgid "Hindi"
+msgstr "नहीं"
+
+#: .\core\settings.py:97
+msgid "Telugu"
+msgstr "तेलुगू"
+
+#: .\templates\accounts\login.html:3
+msgid "Farmer Login | AgriTech"
+msgstr "किसान लॉगिन | एग्रीटेक"
+
+#: .\templates\accounts\login.html:14
+msgid "Welcome"
+msgstr "स्वागत"
+
+#: .\templates\accounts\login.html:14
+msgid "Back"
+msgstr "पीछे"
+
+#: .\templates\accounts\login.html:17
+msgid "Secure Farmer Authentication"
+msgstr "सुरक्षित किसान प्रमाणीकरण"
+
+#: .\templates\accounts\login.html:42 .\templates\accounts\signup.html:26
+msgid "Farmer Email Address"
+msgstr "किसान ईमेल पता"
+
+#: .\templates\accounts\login.html:48
+msgid "Secure Password"
+msgstr "सुरक्षित पासवर्ड"
+
+#: .\templates\accounts\login.html:54
+msgid "Forgot Access?"
+msgstr "पहुंच भूल गए?"
+
+#: .\templates\accounts\login.html:55
+msgid "Register Profile"
+msgstr "प्रोफ़ाइल पंजीकृत करें"
+
+#: .\templates\accounts\login.html:59
+msgid "Authorize Entry"
+msgstr "प्रवेश को अधिकृत करें"
+
+#: .\templates\accounts\signup.html:3
+msgid "Farmer Registration | AgriTech"
+msgstr "किसान पंजीकरण | एग्रीटेक"
+
+#: .\templates\accounts\signup.html:14
+msgid "Join"
+msgstr "जोड़ना"
+
+#: .\templates\accounts\signup.html:14
+msgid "AgriTech"
+msgstr "एग्रीटेक"
+
+#: .\templates\accounts\signup.html:17
+msgid "Create Your Farmer Identity"
+msgstr "अपनी किसान पहचान बनाएं"
+
+#: .\templates\accounts\signup.html:32
+msgid "Security Password"
+msgstr "सुरक्षा पासवर्ड"
+
+#: .\templates\accounts\signup.html:40
+msgid ""
+"A secure verification code will be sent via email to activate your account."
+msgstr ""
+"आपके खाते को सक्रिय करने के लिए एक सुरक्षित सत्यापन कोड ईमेल के माध्यम से "
+"भेजा जाएगा।"
+
+#: .\templates\accounts\signup.html:45
+msgid "Need Help?"
+msgstr "मदद की ज़रूरत है?"
+
+#: .\templates\accounts\signup.html:46
+msgid "Existing Account"
+msgstr "मौजूदा खाता"
+
+#: .\templates\accounts\signup.html:51
+msgid "Initialize Registration"
+msgstr "पंजीकरण प्रारंभ करें"
+
+#: .\templates\accounts\verify_failed.html:3
+msgid "Verification Failed | AgriTech"
+msgstr "सत्यापन विफल | एग्रीटेक"
+
+#: .\templates\accounts\verify_failed.html:14
+#: .\templates\registration\password_reset_done.html:14
+msgid "Link"
+msgstr "जोड़ना"
+
+#: .\templates\accounts\verify_failed.html:14
+msgid "Expired"
+msgstr "खत्म हो चुका"
+
+#: .\templates\accounts\verify_failed.html:18
+msgid ""
+"The verification token is either invalid or has reached its expiration "
+"threshold."
+msgstr "सत्यापन टोकन या तो अमान्य है या अपनी समाप्ति सीमा तक पहुंच गया है।"
+
+#: .\templates\accounts\verify_failed.html:19
+msgid "Security protocols require you to restart your registration process."
+msgstr ""
+"सुरक्षा प्रोटोकॉल के लिए आपको अपनी पंजीकरण प्रक्रिया पुनः आरंभ करने की "
+"आवश्यकता होती है।"
+
+#: .\templates\accounts\verify_failed.html:24
+msgid "Restart Registration"
+msgstr "पंजीकरण पुनः प्रारंभ करें"
+
+#: .\templates\accounts\verify_failed.html:29
+msgid "Back to Login"
+msgstr "लॉगिन पर वापस जाएं"
+
+#: .\templates\accounts\verify_otp.html:3
+msgid "Verify Identity | AgriTech"
+msgstr "पहचान सत्यापित करें | एग्रीटेक"
+
+#: .\templates\accounts\verify_otp.html:14
+msgid "Verify"
+msgstr "सत्यापित करें"
+
+#: .\templates\accounts\verify_otp.html:14
+msgid "Identity"
+msgstr "पहचान"
+
+#: .\templates\accounts\verify_otp.html:17
+msgid "Check your email for the 6-digit secure access code"
+msgstr "6-अंकीय सुरक्षित एक्सेस कोड के लिए अपना ईमेल जांचें"
+
+#: .\templates\accounts\verify_otp.html:28
+msgid "Activate Profile"
+msgstr "प्रोफ़ाइल सक्रिय करें"
+
+#: .\templates\accounts\verify_otp.html:34
+msgid "Didn't receive the code?"
+msgstr "कोड प्राप्त नहीं हुआ?"
+
+#: .\templates\accounts\verify_otp.html:35
+msgid "Resend Transmitted Code"
+msgstr "प्रेषित कोड पुनः भेजें"
+
+#: .\templates\accounts\verify_success.html:3
+msgid "Account Verified | AgriTech"
+msgstr "खाता सत्यापित | एग्रीटेक"
+
+#: .\templates\accounts\verify_success.html:14
+msgid "Profile"
+msgstr "प्रोफ़ाइल"
+
+#: .\templates\accounts\verify_success.html:14
+msgid "Activated"
+msgstr "सक्रिय"
+
+#: .\templates\accounts\verify_success.html:18
+msgid "Your identity has been successfully verified."
+msgstr "आपकी पहचान सफलतापूर्वक सत्यापित कर दी गई है."
+
+#: .\templates\accounts\verify_success.html:19
+msgid "Welcome to the AgriTech smart farming community."
+msgstr "एग्रीटेक स्मार्ट फार्मिंग समुदाय में आपका स्वागत है।"
+
+#: .\templates\accounts\verify_success.html:24
+msgid "Proceed to Login"
+msgstr "लॉगिन करने के लिए आगे बढ़ें"
+
+#: .\templates\base1.html:10
+msgid "AgriTech | Smart Farming Assistant"
+msgstr "एग्रीटेक | स्मार्ट खेती सहायक"
+
+#: .\templates\base1.html:75 .\templates\partials\lens_body.html:10
+msgid "Agri"
+msgstr "कृषि"
+
+#: .\templates\base1.html:75
+msgid "Tech"
+msgstr "तकनीक"
+
+#: .\templates\base1.html:79
+msgid "Home"
+msgstr "घर"
+
+#: .\templates\base1.html:80
+msgid "About"
+msgstr "के बारे में"
+
+#: .\templates\base1.html:86
+msgid "EN"
+msgstr "में"
+
+#: .\templates\base1.html:87
+msgid "HI"
+msgstr "HI"
+
+#: .\templates\base1.html:88
+msgid "TE"
+msgstr ""
+
+#: .\templates\base1.html:91
+msgid "Login"
+msgstr "लॉग इन करें"
+
+#: .\templates\base1.html:92
+msgid "Sign Up"
+msgstr "साइन अप करें"
+
+#: .\templates\base1.html:113 .\templates\landing.html:92
+#: .\templates\partials\sidebar_user.html:34
+msgid "AgriExpert AI"
+msgstr "कृषि विशेषज्ञ ए.आई"
+
+#: .\templates\base1.html:114
+msgid "24/7 Farming Support"
+msgstr "24/7 कृषि सहायता"
+
+#: .\templates\base1.html:122
+msgid ""
+"Welcome to AgriTech! I can help you with crop disease detection, soil "
+"nutrition, and smart farming advice."
+msgstr ""
+"एग्रीटेक में आपका स्वागत है! मैं फसल रोग का पता लगाने, मिट्टी के पोषण और "
+"स्मार्ट खेती संबंधी सलाह में आपकी मदद कर सकता हूं।"
+
+#: .\templates\base1.html:134
+msgid "Type your query..."
+msgstr "अपनी क्वेरी टाइप करें..."
+
+#: .\templates\base1.html:142
+msgid "Send"
+msgstr "भेजना"
+
+#: .\templates\base1.html:145
+msgid "Image ready for analysis..."
+msgstr "छवि विश्लेषण के लिए तैयार है..."
+
+#: .\templates\base1.html:153
+msgid "AgriTech - Smart Solutions for Sustainable Farming"
+msgstr "एग्रीटेक - सतत खेती के लिए स्मार्ट समाधान"
+
+#: .\templates\base1.html:224
+msgid "[Image Sent]"
+msgstr "[छवि भेजी गई]"
+
+#: .\templates\base1.html:262
+msgid "Connection Error"
+msgstr "संपर्क त्रुटि"
+
+#: .\templates\base2.html:7
+msgid "Farmer Dashboard | AgriTech"
+msgstr "किसान डैशबोर्ड | एग्रीटेक"
+
+#: .\templates\base2.html:78
+msgid "Smart Farming"
+msgstr "स्मार्ट खेती"
+
+#: .\templates\base2.html:90
+msgid "Preferences"
+msgstr "प्राथमिकताएँ"
+
+#: .\templates\base2.html:93
+msgid "Account Settings"
+msgstr "अकाउंट सेटिंग"
+
+#: .\templates\base2.html:103
+msgid "Logout"
+msgstr "लॉग आउट"
+
+#: .\templates\base2.html:123
+msgid "ROOT ADMIN ACCESS"
+msgstr "रूट एडमिन एक्सेस"
+
+#: .\templates\base2.html:123
+msgid "VERIFIED FARMER"
+msgstr "सत्यापित किसान"
+
+#: .\templates\base2.html:144
+msgid "Ask AgriExpert AI"
+msgstr "एग्रीएक्सपर्ट एआई से पूछें"
+
+#: .\templates\dashboards\admin_chat_logs.html:10
+msgid "AI Interaction Logs"
+msgstr "एआई इंटरेक्शन लॉग"
+
+#: .\templates\dashboards\admin_chat_logs.html:13
+msgid "Auditing AgriExpert AI Conversations & Advice Quality"
+msgstr "एग्रीएक्सपर्ट एआई वार्तालाप और सलाह गुणवत्ता का ऑडिट करना"
+
+#: .\templates\dashboards\admin_chat_logs.html:18
+msgid "Live Feed"
+msgstr "लाइव फ़ीड"
+
+#: .\templates\dashboards\admin_chat_logs.html:37
+msgid "ANONYMOUS_FARMER"
+msgstr "गुमनाम_किसान"
+
+#: .\templates\dashboards\admin_chat_logs.html:43
+msgid "ago"
+msgstr "पहले"
+
+#: .\templates\dashboards\admin_chat_logs.html:55
+msgid "AgriExpert AI Response"
+msgstr "एग्रीएक्सपर्ट एआई प्रतिक्रिया"
+
+#: .\templates\dashboards\admin_chat_logs.html:65
+msgid "LOG_ID"
+msgstr "लॉग_आईडी"
+
+#: .\templates\dashboards\admin_chat_logs.html:78
+msgid "No recent farmer conversations detected in the neural pipeline."
+msgstr "न्यूरल पाइपलाइन में कोई हालिया किसान वार्तालाप नहीं पाया गया।"
+
+#: .\templates\dashboards\admin_dashboard.html:4
+msgid "Admin Command Center | AgriTech AI"
+msgstr "एडमिन कमांड सेंटर | एग्रीटेक एआई"
+
+#: .\templates\dashboards\admin_dashboard.html:5
+msgid "MASTER_COMMAND_CENTER"
+msgstr "मास्टर_कमांड_सेंटर"
+
+#: .\templates\dashboards\admin_dashboard.html:12
+msgid "Command"
+msgstr "आज्ञा"
+
+#: .\templates\dashboards\admin_dashboard.html:12
+msgid "Center"
+msgstr "केंद्र"
+
+#: .\templates\dashboards\admin_dashboard.html:15
+msgid ""
+"Global oversight of Agri-ML pipelines and regional farmer node clusters."
+msgstr ""
+"एग्री-एमएल पाइपलाइनों और क्षेत्रीय किसान नोड समूहों की वैश्विक निगरानी।"
+
+#: .\templates\dashboards\admin_dashboard.html:21
+msgid "Active Farmer Nodes"
+msgstr "सक्रिय किसान नोड्स"
+
+#: .\templates\dashboards\admin_dashboard.html:29
+msgid "Soil Analysis Logs"
+msgstr "मृदा विश्लेषण लॉग"
+
+#: .\templates\dashboards\admin_dashboard.html:37
+msgid "Yield Predictions"
+msgstr "उपज की भविष्यवाणी"
+
+#: .\templates\dashboards\admin_dashboard.html:45
+msgid "System Integrity"
+msgstr "सिस्टम इंटीग्रिटी"
+
+#: .\templates\dashboards\admin_dashboard.html:51
+msgid "Secure"
+msgstr "सुरक्षित"
+
+#: .\templates\dashboards\admin_dashboard.html:58
+msgid "INFERENCE_LOAD_BALANCING"
+msgstr "अनुमान_लोड_संतुलन"
+
+#: .\templates\dashboards\admin_dashboard.html:65
+msgid "Real-time AI request distribution across clusters"
+msgstr "समूहों में वास्तविक समय एआई अनुरोध वितरण"
+
+#: .\templates\dashboards\admin_dashboard.html:69
+msgid "REGIONAL_DEMAND"
+msgstr "क्षेत्रीय_मांग"
+
+#: .\templates\dashboards\admin_dashboard.html:80
+msgid "Recent AI Inferences"
+msgstr "हाल के एआई अनुमान"
+
+#: .\templates\dashboards\admin_dashboard.html:96
+msgid "No Inference Data Yet"
+msgstr "अभी तक कोई अनुमान डेटा नहीं"
+
+#: .\templates\dashboards\admin_dashboard.html:102
+msgid "Admin Services"
+msgstr "व्यवस्थापक सेवाएँ"
+
+#: .\templates\dashboards\admin_dashboard.html:105
+msgid "Farmer Management"
+msgstr "किसान प्रबंधन"
+
+#: .\templates\dashboards\admin_dashboard.html:109
+#: .\templates\partials\sidebar_admin.html:22
+msgid "Scheme Bulk Upload"
+msgstr "योजना थोक अपलोड"
+
+#: .\templates\dashboards\admin_dashboard.html:116
+msgid "Django Database"
+msgstr "Django डेटाबेस"
+
+#: .\templates\dashboards\ai_monitor.html:11
+msgid "AI Neural"
+msgstr "तंत्रिका ए.आई"
+
+#: .\templates\dashboards\ai_monitor.html:11
+msgid "Monitor"
+msgstr "निगरानी करना"
+
+#: .\templates\dashboards\ai_monitor.html:14
+msgid "Real-time Gemini Performance & System Integrity"
+msgstr "रीयल-टाइम जेमिनी प्रदर्शन और सिस्टम इंटीग्रिटी"
+
+#: .\templates\dashboards\ai_monitor.html:28
+msgid "Intelligence Core"
+msgstr "इंटेलिजेंस कोर"
+
+#: .\templates\dashboards\ai_monitor.html:36
+msgid "Inference Latency"
+msgstr "अनुमान विलंबता"
+
+#: .\templates\dashboards\ai_monitor.html:44
+msgid "API Total Requests"
+msgstr "एपीआई कुल अनुरोध"
+
+#: .\templates\dashboards\ai_monitor.html:53
+msgid "Active AI Services"
+msgstr "सक्रिय एआई सेवाएँ"
+
+#: .\templates\dashboards\ai_monitor.html:72
+msgid "Neural Health"
+msgstr "तंत्रिका स्वास्थ्य"
+
+#: .\templates\dashboards\ai_monitor.html:76
+msgid "Model Load"
+msgstr "मॉडल लोड"
+
+#: .\templates\dashboards\ai_monitor.html:80
+msgid "Token Quota"
+msgstr "टोकन कोटा"
+
+#: .\templates\dashboards\ai_monitor.html:81
+msgid "Free"
+msgstr "मुक्त"
+
+#: .\templates\dashboards\ai_monitor.html:84
+msgid "Node Sync"
+msgstr "नोड सिंक"
+
+#: .\templates\dashboards\ai_monitor.html:85
+#: .\templates\dashboards\user_directory.html:72
+msgid "Active"
+msgstr "सक्रिय"
+
+#: .\templates\dashboards\analytics.html:11
+msgid "Platform"
+msgstr "प्लैटफ़ॉर्म"
+
+#: .\templates\dashboards\analytics.html:11
+msgid "Intelligence"
+msgstr "बुद्धिमत्ता"
+
+#: .\templates\dashboards\analytics.html:14
+msgid "Data-Driven Insights into Regional Agricultural Trends"
+msgstr "क्षेत्रीय कृषि रुझानों में डेटा-संचालित अंतर्दृष्टि"
+
+#: .\templates\dashboards\analytics.html:23
+msgid "Most Recommended Crops"
+msgstr "सर्वाधिक अनुशंसित फसलें"
+
+#: .\templates\dashboards\analytics.html:33
+msgid "Soil Category Distribution"
+msgstr "मृदा श्रेणी वितरण"
+
+#: .\templates\dashboards\analytics.html:55
+msgid "Total Inferences"
+msgstr "कुल अनुमान"
+
+#: .\templates\dashboards\bulk_upload.html:12
+msgid "Bulk Data Import"
+msgstr "थोक डेटा आयात"
+
+#: .\templates\dashboards\bulk_upload.html:16
+msgid "Technical Instructions"
+msgstr "तकनीकी निर्देश"
+
+#: .\templates\dashboards\bulk_upload.html:20
+msgid "Upload a standard"
+msgstr "एक मानक अपलोड करें"
+
+#: .\templates\dashboards\bulk_upload.html:20
+msgid "file containing an array of objects."
+msgstr "ऑब्जेक्ट की एक सरणी वाली फ़ाइल।"
+
+#: .\templates\dashboards\bulk_upload.html:24
+msgid ""
+"Ensure schema includes required fields: name, category, and technical "
+"parameters."
+msgstr ""
+"सुनिश्चित करें कि स्कीमा में आवश्यक फ़ील्ड शामिल हैं: नाम, श्रेणी और तकनीकी "
+"पैरामीटर।"
+
+#: .\templates\dashboards\bulk_upload.html:39
+msgid "Select JSON Dataset"
+msgstr "JSON डेटासेट चुनें"
+
+#: .\templates\dashboards\bulk_upload.html:40
+msgid "Max file size: 10MB"
+msgstr "अधिकतम फ़ाइल आकार: 10 एमबी"
+
+#: .\templates\dashboards\bulk_upload.html:47
+msgid "Execute Bulk Import"
+msgstr "थोक आयात निष्पादित करें"
+
+#: .\templates\dashboards\bulk_upload.html:51
+msgid "Cancel"
+msgstr "रद्द करना"
+
+#: .\templates\dashboards\profile.html:7
+msgid "Farmer Profile"
+msgstr "किसान प्रोफाइल"
+
+#: .\templates\dashboards\profile.html:8
+msgid "Manage your personal details and agricultural preferences."
+msgstr "अपने व्यक्तिगत विवरण और कृषि प्राथमिकताएँ प्रबंधित करें।"
+
+#: .\templates\dashboards\profile.html:14
+msgid "Account Information"
+msgstr "खाता संबंधी जानकारी"
+
+#: .\templates\dashboards\profile.html:22
+msgid "System Role"
+msgstr "सिस्टम भूमिका"
+
+#: .\templates\dashboards\profile.html:29
+msgid "Account Identity (Email)"
+msgstr "खाता पहचान (ईमेल)"
+
+#: .\templates\dashboards\profile.html:37
+msgid "Save Changes"
+msgstr "परिवर्तनों को सुरक्षित करें"
+
+#: .\templates\dashboards\profile.html:45
+msgid "System Preferences"
+msgstr "सिस्टम प्राथमिकताएँ"
+
+#: .\templates\dashboards\profile.html:52
+msgid "Interface Language"
+msgstr "इंटरफ़ेस भाषा"
+
+#: .\templates\dashboards\profile.html:54
+msgid "Preferred language for AI advice and crop analysis."
+msgstr "एआई सलाह और फसल विश्लेषण के लिए पसंदीदा भाषा।"
+
+#: .\templates\dashboards\profile.html:80
+msgid "Climate & Yield Alerts"
+msgstr "जलवायु एवं उपज चेतावनियाँ"
+
+#: .\templates\dashboards\profile.html:82
+msgid "Get real-time updates on weather risks."
+msgstr "मौसम संबंधी जोखिमों पर वास्तविक समय पर अपडेट प्राप्त करें।"
+
+#: .\templates\dashboards\user_dashboard.html:9
+#: .\templates\dashboards\user_directory.html:59
+msgid "Farmer"
+msgstr "किसान"
+
+#: .\templates\dashboards\user_dashboard.html:9
+msgid "Hub"
+msgstr "केंद्र"
+
+#: .\templates\dashboards\user_dashboard.html:12
+msgid "Your Smart Farming Analytics At A Glance"
+msgstr "आपकी स्मार्ट खेती का विश्लेषण एक नज़र में"
+
+#: .\templates\dashboards\user_dashboard.html:22
+msgid "Total Logs"
+msgstr "कुल लॉग"
+
+#: .\templates\dashboards\user_dashboard.html:32
+msgid "Agri Lens"
+msgstr "कृषि लेंस"
+
+#: .\templates\dashboards\user_dashboard.html:33
+msgid "Diagnose Crop"
+msgstr "फसल का निदान करें"
+
+#: .\templates\dashboards\user_dashboard.html:42
+msgid "AI Advisor"
+msgstr "एआई सलाहकार"
+
+#: .\templates\dashboards\user_dashboard.html:43
+msgid "Talk to Expert"
+msgstr "विशेषज्ञ से बात करें"
+
+#: .\templates\dashboards\user_dashboard.html:52
+#: .\templates\weather\weather_dashboard.html:14
+msgid "Climate"
+msgstr "जलवायु"
+
+#: .\templates\dashboards\user_dashboard.html:53
+msgid "Weather Heatmap"
+msgstr "मौसम हीटमैप"
+
+#: .\templates\dashboards\user_dashboard.html:61
+msgid "Recent Crop Recommendations"
+msgstr "नवीनतम फसल सिफ़ारिशें"
+
+#: .\templates\dashboards\user_dashboard.html:62
+msgid "New Analysis +"
+msgstr "नया विश्लेषण+"
+
+#: .\templates\dashboards\user_dashboard.html:74
+msgid "Recommendation"
+msgstr "सिफारिश"
+
+#: .\templates\dashboards\user_dashboard.html:87
+msgid "No soil analysis history yet"
+msgstr "अभी तक कोई मृदा विश्लेषण इतिहास नहीं"
+
+#: .\templates\dashboards\user_dashboard.html:88
+msgid "Start First Analysis"
+msgstr "पहला विश्लेषण प्रारंभ करें"
+
+#: .\templates\dashboards\user_dashboard.html:98
+msgid "Climate Alert"
+msgstr "जलवायु चेतावनी"
+
+#: .\templates\dashboards\user_dashboard.html:100
+msgid "Optimal conditions for Rice planting detected in your region."
+msgstr "आपके क्षेत्र में चावल की रोपाई के लिए अनुकूलतम स्थितियाँ पाई गईं।"
+
+#: .\templates\dashboards\user_dashboard.html:102
+msgid "View Heatmap"
+msgstr "हीटमैप देखें"
+
+#: .\templates\dashboards\user_dashboard.html:107
+msgid "Active Schemes"
+msgstr "सक्रिय योजनाएँ"
+
+#: .\templates\dashboards\user_dashboard.html:111
+msgid "Update"
+msgstr "अद्यतन"
+
+#: .\templates\dashboards\user_dashboard.html:114
+msgid "View All Schemes"
+msgstr "सभी योजनाएं देखें"
+
+#: .\templates\dashboards\user_dashboard.html:124
+msgid "Farming Records"
+msgstr "खेती के रिकार्ड"
+
+#: .\templates\dashboards\user_dashboard.html:127
+msgid "Items Logged"
+msgstr "आइटम लॉग किए गए"
+
+#: .\templates\dashboards\user_dashboard.html:137 .\templates\landing.html:78
+#: .\templates\ml\yield_predict.html:11
+#: .\templates\partials\sidebar_user.html:24
+msgid "Yield Forecast"
+msgstr "उपज का पूर्वानुमान"
+
+#: .\templates\dashboards\user_dashboard.html:140
+msgid "View Report"
+msgstr "रिपोर्ट देखें"
+
+#: .\templates\dashboards\user_dashboard.html:151
+msgid "No Records"
+msgstr "कोई रिकार्ड नहीं"
+
+#: .\templates\dashboards\user_directory.html:9
+msgid "Farmer Node Directory"
+msgstr "किसान नोड निर्देशिका"
+
+#: .\templates\dashboards\user_directory.html:10
+msgid "Manage Regional Agricultural Identity & System Access"
+msgstr "क्षेत्रीय कृषि पहचान और सिस्टम पहुंच प्रबंधित करें"
+
+#: .\templates\dashboards\user_directory.html:20
+msgid "Registered Farmer Nodes"
+msgstr "पंजीकृत किसान नोड्स"
+
+#: .\templates\dashboards\user_directory.html:22
+msgid "Active Nodes"
+msgstr "सक्रिय नोड्स"
+
+#: .\templates\dashboards\user_directory.html:30
+msgid "Farmer Identity"
+msgstr "किसान की पहचान"
+
+#: .\templates\dashboards\user_directory.html:31
+msgid "Auth Level"
+msgstr "प्रामाणिक स्तर"
+
+#: .\templates\dashboards\user_directory.html:32
+msgid "Enrollment"
+msgstr "उपस्थिति पंजी"
+
+#: .\templates\dashboards\user_directory.html:33
+msgid "Node Status"
+msgstr "नोड स्थिति"
+
+#: .\templates\dashboards\user_directory.html:34
+msgid "Management"
+msgstr "प्रबंध"
+
+#: .\templates\dashboards\user_directory.html:55
+msgid "Global Admin"
+msgstr "वैश्विक प्रशासन"
+
+#: .\templates\dashboards\user_directory.html:72
+msgid "Deactivated"
+msgstr "निष्क्रिय"
+
+#: .\templates\dashboards\user_directory.html:81
+msgid "Deactivate Node"
+msgstr "नोड निष्क्रिय करें"
+
+#: .\templates\dashboards\user_directory.html:81
+msgid "Activate Node"
+msgstr "नोड सक्रिय करें"
+
+#: .\templates\dashboards\user_directory.html:87
+msgid "Permanently wipe this farmer node data?"
+msgstr "इस किसान नोड डेटा को स्थायी रूप से मिटा दें?"
+
+#: .\templates\dashboards\user_directory.html:92
+msgid "Current Session"
+msgstr "वर्तमान सत्र"
+
+#: .\templates\dashboards\user_directory.html:101
+msgid "No Farmer Nodes Connected"
+msgstr "कोई किसान नोड कनेक्ट नहीं है"
+
+#: .\templates\landing.html:5
+msgid "AgriTech | Smart AI-Powered Farming Solutions"
+msgstr "एग्रीटेक | स्मार्ट एआई-संचालित खेती समाधान"
+
+#: .\templates\landing.html:18
+msgid "Next Generation Precision Agriculture"
+msgstr "अगली पीढ़ी की परिशुद्ध कृषि"
+
+#: .\templates\landing.html:22
+msgid "Cultivating the Future with"
+msgstr "के साथ भविष्य का विकास करना"
+
+#: .\templates\landing.html:23
+msgid "Artificial Intelligence"
+msgstr "कृत्रिम होशियारी"
+
+#: .\templates\landing.html:27
+msgid ""
+"Empowering farmers with data-driven crop recommendations, yield forecasting,"
+" and real-time AI guidance to ensure sustainable productivity and reduced "
+"risk."
+msgstr ""
+"टिकाऊ उत्पादकता और कम जोखिम सुनिश्चित करने के लिए डेटा-संचालित फसल "
+"अनुशंसाओं, उपज पूर्वानुमान और वास्तविक समय एआई मार्गदर्शन के साथ किसानों को "
+"सशक्त बनाना।"
+
+#: .\templates\landing.html:33
+msgid "Get Crop Advice"
+msgstr "फसल संबंधी सलाह प्राप्त करें"
+
+#: .\templates\landing.html:38
+msgid "Ask AgriExpert"
+msgstr "कृषि विशेषज्ञ से पूछें"
+
+#: .\templates\landing.html:53
+msgid "Smart Agriculture Modules"
+msgstr "स्मार्ट कृषि मॉड्यूल"
+
+#: .\templates\landing.html:54
+msgid ""
+"Leverage our advanced machine learning engines designed for modern soil "
+"science."
+msgstr ""
+"आधुनिक मृदा विज्ञान के लिए डिज़ाइन किए गए हमारे उन्नत मशीन लर्निंग इंजन का "
+"लाभ उठाएं।"
+
+#: .\templates\landing.html:64
+msgid "Crop Advice"
+msgstr "फसल संबंधी सलाह"
+
+#: .\templates\landing.html:66
+msgid ""
+"AI analysis of N-P-K levels, pH, and climate to suggest the most profitable "
+"crop for your soil."
+msgstr ""
+"आपकी मिट्टी के लिए सबसे लाभदायक फसल का सुझाव देने के लिए एन-पी-के स्तर, पीएच"
+" और जलवायु का एआई विश्लेषण।"
+
+#: .\templates\landing.html:70 .\templates\landing.html:84
+msgid "Open Tool"
+msgstr "टूल खोलें"
+
+#: .\templates\landing.html:80
+msgid ""
+"Predict harvest quantity using historical weather data and current soil "
+"conditions."
+msgstr ""
+"ऐतिहासिक मौसम डेटा और वर्तमान मिट्टी की स्थिति का उपयोग करके फसल की मात्रा "
+"का अनुमान लगाएं।"
+
+#: .\templates\landing.html:94
+msgid ""
+"Upload leaf images or ask questions in your local language to identify "
+"diseases instantly."
+msgstr ""
+"बीमारियों की तुरंत पहचान करने के लिए पत्तों के चित्र अपलोड करें या अपनी "
+"स्थानीय भाषा में प्रश्न पूछें।"
+
+#: .\templates\landing.html:98
+msgid "Talk to AI"
+msgstr "एआई से बात करें"
+
+#: .\templates\landing.html:112
+msgid "Bilingual & Smart"
+msgstr "द्विभाषी एवं स्मार्ट"
+
+#: .\templates\landing.html:115
+msgid "Language is no longer a"
+msgstr "भाषा अब नहीं रही"
+
+#: .\templates\landing.html:115
+msgid "Barrier"
+msgstr "रुकावट"
+
+#: .\templates\landing.html:118
+msgid ""
+"Our platform supports Hindi, Telugu, and English, allowing you to interact "
+"with advanced AI through text or voice in the language you know best."
+msgstr ""
+"हमारा प्लेटफ़ॉर्म हिंदी, तेलुगु और अंग्रेजी का समर्थन करता है, जिससे आप उस "
+"भाषा में टेक्स्ट या आवाज के माध्यम से उन्नत एआई के साथ बातचीत कर सकते हैं "
+"जिसे आप सबसे अच्छी तरह जानते हैं।"
+
+#: .\templates\landing.html:124
+msgid "Create Free Account"
+msgstr "मुफ्त खाता बनाओ"
+
+#: .\templates\landing.html:147
+msgid "Model Accuracy"
+msgstr "मॉडल सटीकता"
+
+#: .\templates\landing.html:151
+msgid "Crop Varieties"
+msgstr "फसल की किस्में"
+
+#: .\templates\landing.html:155
+msgid "AI Support"
+msgstr "एआई समर्थन"
+
+#: .\templates\landing.html:159
+msgid "Regional Languages"
+msgstr "क्षेत्रीय भाषाएँ"
+
+#: .\templates\ml\crop_recommend.html:4
+msgid "Crop Recommendation | AgriTech"
+msgstr "फसल सिफ़ारिश | एग्रीटेक"
+
+#: .\templates\ml\crop_recommend.html:11
+msgid "Soil Analysis"
+msgstr "मृदा विश्लेषण"
+
+#: .\templates\ml\crop_recommend.html:11
+msgid "Suggestion"
+msgstr "सुझाव"
+
+#: .\templates\ml\crop_recommend.html:14
+msgid "Input soil parameters to receive AI-driven crop recommendations"
+msgstr "एआई-संचालित फसल सिफारिशें प्राप्त करने के लिए इनपुट मिट्टी पैरामीटर"
+
+#: .\templates\ml\crop_recommend.html:27
+msgid "Macronutrients (mg/kg)"
+msgstr "मैक्रोन्यूट्रिएंट्स (मिलीग्राम/किग्रा)"
+
+#: .\templates\ml\crop_recommend.html:31
+msgid "Nitrogen (N)"
+msgstr "नाइट्रोजन (एन)"
+
+#: .\templates\ml\crop_recommend.html:36
+msgid "Phosphorus (P)"
+msgstr "फास्फोरस (पी)"
+
+#: .\templates\ml\crop_recommend.html:41
+msgid "Potassium (K)"
+msgstr "पोटेशियम (K)"
+
+#: .\templates\ml\crop_recommend.html:50
+msgid "Environmental Factors"
+msgstr "वातावरणीय कारक"
+
+#: .\templates\ml\crop_recommend.html:54
+msgid "Soil pH Level"
+msgstr "मृदा पीएच स्तर"
+
+#: .\templates\ml\crop_recommend.html:59
+msgid "Avg Rainfall (mm)"
+msgstr "औसत वर्षा (मिमी)"
+
+#: .\templates\ml\crop_recommend.html:67
+msgid "Generate Recommendation"
+msgstr "सिफ़ारिश उत्पन्न करें"
+
+#: .\templates\ml\crop_recommend.html:75
+msgid "Why these values?"
+msgstr "ये मूल्य क्यों?"
+
+#: .\templates\ml\crop_recommend.html:77
+msgid ""
+"Our ML model analyzes the chemical composition of your soil to predict which"
+" crop will thrive most efficiently in these specific conditions."
+msgstr ""
+"हमारा एमएल मॉडल आपकी मिट्टी की रासायनिक संरचना का विश्लेषण करके यह अनुमान "
+"लगाता है कि इन विशिष्ट परिस्थितियों में कौन सी फसल सबसे अधिक कुशलता से "
+"पनपेगी।"
+
+#: .\templates\ml\crop_recommend.html:80
+msgid "Pro Tip"
+msgstr "टिप के लिए"
+
+#: .\templates\ml\crop_recommend.html:81
+msgid ""
+"Use a soil testing kit for accurate N-P-K readings to get the best results."
+msgstr ""
+"सर्वोत्तम परिणाम प्राप्त करने के लिए सटीक एन-पी-के रीडिंग के लिए मिट्टी "
+"परीक्षण किट का उपयोग करें।"
+
+#: .\templates\ml\crop_recommend.html:87
+msgid "Processing Soil Data..."
+msgstr "मृदा डेटा संसाधित करना..."
+
+#: .\templates\ml\crop_recommend_result.html:4
+msgid "Recommendation Result | AgriTech"
+msgstr "सिफ़ारिश परिणाम | एग्रीटेक"
+
+#: .\templates\ml\crop_recommend_result.html:17
+msgid "AI Analysis Complete"
+msgstr "एआई विश्लेषण पूर्ण"
+
+#: .\templates\ml\crop_recommend_result.html:19
+msgid "Is the most suitable crop for your soil conditions"
+msgstr "आपकी मिट्टी की स्थिति के लिए सबसे उपयुक्त फसल है"
+
+#: .\templates\ml\crop_recommend_result.html:44
+msgid "Cultivation Guidance"
+msgstr "खेती संबंधी मार्गदर्शन"
+
+#: .\templates\ml\crop_recommend_result.html:53
+msgid "Download Analysis Report"
+msgstr "विश्लेषण रिपोर्ट डाउनलोड करें"
+
+#: .\templates\ml\crop_recommend_result.html:56
+msgid "New Analysis"
+msgstr "नया विश्लेषण"
+
+#: .\templates\ml\crop_recommend_result.html:64
+msgid ""
+"Caution: This is an AI-generated prediction based on Machine Learning "
+"models. Please cross-verify with local agricultural experts before making "
+"financial investments."
+msgstr ""
+"सावधानी: यह मशीन लर्निंग मॉडल पर आधारित एआई-जनित भविष्यवाणी है। कृपया "
+"वित्तीय निवेश करने से पहले स्थानीय कृषि विशेषज्ञों से पुष्टि कर लें।"
+
+#: .\templates\ml\yield_predict.html:4 .\templates\ml\yield_result.html:4
+msgid "Yield Forecast | AgriTech"
+msgstr "उपज पूर्वानुमान | एग्रीटेक"
+
+#: .\templates\ml\yield_predict.html:14
+msgid "Estimate crop yield using AI regression model"
+msgstr "एआई रिग्रेशन मॉडल का उपयोग करके फसल की उपज का अनुमान लगाएं"
+
+#: .\templates\ml\yield_predict.html:32 .\templates\ml\yield_result.html:42
+msgid "Crop Type"
+msgstr "फसल का प्रकार"
+
+#: .\templates\ml\yield_predict.html:45 .\templates\ml\yield_result.html:48
+msgid "Season"
+msgstr "मौसम"
+
+#: .\templates\ml\yield_predict.html:58
+msgid "Area (Hectares)"
+msgstr "क्षेत्रफल (हेक्टेयर)"
+
+#: .\templates\ml\yield_predict.html:70
+msgid "Predict Yield"
+msgstr "उपज की भविष्यवाणी करें"
+
+#: .\templates\ml\yield_result.html:21
+msgid "Estimated Production"
+msgstr "अनुमानित उत्पादन"
+
+#: .\templates\ml\yield_result.html:27
+msgid "Forecast for"
+msgstr "के लिए पूर्वानुमान"
+
+#: .\templates\ml\yield_result.html:28
+msgid "Hectares of"
+msgstr "के हेक्टेयर"
+
+#: .\templates\ml\yield_result.html:37
+msgid "Forecast Parameters"
+msgstr "पूर्वानुमान पैरामीटर"
+
+#: .\templates\ml\yield_result.html:59
+msgid "Download Yield Report"
+msgstr "यील्ड रिपोर्ट डाउनलोड करें"
+
+#: .\templates\ml\yield_result.html:64
+msgid "Recalculate"
+msgstr "पुनर्गणना"
+
+#: .\templates\ml\yield_result.html:72
+msgid ""
+"Generated by AgriTech AI Regression Engine • Caution: Historical data "
+"patterns may vary with climate shifts."
+msgstr ""
+"एग्रीटेक एआई रिग्रेशन इंजन द्वारा उत्पन्न • सावधानी: जलवायु परिवर्तन के साथ "
+"ऐतिहासिक डेटा पैटर्न भिन्न हो सकते हैं।"
+
+#: .\templates\partials\chatbot_body.html:36
+msgid "AgriExpert AI Advisor"
+msgstr "कृषि विशेषज्ञ एआई सलाहकार"
+
+#: .\templates\partials\chatbot_body.html:37
+msgid "Precision Agriculture Core"
+msgstr "परिशुद्ध कृषि कोर"
+
+#: .\templates\partials\chatbot_body.html:41
+msgid "Close Terminal"
+msgstr "टर्मिनल बंद करें"
+
+#: .\templates\partials\chatbot_body.html:47
+msgid ""
+"System Ready. Please describe your crop concern or upload a photo of a "
+"leaf/plant for immediate disease diagnosis."
+msgstr ""
+"सिस्टम तैयार. कृपया रोग के तत्काल निदान के लिए अपनी फसल संबंधी चिंता का "
+"वर्णन करें या किसी पत्ती/पौधे की तस्वीर अपलोड करें।"
+
+#: .\templates\partials\chatbot_body.html:67
+msgid "Describe soil conditions or ask about fertilizers..."
+msgstr "मिट्टी की स्थिति का वर्णन करें या उर्वरकों के बारे में पूछें..."
+
+#: .\templates\partials\chatbot_body.html:126
+msgid "Analyzing Crop Image..."
+msgstr "फसल छवि का विश्लेषण किया जा रहा है..."
+
+#: .\templates\partials\chatbot_body.html:154
+msgid "AI Agricultural Insight"
+msgstr "एआई कृषि अंतर्दृष्टि"
+
+#: .\templates\partials\chatbot_body.html:161
+msgid "Satellite link interrupted. Try again."
+msgstr "सैटेलाइट लिंक बाधित. पुनः प्रयास करें।"
+
+#: .\templates\partials\lens_body.html:10
+msgid "Lens"
+msgstr "लेंस"
+
+#: .\templates\partials\lens_body.html:11
+msgid "AI-Powered Plant Disease Diagnosis"
+msgstr "एआई-संचालित पादप रोग निदान"
+
+#: .\templates\partials\lens_body.html:24
+msgid "Upload Crop Photo"
+msgstr "क्रॉप फ़ोटो अपलोड करें"
+
+#: .\templates\partials\lens_body.html:25
+msgid "Snap a photo of a leaf or plant to identify issues"
+msgstr "समस्याओं की पहचान करने के लिए किसी पत्ते या पौधे की तस्वीर खींचें"
+
+#: .\templates\partials\lens_body.html:30
+msgid "AI Diagnosis Complete"
+msgstr "एआई निदान पूर्ण"
+
+#: .\templates\partials\lens_body.html:36
+msgid "Expert Treatment Plan"
+msgstr "विशेषज्ञ उपचार योजना"
+
+#: .\templates\partials\lens_body.html:43
+msgid "Scan Another"
+msgstr "दूसरे को स्कैन करें"
+
+#: .\templates\partials\lens_body.html:46
+msgid "Get Treatment Plan"
+msgstr "उपचार योजना प्राप्त करें"
+
+#: .\templates\partials\lens_body.html:55
+msgid "Analyzing Cellular Structure..."
+msgstr "सेलुलर संरचना का विश्लेषण..."
+
+#: .\templates\partials\sidebar_admin.html:4
+msgid "Core Operations"
+msgstr "मुख्य संचालन"
+
+#: .\templates\partials\sidebar_admin.html:10
+msgid "Command Center"
+msgstr "कमांड सेंटर"
+
+#: .\templates\partials\sidebar_admin.html:16
+msgid "Farmer Nodes"
+msgstr "किसान नोड्स"
+
+#: .\templates\partials\sidebar_admin.html:28
+msgid "AI Chat Logs"
+msgstr "एआई चैट लॉग्स"
+
+#: .\templates\partials\sidebar_admin.html:34
+msgid "System Database"
+msgstr "सिस्टम डेटाबेस"
+
+#: .\templates\partials\sidebar_user.html:6
+msgid "Farming Operations"
+msgstr "कृषि कार्य"
+
+#: .\templates\partials\sidebar_user.html:12
+msgid "Farmer Dashboard"
+msgstr "किसान डैशबोर्ड"
+
+#: .\templates\partials\sidebar_user.html:18
+msgid "Crop Suggestion"
+msgstr "फसल सुझाव"
+
+#: .\templates\partials\sidebar_user.html:28
+msgid "AI Assistance"
+msgstr "एआई सहायता"
+
+#: .\templates\partials\sidebar_user.html:40
+msgid "Agri-Lens Scan"
+msgstr "एग्री-लेंस स्कैन"
+
+#: .\templates\partials\sidebar_user.html:46
+msgid "Climate Heatmap"
+msgstr "जलवायु हीटमैप"
+
+#: .\templates\partials\sidebar_user.html:50
+msgid "Support & Policy"
+msgstr "समर्थन एवं नीति"
+
+#: .\templates\partials\sidebar_user.html:56
+msgid "Govt Schemes"
+msgstr "सरकारी योजनाएँ"
+
+#: .\templates\registration\password_reset_complete.html:3
+msgid "Password Updated | AgriTech"
+msgstr "पासवर्ड अपडेट किया गया | एग्रीटेक"
+
+#: .\templates\registration\password_reset_complete.html:14
+#: .\templates\registration\password_reset_confirm.html:14
+msgid "Password"
+msgstr "पासवर्ड"
+
+#: .\templates\registration\password_reset_complete.html:14
+msgid "Updated"
+msgstr "अद्यतन"
+
+#: .\templates\registration\password_reset_complete.html:18
+msgid ""
+"Your account security has been successfully updated. You can now log in with"
+" your new credentials."
+msgstr ""
+"आपके खाते की सुरक्षा सफलतापूर्वक अद्यतन कर दी गई है. अब आप अपने नए "
+"क्रेडेंशियल के साथ लॉग इन कर सकते हैं।"
+
+#: .\templates\registration\password_reset_complete.html:22
+msgid "Login Now"
+msgstr "अभी लॉगिन करें"
+
+#: .\templates\registration\password_reset_confirm.html:3
+msgid "New Password | AgriTech"
+msgstr "नया पासवर्ड | एग्रीटेक"
+
+#: .\templates\registration\password_reset_confirm.html:14
+msgid "New"
+msgstr "नया"
+
+#: .\templates\registration\password_reset_confirm.html:17
+msgid "Update your account security"
+msgstr "अपने खाते की सुरक्षा अपडेट करें"
+
+#: .\templates\registration\password_reset_confirm.html:26
+msgid "New Password"
+msgstr "नया पासवर्ड"
+
+#: .\templates\registration\password_reset_confirm.html:31
+msgid "Security Check"
+msgstr "सुरक्षा जाँच"
+
+#: .\templates\registration\password_reset_confirm.html:33
+msgid "8+ Characters"
+msgstr "8+ अक्षर"
+
+#: .\templates\registration\password_reset_confirm.html:34
+msgid "1 Uppercase Letter"
+msgstr "1 बड़ा अक्षर"
+
+#: .\templates\registration\password_reset_confirm.html:40
+msgid "Confirm New Password"
+msgstr "नए पासवर्ड की पुष्टि करें"
+
+#: .\templates\registration\password_reset_confirm.html:46
+msgid "Update Password"
+msgstr "पासवर्ड अपडेट करें"
+
+#: .\templates\registration\password_reset_done.html:3
+msgid "Link Sent | AgriTech"
+msgstr "लिंक भेजा गया | एग्रीटेक"
+
+#: .\templates\registration\password_reset_done.html:14
+msgid "Dispatched"
+msgstr "भेजा गया"
+
+#: .\templates\registration\password_reset_done.html:18
+msgid ""
+"Check your inbox. We have sent a secure link to reset your password to your "
+"registered email address."
+msgstr ""
+"अपने इनबॉक्स की जाँच करें। हमने आपके पंजीकृत ईमेल पते पर आपका पासवर्ड रीसेट "
+"करने के लिए एक सुरक्षित लिंक भेजा है।"
+
+#: .\templates\registration\password_reset_done.html:23
+msgid "Back to Homepage"
+msgstr "मुखपृष्ठ पर वापस"
+
+#: .\templates\registration\password_reset_email.html:9
+msgid "Hello,"
+msgstr "नमस्ते,"
+
+#: .\templates\registration\password_reset_email.html:10
+msgid "We received a request to reset the password for your AgriTech account."
+msgstr "हमें आपके एग्रीटेक खाते का पासवर्ड रीसेट करने का अनुरोध प्राप्त हुआ।"
+
+#: .\templates\registration\password_reset_email.html:14
+msgid "Reset My Password"
+msgstr "अपना पासवर्ड रीसेट करें"
+
+#: .\templates\registration\password_reset_email.html:17
+msgid "If you did not request this, please ignore this email."
+msgstr "यदि आपने इसका अनुरोध नहीं किया है, तो कृपया इस ईमेल को अनदेखा करें।"
+
+#: .\templates\registration\password_reset_form.html:3
+msgid "Account Recovery | AgriTech"
+msgstr "खाता पुनर्प्राप्ति | एग्रीटेक"
+
+#: .\templates\registration\password_reset_form.html:14
+msgid "Reset"
+msgstr "रीसेट करें"
+
+#: .\templates\registration\password_reset_form.html:14
+msgid "Access"
+msgstr "पहुँच"
+
+#: .\templates\registration\password_reset_form.html:17
+msgid "Initialize Secure Account Recovery"
+msgstr "सुरक्षित खाता पुनर्प्राप्ति आरंभ करें"
+
+#: .\templates\registration\password_reset_form.html:25
+msgid "Registered Farmer Email"
+msgstr "पंजीकृत किसान ईमेल"
+
+#: .\templates\registration\password_reset_form.html:35
+msgid "Send Recovery Link"
+msgstr "पुनर्प्राप्ति लिंक भेजें"
+
+#: .\templates\registration\password_reset_form.html:41
+msgid "Return to Login"
+msgstr "लॉगिन पर लौटें"
+
+#: .\templates\registration\password_reset_subject.txt:1
+msgid "AgriTech Security: Reset Your Password"
+msgstr "एग्रीटेक सुरक्षा: अपना पासवर्ड रीसेट करें"
+
+#: .\templates\schemes\scheme_list.html:4
+msgid "Government Schemes | AgriTech"
+msgstr "सरकारी योजनाएं | एग्रीटेक"
+
+#: .\templates\schemes\scheme_list.html:6
+msgid "AGRICULTURAL_POLICY_HUB"
+msgstr "कृषि नीति केंद्र"
+
+#: .\templates\schemes\scheme_list.html:14
+msgid "Welfare"
+msgstr "कल्याण"
+
+#: .\templates\schemes\scheme_list.html:14
+msgid "Schemes"
+msgstr "योजनाओं"
+
+#: .\templates\schemes\scheme_list.html:17
+msgid "Empowering Farmers through Central & State Support"
+msgstr "केंद्र और राज्य सहायता के माध्यम से किसानों को सशक्त बनाना"
+
+#: .\templates\schemes\scheme_list.html:22
+msgid "Search schemes..."
+msgstr "योजनाएं खोजें..."
+
+#: .\templates\schemes\scheme_list.html:46
+msgid "Official Scheme"
+msgstr "आधिकारिक योजना"
+
+#: .\templates\schemes\scheme_list.html:60
+msgid "Eligibility"
+msgstr "पात्रता"
+
+#: .\templates\schemes\scheme_list.html:69
+msgid "Key Benefits"
+msgstr "मुख्य लाभ"
+
+#: .\templates\schemes\scheme_list.html:80
+msgid "Visit Official Portal"
+msgstr "आधिकारिक पोर्टल पर जाएँ"
+
+#: .\templates\schemes\scheme_list.html:91
+msgid "No Schemes Logged"
+msgstr "कोई स्कीम लॉग नहीं की गई"
+
+#: .\templates\schemes\scheme_list.html:92
+msgid "We are currently syncing with the Ministry database."
+msgstr "हम वर्तमान में मंत्रालय डेटाबेस के साथ समन्वयित कर रहे हैं।"
+
+#: .\templates\weather\weather_dashboard.html:4
+msgid "Climate Monitor | AgriTech"
+msgstr "जलवायु मॉनिटर | एग्रीटेक"
+
+#: .\templates\weather\weather_dashboard.html:6
+msgid "ENVIRONMENTAL_SENSORS"
+msgstr "पर्यावरण सेंसर"
+
+#: .\templates\weather\weather_dashboard.html:14
+msgid "Heatmap"
+msgstr "हीटमैप"
+
+#: .\templates\weather\weather_dashboard.html:17
+msgid "Atmospheric data ingestion for optimal irrigation"
+msgstr "इष्टतम सिंचाई के लिए वायुमंडलीय डेटा अंतर्ग्रहण"
+
+#: .\templates\weather\weather_dashboard.html:24
+msgid "Search City..."
+msgstr "शहर खोजें..."
+
+#: .\templates\weather\weather_dashboard.html:44
+msgid "Live Node"
+msgstr "लाइव नोड"
+
+#: .\templates\weather\weather_dashboard.html:52
+msgid "Humidity"
+msgstr "नमी"
+
+#: .\templates\weather\weather_dashboard.html:56
+msgid "Wind"
+msgstr "हवा"
+
+#: .\templates\weather\weather_dashboard.html:66
+msgid "Heat Intensity"
+msgstr "ताप की तीव्रता"
+
+#: .\templates\weather\weather_dashboard.html:79
+msgid "Current temperature is in the"
+msgstr "वर्तमान तापमान है"
+
+#: .\templates\weather\weather_dashboard.html:80
+msgid "Optimal Range"
+msgstr "इष्टतम रेंज"
+
+#: .\templates\weather\weather_dashboard.html:81
+msgid "for photosynthesis."
+msgstr "प्रकाश संश्लेषण के लिए."
+
+#: .\templates\weather\weather_dashboard.html:88
+msgid "Rainfall (1h)"
+msgstr "वर्षा (1 घंटा)"
+
+#: .\templates\weather\weather_dashboard.html:93
+msgid "UV Index"
+msgstr "यूवी सूचकांक"
+
+#: .\templates\weather\weather_dashboard.html:98
+msgid "Visibility"
+msgstr "दृश्यता"
+
+#: .\templates\weather\weather_dashboard.html:103
+msgid "Dew Point"
+msgstr "ओसांक"
+
+#: .\templates\weather\weather_dashboard.html:112
+msgid "Atmospheric Link Failure"
+msgstr "वायुमंडलीय लिंक विफलता"
+
+#: .\templates\weather\weather_dashboard.html:113
+msgid "Check API key or city name."
+msgstr "एपीआई कुंजी या शहर का नाम जांचें।"
+
+#: .\templates\weather\weather_dashboard.html:115
+msgid "Retry Handshake"
+msgstr "पुनः हाथ मिलाने का प्रयास करें"
+
+#: .\venv\Lib\site-packages\django\contrib\messages\apps.py:16
+msgid "Messages"
+msgstr "संदेशों"
+
+#: .\venv\Lib\site-packages\django\contrib\sitemaps\apps.py:8
+msgid "Site Maps"
+msgstr "साइट मानचित्र"
+
+#: .\venv\Lib\site-packages\django\contrib\staticfiles\apps.py:9
+msgid "Static Files"
+msgstr "स्थैतिक फ़ाइलें"
+
+#: .\venv\Lib\site-packages\django\contrib\syndication\apps.py:7
+msgid "Syndication"
+msgstr "सिंडिकेशन"
+
+#. Translators: String used to replace omitted page numbers in elided page
+#. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
+#: .\venv\Lib\site-packages\django\core\paginator.py:30
+msgid "…"
+msgstr "…"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:32
+msgid "That page number is not an integer"
+msgstr "वह पृष्ठ संख्या पूर्णांक नहीं है"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:33
+msgid "That page number is less than 1"
+msgstr "वह पृष्ठ संख्या 1 से कम है"
+
+#: .\venv\Lib\site-packages\django\core\paginator.py:34
+msgid "That page contains no results"
+msgstr "उस पृष्ठ में कोई परिणाम नहीं है"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:22
+msgid "Enter a valid value."
+msgstr "एक मान्य मान दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:70
+msgid "Enter a valid domain name."
+msgstr "एक वैध डोमेन नाम दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:153
+#: .\venv\Lib\site-packages\django\forms\fields.py:775
+msgid "Enter a valid URL."
+msgstr "एक मान्य यूआरएल दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:200
+msgid "Enter a valid integer."
+msgstr "एक वैध पूर्णांक दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:211
+msgid "Enter a valid email address."
+msgstr "एक मान्य ईमेल पता दर्ज करें।"
+
+#. Translators: "letters" means latin letters: a-z and A-Z.
+#: .\venv\Lib\site-packages\django\core\validators.py:289
+msgid ""
+"Enter a valid “slug” consisting of letters, numbers, underscores or hyphens."
+msgstr ""
+"अक्षरों, संख्याओं, अंडरस्कोर या हाइफ़न से युक्त एक वैध \"स्लग\" दर्ज करें।"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:297
+msgid ""
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
+" hyphens."
+msgstr ""
+"यूनिकोड अक्षरों, संख्याओं, अंडरस्कोर या हाइफ़न से युक्त एक वैध \"स्लग\" दर्ज"
+" करें।"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:309
+#: .\venv\Lib\site-packages\django\core\validators.py:318
+#: .\venv\Lib\site-packages\django\core\validators.py:332
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2220
+#, python-format
+msgid "Enter a valid %(protocol)s address."
+msgstr "मान्य %(protocol)s पता दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:311
+msgid "IPv4"
+msgstr "आईपीवीसीएच"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:320
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:43
+msgid "IPv6"
+msgstr "आईपीवीएसएच"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:334
+msgid "IPv4 or IPv6"
+msgstr "आईपीवी4 या आईपीवी6"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:375
+msgid "Enter only digits separated by commas."
+msgstr "केवल अल्पविराम से अलग किए गए अंक दर्ज करें।"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:381
+#, python-format
+msgid "Ensure this value is %(limit_value)s (it is %(show_value)s)."
+msgstr "सुनिश्चित करें कि यह मान %(limit_value)s है (यह %(show_value)s है)।"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:416
+#, python-format
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "सुनिश्चित करें कि यह मान %(limit_value)s से कम या उसके बराबर है।"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:425
+#, python-format
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "सुनिश्चित करें कि यह मान %(limit_value)s से अधिक या उसके बराबर है।"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:434
+#, python-format
+msgid "Ensure this value is a multiple of step size %(limit_value)s."
+msgstr "सुनिश्चित करें कि यह मान चरण आकार %(limit_value)s का गुणज है।"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:441
+#, python-format
+msgid ""
+"Ensure this value is a multiple of step size %(limit_value)s, starting from "
+"%(offset)s, e.g. %(offset)s, %(valid_value1)s, %(valid_value2)s, and so on."
+msgstr ""
+"सुनिश्चित करें कि यह मान चरण आकार %(limit_value)s का गुणज है, जो %(offset)s "
+"से शुरू होता है, उदाहरण के लिए %(offset)s, %(valid_value1)s, "
+"%(valid_value2)s, इत्यादि।"
+
+#: .\venv\Lib\site-packages\django\core\validators.py:473
+#, python-format
+msgid ""
+"Ensure this value has at least %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at least %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:491
+#, python-format
+msgid ""
+"Ensure this value has at most %(limit_value)d character (it has "
+"%(show_value)d)."
+msgid_plural ""
+"Ensure this value has at most %(limit_value)d characters (it has "
+"%(show_value)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:514
+#: .\venv\Lib\site-packages\django\forms\fields.py:366
+#: .\venv\Lib\site-packages\django\forms\fields.py:405
+msgid "Enter a number."
+msgstr "एक नंबर दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:516
+#, python-format
+msgid "Ensure that there are no more than %(max)s digit in total."
+msgid_plural "Ensure that there are no more than %(max)s digits in total."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:521
+#, python-format
+msgid "Ensure that there are no more than %(max)s decimal place."
+msgid_plural "Ensure that there are no more than %(max)s decimal places."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:526
+#, python-format
+msgid ""
+"Ensure that there are no more than %(max)s digit before the decimal point."
+msgid_plural ""
+"Ensure that there are no more than %(max)s digits before the decimal point."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\core\validators.py:597
+#, python-format
+msgid ""
+"File extension “%(extension)s” is not allowed. Allowed extensions are: "
+"%(allowed_extensions)s."
+msgstr ""
+"फ़ाइल एक्सटेंशन \"%(extension)s\" की अनुमति नहीं है। अनुमत एक्सटेंशन हैं: "
+"%(allowed_extensions)s."
+
+#: .\venv\Lib\site-packages\django\core\validators.py:659
+msgid "Null characters are not allowed."
+msgstr "शून्य वर्णों की अनुमति नहीं है."
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1600
+#: .\venv\Lib\site-packages\django\forms\models.py:908
+msgid "and"
+msgstr "और"
+
+#: .\venv\Lib\site-packages\django\db\models\base.py:1602
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(model_name)s इसके साथ %(field_labels)s पहले से मौजूद है।"
+
+#: .\venv\Lib\site-packages\django\db\models\constraints.py:22
+#, python-format
+msgid "Constraint “%(name)s” is violated."
+msgstr "बाधा \"%(name)s\" का उल्लंघन हुआ है।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:134
+#, python-format
+msgid "Value %(value)r is not a valid choice."
+msgstr "मान %(मान)r एक वैध विकल्प नहीं है।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:135
+msgid "This field cannot be null."
+msgstr "यह फ़ील्ड शून्य नहीं हो सकती."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:136
+msgid "This field cannot be blank."
+msgstr "यह क्षेत्र रिक्त नहीं हो सकता।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:137
+#, python-format
+msgid "%(model_name)s with this %(field_label)s already exists."
+msgstr "%(model_name)s इसके साथ %(field_label)s पहले से मौजूद है।"
+
+#. Translators: The 'lookup_type' is one of 'date', 'year' or
+#. 'month'. Eg: "Title must be unique for pub_date year"
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:141
+#, python-format
+msgid ""
+"%(field_label)s must be unique for %(date_field_label)s %(lookup_type)s."
+msgstr ""
+"%(field_label)s %(date_field_label)s %(lookup_type)s के लिए अद्वितीय होना "
+"चाहिए।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:180
+#, python-format
+msgid "Field of type: %(field_type)s"
+msgstr "फ़ील्ड प्रकार: %(field_type)s"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1162
+#, python-format
+msgid "“%(value)s” value must be either True or False."
+msgstr "\"%(value)s\" मान या तो सही या गलत होना चाहिए।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1163
+#, python-format
+msgid "“%(value)s” value must be either True, False, or None."
+msgstr "\"%(value)s\" मान या तो सही, गलत या कुछ नहीं होना चाहिए।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1165
+msgid "Boolean (Either True or False)"
+msgstr "बूलियन (या तो सही या गलत)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1215
+#, python-format
+msgid "String (up to %(max_length)s)"
+msgstr "स्ट्रिंग (_प्लेसहोल्डर_0_ तक)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1217
+msgid "String (unlimited)"
+msgstr "स्ट्रिंग (असीमित)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1326
+msgid "Comma-separated integers"
+msgstr "अल्पविराम से अलग किए गए पूर्णांक"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1427
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid date format. It must be in YYYY-MM-DD "
+"format."
+msgstr ""
+"\"%(value)s\" मान में अमान्य दिनांक प्रारूप है। यह YYYY-MM-DD प्रारूप में "
+"होना चाहिए।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1431
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1566
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD) but it is an invalid "
+"date."
+msgstr ""
+"\"%(value)s\" मान का प्रारूप सही है (YYYY-MM-DD) लेकिन यह एक अमान्य दिनांक "
+"है।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1435
+msgid "Date (without time)"
+msgstr "दिनांक (समय के बिना)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1562
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ] format."
+msgstr ""
+"“%(value)s” मान का प्रारूप अमान्य है. यह YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ] "
+"प्रारूप में होना चाहिए।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1570
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (YYYY-MM-DD "
+"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+msgstr ""
+"\"%(value)s\" मान का प्रारूप सही है (YYYY-MM-DD HH:MM[:ss[.uuuuuu]][TZ]) "
+"लेकिन यह एक अमान्य दिनांक/समय है।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1575
+msgid "Date (with time)"
+msgstr "दिनांक (समय के साथ)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1702
+#, python-format
+msgid "“%(value)s” value must be a decimal number."
+msgstr "“%(value)s” मान एक दशमलव संख्या होनी चाहिए."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1704
+msgid "Decimal number"
+msgstr "दशमलव संख्या"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1864
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in [DD] "
+"[[HH:]MM:]ss[.uuuuuu] format."
+msgstr ""
+"“%(value)s” मान का प्रारूप अमान्य है. यह [DD] [[HH:]MM:]ss[.uuuuuu] प्रारूप "
+"में होना चाहिए।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1868
+msgid "Duration"
+msgstr "अवधि"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1920
+msgid "Email address"
+msgstr "मेल पता"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:1945
+msgid "File path"
+msgstr "दस्तावेज पथ"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2023
+#, python-format
+msgid "“%(value)s” value must be a float."
+msgstr "“%(value)s” मान एक फ़्लोट होना चाहिए."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2025
+msgid "Floating point number"
+msgstr "चल बिन्दु संख्या"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2065
+#, python-format
+msgid "“%(value)s” value must be an integer."
+msgstr "“%(value)s” मान पूर्णांक होना चाहिए."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2067
+msgid "Integer"
+msgstr "पूर्णांक"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2163
+msgid "Big (8 byte) integer"
+msgstr "बड़ा (8 बाइट) पूर्णांक"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2180
+msgid "Small integer"
+msgstr "छोटा पूर्णांक"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2188
+msgid "IPv4 address"
+msgstr "IPv4 पता"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2219
+msgid "IP address"
+msgstr "आईपी ​​पता"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2310
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2311
+#, python-format
+msgid "“%(value)s” value must be either None, True or False."
+msgstr "\"%(value)s\" मान या तो कोई नहीं, सही या गलत होना चाहिए।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2313
+msgid "Boolean (Either True, False or None)"
+msgstr "बूलियन (या तो सत्य, असत्य या कोई नहीं)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2364
+msgid "Positive big integer"
+msgstr "सकारात्मक बड़ा पूर्णांक"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2379
+msgid "Positive integer"
+msgstr "धनात्मक पूर्णांक"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2394
+msgid "Positive small integer"
+msgstr "धनात्मक लघु पूर्णांक"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2410
+#, python-format
+msgid "Slug (up to %(max_length)s)"
+msgstr "स्लग (_प्लेसहोल्डर_0_ तक)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2446
+msgid "Text"
+msgstr "मूलपाठ"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2526
+#, python-format
+msgid ""
+"“%(value)s” value has an invalid format. It must be in HH:MM[:ss[.uuuuuu]] "
+"format."
+msgstr ""
+"“%(value)s” मान का प्रारूप अमान्य है. यह HH:MM[:ss[.uuuuuu]] प्रारूप में "
+"होना चाहिए।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2530
+#, python-format
+msgid ""
+"“%(value)s” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an "
+"invalid time."
+msgstr ""
+"\"%(value)s\" मान का प्रारूप सही है (HH:MM[:ss[.uuuuuu]]) लेकिन यह एक अमान्य"
+" समय है।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2534
+msgid "Time"
+msgstr "समय"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2642
+msgid "URL"
+msgstr "यूआरएल"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2666
+msgid "Raw binary data"
+msgstr "कच्चा बाइनरी डेटा"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2731
+#, python-format
+msgid "“%(value)s” is not a valid UUID."
+msgstr "\"%(value)s\" मान्य UUID नहीं है."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\__init__.py:2733
+msgid "Universally unique identifier"
+msgstr "सार्वभौमिक रूप से अद्वितीय पहचानकर्ता"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:244
+msgid "File"
+msgstr "फ़ाइल"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\files.py:420
+msgid "Image"
+msgstr "छवि"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:24
+msgid "A JSON object"
+msgstr "एक JSON ऑब्जेक्ट"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\json.py:26
+msgid "Value must be valid JSON."
+msgstr "मान मान्य JSON होना चाहिए."
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:979
+#, python-format
+msgid "%(model)s instance with %(field)s %(value)r is not a valid choice."
+msgstr "%(model)s उदाहरण %(field)s %(value)r के साथ एक वैध विकल्प नहीं है।"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:982
+msgid "Foreign Key (type determined by related field)"
+msgstr "विदेशी कुंजी (संबंधित फ़ील्ड द्वारा निर्धारित प्रकार)"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1276
+msgid "One-to-one relationship"
+msgstr "एक-से-एक रिश्ता"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1333
+#, python-format
+msgid "%(from)s-%(to)s relationship"
+msgstr "%(from)s-%(to)s संबंध"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1335
+#, python-format
+msgid "%(from)s-%(to)s relationships"
+msgstr "%(from)s-%(to)s संबंध"
+
+#: .\venv\Lib\site-packages\django\db\models\fields\related.py:1383
+msgid "Many-to-many relationship"
+msgstr "अनेक-से-अनेक संबंध"
+
+#. Translators: If found as last label character, these punctuation
+#. characters will prevent the default label_suffix to be appended to the
+#. label
+#: .\venv\Lib\site-packages\django\forms\boundfield.py:185
+msgid ":?.!"
+msgstr ":?.!"
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:95
+msgid "This field is required."
+msgstr "यह फ़ील्ड आवश्यक है."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:315
+msgid "Enter a whole number."
+msgstr "एक पूर्ण संख्या दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:486
+#: .\venv\Lib\site-packages\django\forms\fields.py:1267
+msgid "Enter a valid date."
+msgstr "एक वैध तिथि दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:509
+#: .\venv\Lib\site-packages\django\forms\fields.py:1268
+msgid "Enter a valid time."
+msgstr "एक वैध समय दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:536
+msgid "Enter a valid date/time."
+msgstr "एक वैध दिनांक/समय दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:570
+msgid "Enter a valid duration."
+msgstr "एक वैध अवधि दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:571
+#, python-brace-format
+msgid "The number of days must be between {min_days} and {max_days}."
+msgstr "दिनों की संख्या {min_days} और {max_days} के बीच होनी चाहिए."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:640
+msgid "No file was submitted. Check the encoding type on the form."
+msgstr ""
+"कोई फ़ाइल प्रस्तुत नहीं की गई. प्रपत्र पर एन्कोडिंग प्रकार की जाँच करें।"
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:641
+msgid "No file was submitted."
+msgstr "कोई फ़ाइल प्रस्तुत नहीं की गई."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:642
+msgid "The submitted file is empty."
+msgstr "सबमिट की गई फ़ाइल खाली है."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:644
+#, python-format
+msgid ""
+"Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid_plural ""
+"Ensure this filename has at most %(max)d characters (it has %(length)d)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:649
+msgid "Please either submit a file or check the clear checkbox, not both."
+msgstr "कृपया या तो फ़ाइल सबमिट करें या स्पष्ट चेकबॉक्स चेक करें, दोनों नहीं।"
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:717
+msgid ""
+"Upload a valid image. The file you uploaded was either not an image or a "
+"corrupted image."
+msgstr ""
+"एक वैध छवि अपलोड करें. आपके द्वारा अपलोड की गई फ़ाइल या तो छवि नहीं थी या "
+"दूषित छवि थी।"
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:889
+#: .\venv\Lib\site-packages\django\forms\fields.py:975
+#: .\venv\Lib\site-packages\django\forms\models.py:1592
+#, python-format
+msgid "Select a valid choice. %(value)s is not one of the available choices."
+msgstr "एक वैध विकल्प चुनें. %(value)s उपलब्ध विकल्पों में से एक नहीं है."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:977
+#: .\venv\Lib\site-packages\django\forms\fields.py:1096
+#: .\venv\Lib\site-packages\django\forms\models.py:1590
+msgid "Enter a list of values."
+msgstr "मानों की एक सूची दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1097
+msgid "Enter a complete value."
+msgstr "पूर्ण मान दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1339
+msgid "Enter a valid UUID."
+msgstr "एक वैध यूयूआईडी दर्ज करें."
+
+#: .\venv\Lib\site-packages\django\forms\fields.py:1369
+msgid "Enter a valid JSON."
+msgstr "एक वैध JSON दर्ज करें."
+
+#. Translators: This is the default suffix added to form field labels
+#: .\venv\Lib\site-packages\django\forms\forms.py:97
+msgid ":"
+msgstr ":"
+
+#: .\venv\Lib\site-packages\django\forms\forms.py:239
+#, python-format
+msgid "(Hidden field %(name)s) %(error)s"
+msgstr "(छिपा हुआ क्षेत्र %(name)s) %(error)s"
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:61
+#, python-format
+msgid ""
+"ManagementForm data is missing or has been tampered with. Missing fields: "
+"%(field_names)s. You may need to file a bug report if the issue persists."
+msgstr ""
+"मैनेजमेंटफॉर्म डेटा गायब है या उसके साथ छेड़छाड़ की गई है। गुम फ़ील्ड: "
+"%(field_names)s. यदि समस्या बनी रहती है तो आपको बग रिपोर्ट दर्ज करने की "
+"आवश्यकता हो सकती है।"
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:65
+#, python-format
+msgid "Please submit at most %(num)d form."
+msgid_plural "Please submit at most %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:70
+#, python-format
+msgid "Please submit at least %(num)d form."
+msgid_plural "Please submit at least %(num)d forms."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:484
+#: .\venv\Lib\site-packages\django\forms\formsets.py:491
+msgid "Order"
+msgstr "आदेश"
+
+#: .\venv\Lib\site-packages\django\forms\formsets.py:499
+msgid "Delete"
+msgstr "मिटाना"
+
+#: .\venv\Lib\site-packages\django\forms\models.py:901
+#, python-format
+msgid "Please correct the duplicate data for %(field)s."
+msgstr "कृपया %(field)s के डुप्लिकेट डेटा को सही करें।"
+
+#: .\venv\Lib\site-packages\django\forms\models.py:906
+#, python-format
+msgid "Please correct the duplicate data for %(field)s, which must be unique."
+msgstr ""
+"कृपया %(field)s के लिए डुप्लिकेट डेटा को सही करें, जो अद्वितीय होना चाहिए।"
+
+#: .\venv\Lib\site-packages\django\forms\models.py:913
+#, python-format
+msgid ""
+"Please correct the duplicate data for %(field_name)s which must be unique "
+"for the %(lookup)s in %(date_field)s."
+msgstr ""
+"कृपया %(field_name)s के लिए डुप्लिकेट डेटा को सही करें जो %(date_field)s में"
+" %(lookup)s के लिए अद्वितीय होना चाहिए।"
+
+#: .\venv\Lib\site-packages\django\forms\models.py:922
+msgid "Please correct the duplicate values below."
+msgstr "कृपया नीचे डुप्लिकेट मानों को ठीक करें।"
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1359
+msgid "The inline value did not match the parent instance."
+msgstr "इनलाइन मान मूल उदाहरण से मेल नहीं खाता।"
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1450
+msgid ""
+"Select a valid choice. That choice is not one of the available choices."
+msgstr "एक वैध विकल्प चुनें. वह विकल्प उपलब्ध विकल्पों में से एक नहीं है।"
+
+#: .\venv\Lib\site-packages\django\forms\models.py:1594
+#, python-format
+msgid "“%(pk)s” is not a valid value."
+msgstr "\"%(pk)s\" मान्य मान नहीं है."
+
+#: .\venv\Lib\site-packages\django\forms\utils.py:229
+#, python-format
+msgid ""
+"%(datetime)s couldn’t be interpreted in time zone %(current_timezone)s; it "
+"may be ambiguous or it may not exist."
+msgstr ""
+"%(datetime)s की व्याख्या समय क्षेत्र %(current_timezone)s में नहीं की जा "
+"सकी; यह अस्पष्ट हो सकता है या इसका अस्तित्व ही नहीं हो सकता है।"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:527
+msgid "Clear"
+msgstr "स्पष्ट"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:528
+msgid "Currently"
+msgstr "वर्तमान में"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:529
+msgid "Change"
+msgstr "परिवर्तन"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:866
+msgid "Unknown"
+msgstr "अज्ञात"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:867
+msgid "Yes"
+msgstr "हाँ"
+
+#: .\venv\Lib\site-packages\django\forms\widgets.py:868
+msgid "No"
+msgstr "नहीं"
+
+#. Translators: Please do not add spaces around commas.
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:873
+msgid "yes,no,maybe"
+msgstr "हाँ, नहीं, शायद"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:903
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:920
+#, python-format
+msgid "%(size)d byte"
+msgid_plural "%(size)d bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:922
+#, python-format
+msgid "%s KB"
+msgstr "%s KB"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:924
+#, python-format
+msgid "%s MB"
+msgstr "%s एमबी"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:926
+#, python-format
+msgid "%s GB"
+msgstr "%s जीबी"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:928
+#, python-format
+msgid "%s TB"
+msgstr "%s टीबी"
+
+#: .\venv\Lib\site-packages\django\template\defaultfilters.py:930
+#, python-format
+msgid "%s PB"
+msgstr "%s पीबी"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:74
+msgid "p.m."
+msgstr "अपराह्न"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:75
+msgid "a.m."
+msgstr "पूर्वाह्न।"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:80
+msgid "PM"
+msgstr "बजे"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:81
+msgid "AM"
+msgstr "पूर्वाह्न"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:153
+msgid "midnight"
+msgstr "मध्यरात्रि"
+
+#: .\venv\Lib\site-packages\django\utils\dateformat.py:155
+msgid "noon"
+msgstr "दोपहर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:7
+msgid "Monday"
+msgstr "सोमवार"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:8
+msgid "Tuesday"
+msgstr "मंगलवार"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:9
+msgid "Wednesday"
+msgstr "बुधवार"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:10
+msgid "Thursday"
+msgstr "गुरुवार"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:11
+msgid "Friday"
+msgstr "शुक्रवार"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:12
+msgid "Saturday"
+msgstr "शनिवार"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:13
+msgid "Sunday"
+msgstr "रविवार"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:16
+msgid "Mon"
+msgstr "मेरा"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:17
+msgid "Tue"
+msgstr "मंगल"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:18
+msgid "Wed"
+msgstr "बुध"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:19
+msgid "Thu"
+msgstr "इकट्ठा करना"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:20
+msgid "Fri"
+msgstr "शुक्र"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:21
+msgid "Sat"
+msgstr "बैठा"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:22
+msgid "Sun"
+msgstr "सूरज"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:25
+msgid "January"
+msgstr "जनवरी"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:26
+msgid "February"
+msgstr "फ़रवरी"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:27
+msgid "March"
+msgstr "मार्च"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:28
+msgid "April"
+msgstr "अप्रैल"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:29
+msgid "May"
+msgstr "मई"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:30
+msgid "June"
+msgstr "जून"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:31
+msgid "July"
+msgstr "जुलाई"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:32
+msgid "August"
+msgstr "अगस्त"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:33
+msgid "September"
+msgstr "सितम्बर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:34
+msgid "October"
+msgstr "अक्टूबर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:35
+msgid "November"
+msgstr "नवंबर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:36
+msgid "December"
+msgstr "दिसंबर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:39
+msgid "jan"
+msgstr "जनवरी"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:40
+msgid "feb"
+msgstr "फ़रवरी"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:41
+msgid "mar"
+msgstr "मार्च"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:42
+msgid "apr"
+msgstr "अप्रैल"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:43
+msgid "may"
+msgstr "मई"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:44
+msgid "jun"
+msgstr "जून"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:45
+msgid "jul"
+msgstr "जुलाई"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:46
+msgid "aug"
+msgstr "अगस्त"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:47
+msgid "sep"
+msgstr "सितम्बर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:48
+msgid "oct"
+msgstr "अक्टूबर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:49
+msgid "nov"
+msgstr "नवंबर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:50
+msgid "dec"
+msgstr "दिसम्बर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:53
+msgctxt "abbrev. month"
+msgid "Jan."
+msgstr "जनवरी।"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:54
+msgctxt "abbrev. month"
+msgid "Feb."
+msgstr "फ़रवरी।"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:55
+msgctxt "abbrev. month"
+msgid "March"
+msgstr "मार्च"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:56
+msgctxt "abbrev. month"
+msgid "April"
+msgstr "अप्रैल"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:57
+msgctxt "abbrev. month"
+msgid "May"
+msgstr "मई"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:58
+msgctxt "abbrev. month"
+msgid "June"
+msgstr "जून"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:59
+msgctxt "abbrev. month"
+msgid "July"
+msgstr "जुलाई"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:60
+msgctxt "abbrev. month"
+msgid "Aug."
+msgstr "अगस्त"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:61
+msgctxt "abbrev. month"
+msgid "Sept."
+msgstr "सितम्बर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:62
+msgctxt "abbrev. month"
+msgid "Oct."
+msgstr "अक्टूबर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:63
+msgctxt "abbrev. month"
+msgid "Nov."
+msgstr "नवम्बर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:64
+msgctxt "abbrev. month"
+msgid "Dec."
+msgstr "दिसम्बर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:67
+msgctxt "alt. month"
+msgid "January"
+msgstr "जनवरी"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:68
+msgctxt "alt. month"
+msgid "February"
+msgstr "फ़रवरी"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:69
+msgctxt "alt. month"
+msgid "March"
+msgstr "मार्च"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:70
+msgctxt "alt. month"
+msgid "April"
+msgstr "अप्रैल"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:71
+msgctxt "alt. month"
+msgid "May"
+msgstr "मई"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:72
+msgctxt "alt. month"
+msgid "June"
+msgstr "जून"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:73
+msgctxt "alt. month"
+msgid "July"
+msgstr "जुलाई"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:74
+msgctxt "alt. month"
+msgid "August"
+msgstr "अगस्त"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:75
+msgctxt "alt. month"
+msgid "September"
+msgstr "सितम्बर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:76
+msgctxt "alt. month"
+msgid "October"
+msgstr "अक्टूबर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:77
+msgctxt "alt. month"
+msgid "November"
+msgstr "नवंबर"
+
+#: .\venv\Lib\site-packages\django\utils\dates.py:78
+msgctxt "alt. month"
+msgid "December"
+msgstr "दिसंबर"
+
+#: .\venv\Lib\site-packages\django\utils\ipv6.py:20
+msgid "This is not a valid IPv6 address."
+msgstr "यह वैध IPv6 पता नहीं है."
+
+#: .\venv\Lib\site-packages\django\utils\text.py:76
+#, python-format
+msgctxt "String to return when truncating text"
+msgid "%(truncated_text)s…"
+msgstr "__प्लेसहोल्डर_0__…"
+
+#: .\venv\Lib\site-packages\django\utils\text.py:288
+msgid "or"
+msgstr "या"
+
+#. Translators: This string is used as a separator between list elements
+#: .\venv\Lib\site-packages\django\utils\text.py:307
+#: .\venv\Lib\site-packages\django\utils\timesince.py:135
+msgid ", "
+msgstr ","
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:8
+#, python-format
+msgid "%(num)d year"
+msgid_plural "%(num)d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:9
+#, python-format
+msgid "%(num)d month"
+msgid_plural "%(num)d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:10
+#, python-format
+msgid "%(num)d week"
+msgid_plural "%(num)d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:11
+#, python-format
+msgid "%(num)d day"
+msgid_plural "%(num)d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:12
+#, python-format
+msgid "%(num)d hour"
+msgid_plural "%(num)d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\utils\timesince.py:13
+#, python-format
+msgid "%(num)d minute"
+msgid_plural "%(num)d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:29
+msgid "Forbidden"
+msgstr "निषिद्ध"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:30
+msgid "CSRF verification failed. Request aborted."
+msgstr "सीएसआरएफ सत्यापन विफल रहा. अनुरोध निरस्त किया गया."
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:34
+msgid ""
+"You are seeing this message because this HTTPS site requires a “Referer "
+"header” to be sent by your web browser, but none was sent. This header is "
+"required for security reasons, to ensure that your browser is not being "
+"hijacked by third parties."
+msgstr ""
+"आप यह संदेश इसलिए देख रहे हैं क्योंकि इस HTTPS साइट को आपके वेब ब्राउज़र "
+"द्वारा भेजे जाने वाले \"रेफ़रर हेडर\" की आवश्यकता होती है, लेकिन कोई भी नहीं"
+" भेजा गया था। यह हेडर सुरक्षा कारणों से आवश्यक है, ताकि यह सुनिश्चित किया जा"
+" सके कि आपका ब्राउज़र तीसरे पक्षों द्वारा हाईजैक नहीं किया जा रहा है।"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:40
+msgid ""
+"If you have configured your browser to disable “Referer” headers, please re-"
+"enable them, at least for this site, or for HTTPS connections, or for “same-"
+"origin” requests."
+msgstr ""
+"यदि आपने अपने ब्राउज़र को \"रेफ़रर\" हेडर को अक्षम करने के लिए कॉन्फ़िगर "
+"किया है, तो कृपया उन्हें कम से कम इस साइट के लिए, या HTTPS कनेक्शन के लिए, "
+"या \"समान-मूल\" अनुरोधों के लिए पुनः सक्षम करें।"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:45
+msgid ""
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
+" including the “Referrer-Policy: no-referrer” header, please remove them. "
+"The CSRF protection requires the “Referer” header to do strict referer "
+"checking. If you’re concerned about privacy, use alternatives like <a "
+"rel=\"noreferrer\" …> for links to third-party sites."
+msgstr ""
+"यदि आप <meta name='referrer' content='no-referrer'> टैग का उपयोग कर रहे हैं "
+"या इसमें “Referrer-Policy: no-referrer” हेडर शामिल है, तो कृपया उन्हें हटा "
+"दें। सीएसआरएफ सुरक्षा के लिए सख्त रेफरर जांच करने के लिए \"रेफरर\" हेडर की "
+"आवश्यकता होती है। यदि आप गोपनीयता के बारे में चिंतित हैं, तो तृतीय-पक्ष "
+"साइटों के लिंक के लिए <a rel='noreferrer'...> जैसे विकल्पों का उपयोग करें।"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:54
+msgid ""
+"You are seeing this message because this site requires a CSRF cookie when "
+"submitting forms. This cookie is required for security reasons, to ensure "
+"that your browser is not being hijacked by third parties."
+msgstr ""
+"आप यह संदेश इसलिए देख रहे हैं क्योंकि फ़ॉर्म सबमिट करते समय इस साइट को CSRF "
+"कुकी की आवश्यकता होती है। यह कुकी सुरक्षा कारणों से आवश्यक है, ताकि यह "
+"सुनिश्चित किया जा सके कि आपका ब्राउज़र तीसरे पक्ष द्वारा हाईजैक नहीं किया जा"
+" रहा है।"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:60
+msgid ""
+"If you have configured your browser to disable cookies, please re-enable "
+"them, at least for this site, or for “same-origin” requests."
+msgstr ""
+"यदि आपने अपने ब्राउज़र को कुकीज़ को अक्षम करने के लिए कॉन्फ़िगर किया है, तो "
+"कृपया उन्हें कम से कम इस साइट के लिए, या \"समान-मूल\" अनुरोधों के लिए पुनः "
+"सक्षम करें।"
+
+#: .\venv\Lib\site-packages\django\views\csrf.py:66
+msgid "More information is available with DEBUG=True."
+msgstr "अधिक जानकारी DEBUG=True के साथ उपलब्ध है।"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:44
+msgid "No year specified"
+msgstr "कोई वर्ष निर्दिष्ट नहीं"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:64
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:115
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:214
+msgid "Date out of range"
+msgstr "तिथि सीमा से बाहर है"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:94
+msgid "No month specified"
+msgstr "कोई माह निर्दिष्ट नहीं"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:147
+msgid "No day specified"
+msgstr "कोई दिन निर्दिष्ट नहीं"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:194
+msgid "No week specified"
+msgstr "कोई सप्ताह निर्दिष्ट नहीं"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:353
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:384
+#, python-format
+msgid "No %(verbose_name_plural)s available"
+msgstr "कोई %(verbose_name_plural)s उपलब्ध नहीं"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:680
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because "
+"%(class_name)s.allow_future is False."
+msgstr ""
+"भविष्य %(verbose_name_plural)s उपलब्ध नहीं है क्योंकि "
+"%(class_name)s.allow_future ग़लत है।"
+
+#: .\venv\Lib\site-packages\django\views\generic\dates.py:720
+#, python-format
+msgid "Invalid date string “%(datestr)s” given format “%(format)s”"
+msgstr "अमान्य दिनांक स्ट्रिंग \"%(datestr)s\" दिया गया प्रारूप \"%(format)s\""
+
+#: .\venv\Lib\site-packages\django\views\generic\detail.py:56
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "क्वेरी से मेल खाता कोई %(verbose_name)s नहीं मिला"
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:70
+msgid "Page is not “last”, nor can it be converted to an int."
+msgstr "पेज \"अंतिम\" नहीं है, न ही इसे इंट में बदला जा सकता है।"
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:77
+#, python-format
+msgid "Invalid page (%(page_number)s): %(message)s"
+msgstr "अमान्य पृष्ठ (%(page_number)s): %(message)s"
+
+#: .\venv\Lib\site-packages\django\views\generic\list.py:173
+#, python-format
+msgid "Empty list and “%(class_name)s.allow_empty” is False."
+msgstr "खाली सूची और \"%(class_name)s.allow_empty\" गलत है।"
+
+#: .\venv\Lib\site-packages\django\views\static.py:49
+msgid "Directory indexes are not allowed here."
+msgstr "यहां निर्देशिका अनुक्रमणिका की अनुमति नहीं है."
+
+#: .\venv\Lib\site-packages\django\views\static.py:51
+#, python-format
+msgid "“%(path)s” does not exist"
+msgstr "“%(path)s” मौजूद नहीं है"
+
+#: .\venv\Lib\site-packages\django\views\static.py:68
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:8
+#: .\venv\Lib\site-packages\django\views\templates\directory_index.html:11
+#, python-format
+msgid "Index of %(directory)s"
+msgstr "%(directory)s का सूचकांक"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:7
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:204
+msgid "The install worked successfully! Congratulations!"
+msgstr "इंस्टालेशन सफलतापूर्वक काम किया! बधाई हो!"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:206
+#, python-format
+msgid ""
+"View <a href=\"https://docs.djangoproject.com/en/%(version)s/releases/\" "
+"target=\"_blank\" rel=\"noopener\">release notes</a> for Django %(version)s"
+msgstr ""
+"Django %(version)s के लिए <a "
+"href='https://docs.djangoproject.com/en/%(version)s/releases/' "
+"target='_blank' rel='noopener'>रिलीज़ नोट</a> देखें"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:208
+#, python-format
+msgid ""
+"You are seeing this page because <a "
+"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
+"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
+"and you have not configured any URLs."
+msgstr ""
+"आप यह पृष्ठ इसलिए देख रहे हैं क्योंकि <a "
+"href='https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug' "
+"target='_blank' rel='noopener'>DEBUG=True</a> आपकी सेटिंग फ़ाइल में है और "
+"आपने कोई URL कॉन्फ़िगर नहीं किया है।"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:217
+msgid "Django Documentation"
+msgstr "Django दस्तावेज़ीकरण"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:218
+msgid "Topics, references, &amp; how-to’s"
+msgstr "विषय, संदर्भ और कैसे करें"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:226
+msgid "Tutorial: A Polling App"
+msgstr "ट्यूटोरियल: एक मतदान ऐप"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:227
+msgid "Get started with Django"
+msgstr "Django से शुरुआत करें"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:235
+msgid "Django Community"
+msgstr "जैंगो समुदाय"
+
+#: .\venv\Lib\site-packages\django\views\templates\default_urlconf.html:236
+msgid "Connect, get help, or contribute"
+msgstr "जुड़ें, सहायता प्राप्त करें, या योगदान करें"

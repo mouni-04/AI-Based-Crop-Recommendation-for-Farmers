@@ -1,0 +1,167 @@
+{% extends 'base2.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Climate Monitor | AgriTech" %}{% endblock %}
+
+{% block page_title %}{% trans "ENVIRONMENTAL_SENSORS" %}{% endblock %}
+
+{% block content %}
+<div class="animate-in fade-in duration-700 space-y-8">
+    
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+            <h2 class="text-3xl font-black text-green-900 uppercase tracking-tight">
+                {% translate "Climate" %} <span class="text-green-600">{% translate "Heatmap" %}</span>
+            </h2>
+            <p class="text-gray-400 text-[10px] font-bold uppercase tracking-[0.3em]">
+                {% translate "Atmospheric data ingestion for optimal irrigation" %}
+            </p>
+        </div>
+        <p id="location-status" class="text-[10px] font-bold uppercase text-green-700 tracking-widest">
+            Detecting location…
+        </p>
+        <form method="GET" class="relative group w-full md:w-auto">
+            <input type="text" name="city" placeholder="{% translate 'Search City...' %}" 
+                   class="w-full md:w-64 pl-12 pr-6 py-3 bg-white border border-green-100 rounded-2xl focus:border-green-500 focus:ring-4 focus:ring-green-500/5 outline-none font-bold text-green-900 transition-all shadow-sm">
+            <i class="fa-solid fa-location-dot absolute left-5 top-4 text-green-600"></i>
+            <button type="submit" class="hidden"></button>
+        </form>
+        <button onclick="navigator.geolocation.getCurrentPosition(() => location.reload())"
+            class="ml-3 text-[10px] font-black uppercase text-green-700 hover:underline">
+            Re-detect Location
+        </button>
+
+    </div>
+
+    {% if weather %}
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 bg-gradient-to-br from-green-700 to-green-900 rounded-[3.5rem] p-10 md:p-14 text-white shadow-2xl relative overflow-hidden group">
+            <i class="fa-solid fa-cloud-sun-rain absolute -right-10 -bottom-10 text-[20rem] opacity-5 group-hover:scale-110 transition-transform duration-1000"></i>
+            
+            <div class="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center">
+                <div>
+                    <span class="px-4 py-1.5 bg-white/10 rounded-full text-[9px] font-black uppercase tracking-[0.2em] border border-white/10 mb-6 inline-block">
+                        {% translate "Live Node" %}: {{ weather.city }}
+                    </span>
+                    <h3 class="text-7xl font-black mb-2 tracking-tighter">{{ weather.temp }}°<span class="text-3xl text-green-400">C</span></h3>
+                    <p class="text-xl font-bold text-green-200 uppercase tracking-widest">{{ weather.description }}</p>
+                </div>
+                
+                <div class="mt-10 md:mt-0 bg-white/5 backdrop-blur-xl p-8 rounded-[2.5rem] border border-white/10 grid grid-cols-2 gap-8 shadow-inner">
+                    <div class="text-center">
+                        <p class="text-[9px] font-black text-green-300 uppercase tracking-widest mb-1">{% translate "Humidity" %}</p>
+                        <p class="text-2xl font-black">{{ weather.humidity }}%</p>
+                    </div>
+                    <div class="text-center border-l border-white/10 pl-8">
+                        <p class="text-[9px] font-black text-green-300 uppercase tracking-widest mb-1">{% translate "Wind" %}</p>
+                        <p class="text-2xl font-black">{{ weather.wind }} <span class="text-[10px]">km/h</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-[3.5rem] p-10 shadow-xl border border-green-50 flex flex-col justify-between">
+            <div>
+                <h4 class="text-xs font-black text-green-900 uppercase tracking-widest mb-8 flex items-center gap-2">
+                    <i class="fa-solid fa-temperature-half text-green-600"></i> {% translate "Heat Intensity" %}
+                </h4>
+                
+                <div class="relative h-64 w-full bg-gray-100 rounded-3xl overflow-hidden shadow-inner border border-gray-50">
+                    <div class="absolute inset-0 bg-gradient-to-t from-green-400 via-yellow-400 to-red-500 opacity-20"></div>
+                    <div class="absolute bottom-0 w-full bg-green-600 transition-all duration-1000 ease-out flex items-center justify-center font-black text-[10px] text-white"
+                         style="height: {{ heatmap_intensity }}%;">
+                         {{ weather.temp }}°C
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-[10px] text-gray-400 font-bold uppercase mt-8 leading-relaxed">
+                {% translate "Current temperature is in the" %} 
+                <span class="text-green-700 font-black italic">{% translate "Optimal Range" %}</span> 
+                {% translate "for photosynthesis." %}
+            </p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-[2.5rem] border border-green-50 shadow-sm text-center">
+            <p class="text-[9px] font-black text-gray-400 uppercase mb-3">{% translate "Rainfall (1h)" %}</p>
+            <i class="fa-solid fa-droplet text-green-600 text-xl mb-2"></i>
+            <p class="text-lg font-black text-green-900">{{ weather.rainfall }} mm</p>
+        </div>
+        <div class="bg-white p-6 rounded-[2.5rem] border border-green-50 shadow-sm text-center">
+            <p class="text-[9px] font-black text-gray-400 uppercase mb-3">{% translate "UV Index" %}</p>
+            <i class="fa-solid fa-sun text-yellow-500 text-xl mb-2"></i>
+            <p class="text-lg font-black text-green-900">Moderate</p>
+        </div>
+        <div class="bg-white p-6 rounded-[2.5rem] border border-green-50 shadow-sm text-center">
+            <p class="text-[9px] font-black text-gray-400 uppercase mb-3">{% translate "Visibility" %}</p>
+            <i class="fa-solid fa-eye text-blue-500 text-xl mb-2"></i>
+            <p class="text-lg font-black text-green-900">10 km</p>
+        </div>
+        <div class="bg-white p-6 rounded-[2.5rem] border border-green-50 shadow-sm text-center">
+            <p class="text-[9px] font-black text-gray-400 uppercase mb-3">{% translate "Dew Point" %}</p>
+            <i class="fa-solid fa-temperature-arrow-down text-emerald-500 text-xl mb-2"></i>
+            <p class="text-lg font-black text-green-900">18°C</p>
+        </div>
+    </div>
+
+    {% else %}
+    <div class="p-20 bg-white rounded-[3rem] text-center border-2 border-dashed border-green-100">
+        <i class="fa-solid fa-cloud-bolt text-5xl text-gray-200 mb-6"></i>
+        <h3 class="text-xl font-bold text-gray-800 uppercase tracking-widest">{% translate "Atmospheric Link Failure" %}</h3>
+        <p class="text-xs text-gray-400 font-bold uppercase mt-2">{% translate "Check API key or city name." %}</p>
+        <a href="." class="inline-block mt-8 bg-green-700 text-white px-8 py-3 rounded-2xl font-black text-[10px] uppercase tracking-widest active:scale-95 transition-all">
+            {% translate "Retry Handshake" %}
+        </a>
+    </div>
+    {% endif %}
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const statusEl = document.getElementById("location-status");
+    const params = new URLSearchParams(window.location.search);
+
+    function requestLocation(force = false) {
+        if (!("geolocation" in navigator)) {
+            statusEl.innerText = "Location not supported. Using default city.";
+            return;
+        }
+
+        if (!force && (params.has("lat") && params.has("lon"))) {
+            statusEl.innerText = "Using detected farm location.";
+            return;
+        }
+
+        statusEl.innerText = "Detecting location…";
+
+        navigator.geolocation.getCurrentPosition(
+            function (position) {
+                const lat = position.coords.latitude;
+                const lon = position.coords.longitude;
+
+                const url = new URL(window.location.href);
+                url.searchParams.set("lat", lat);
+                url.searchParams.set("lon", lon);
+                url.searchParams.delete("city");
+
+                window.location.replace(url.toString());
+            },
+            function () {
+                statusEl.innerText = "Location denied. Using default city.";
+            },
+            {
+                enableHighAccuracy: true,
+                timeout: 8000
+            }
+        );
+    }
+
+    requestLocation();
+});
+</script>
+
+
+{% endblock %}

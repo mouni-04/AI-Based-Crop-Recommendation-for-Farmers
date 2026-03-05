@@ -1,0 +1,14 @@
+{% extends user.is_authenticated|yesno:"base2.html,base1.html" %}
+{% load i18n %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        {# For base2.html (Authenticated Sidebar Layout) #}
+        {% include "partials/chatbot_body.html" with base_template="base2.html" %}
+    {% else %}
+        {# For base1.html (Public Layout) #}
+        <div class="pt-20"> {# Add padding for fixed navbar in base1 #}
+            {% include "partials/chatbot_body.html" with base_template="base1.html" %}
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,95 @@
+{% extends 'base2.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Recommendation Result | AgriTech" %}{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto animate-in zoom-in-95 duration-700">
+    
+    <div class="text-center mb-12">
+        <h1 class="text-xl font-black text-green-800 tracking-[0.4em] uppercase mb-2">Agri<span class="text-green-500">Tech</span></h1>
+        <div class="h-1 w-20 bg-green-500 mx-auto rounded-full"></div>
+    </div>
+
+    <div id="print-section" class="bg-white rounded-[3.5rem] shadow-2xl border border-green-50 overflow-hidden">
+        <div class="bg-green-700 p-10 text-center text-white relative">
+            <i class="fa-solid fa-seedling text-6xl opacity-20 absolute left-10 top-10"></i>
+            <p class="text-[11px] font-black uppercase tracking-[0.3em] mb-4 text-green-200">{% translate "AI Analysis Complete" %}</p>
+            <h2 class="text-5xl font-black tracking-tight mb-2 uppercase">{{ result }}</h2>
+            <p class="text-green-100 font-medium italic">{% translate "Is the most suitable crop for your soil conditions" %}</p>
+        </div>
+
+        <div class="p-10 md:p-16 space-y-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-green-50 rounded-2xl text-center">
+                    <p class="text-[9px] font-black text-gray-400 uppercase">Nitrogen</p>
+                    <p class="text-lg font-bold text-green-900">{{ n|default:"--" }}</p>
+                </div>
+                <div class="p-4 bg-green-50 rounded-2xl text-center">
+                    <p class="text-[9px] font-black text-gray-400 uppercase">Phosphorus</p>
+                    <p class="text-lg font-bold text-green-900">{{ p|default:"--" }}</p>
+                </div>
+                <div class="p-4 bg-green-50 rounded-2xl text-center">
+                    <p class="text-[9px] font-black text-gray-400 uppercase">Potassium</p>
+                    <p class="text-lg font-bold text-green-900">{{ k|default:"--" }}</p>
+                </div>
+                <div class="p-4 bg-green-50 rounded-2xl text-center">
+                    <p class="text-[9px] font-black text-gray-400 uppercase">Soil pH</p>
+                    <p class="text-lg font-bold text-green-900">{{ ph|default:"--" }}</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-[2.5rem] border border-gray-100">
+                <h4 class="text-xs font-black text-green-800 uppercase tracking-widest mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-lightbulb"></i> {% translate "Cultivation Guidance" %}
+                </h4>
+                <p class="text-sm text-gray-600 leading-relaxed font-medium">
+                    {{ guidance|default:"Based on current soil metrics, ensure adequate irrigation during the early growth phase and monitor nitrogen levels weekly." }}
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 pt-6">
+                <button onclick="window.print()" class="btn-glow flex-1 text-white py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-[10px] shadow-lg flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-file-pdf"></i> {% translate "Download Analysis Report" %}
+                </button>
+                <a href="{% url 'ml:crop_recommend' %}" class="px-10 py-5 bg-gray-100 text-gray-500 rounded-2xl text-[10px] font-black uppercase tracking-[0.2em] text-center hover:bg-gray-200 transition-colors">
+                    {% translate "New Analysis" %}
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-red-50 p-6 text-center border-t border-red-100">
+            <p class="text-[9px] font-bold text-red-800 uppercase tracking-widest leading-relaxed">
+                <i class="fa-solid fa-triangle-exclamation mr-1"></i> 
+                {% translate "Caution: This is an AI-generated prediction based on Machine Learning models. Please cross-verify with local agricultural experts before making financial investments." %}
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+    @media print {
+    
+        body * {
+            visibility: hidden;
+        }
+    
+        #print-section, #print-section * {
+            visibility: visible;
+        }
+    
+        #print-section {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+    
+        button, a {
+            display: none !important;
+        }
+    
+    }
+    </style>
+    
+{% endblock %}

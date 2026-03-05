@@ -1,0 +1,54 @@
+{% extends base_template %}
+{% load i18n %}
+{% block title %}{% trans "Verify Identity | AgriTech" %}{% endblock %}
+
+{% block content %}
+<div class="flex items-center justify-center py-24 px-4 agri-bg">
+    <div class="max-w-md w-full bg-white/80 backdrop-blur-xl p-10 rounded-[3rem] border border-green-100 shadow-[0_20px_50px_rgba(46,125,50,0.1)] hover:shadow-[0_0_30px_rgba(0,255,65,0.2)] transition-shadow duration-500 text-center">
+        
+        <div class="w-20 h-20 bg-green-50 border-2 border-green-500 rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-[0_0_15px_rgba(46,125,50,0.1)]">
+            <i class="fa-solid fa-envelope-open-text text-3xl text-green-700 animate-bounce"></i>
+        </div>
+
+        <h2 class="text-3xl font-black text-green-900 mb-2 tracking-tight">
+            {% trans "Verify" %} <span class="text-green-600">{% trans "Identity" %}</span>
+        </h2>
+        <p class="text-[11px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-10">
+            {% trans "Check your email for the 6-digit secure access code" %}
+        </p>
+
+        <form method="POST" class="space-y-8">
+            {% csrf_token %}
+            <div class="relative group">
+                <input name="otp" maxlength="6" required placeholder="000000"
+                       class="w-full text-center text-5xl tracking-[0.4em] py-6 bg-gray-50/50 border border-gray-200 rounded-2xl focus:border-green-500/50 focus:ring-4 focus:ring-green-500/5 outline-none font-black text-green-900 placeholder-gray-200 transition-all">
+            </div>
+
+            <button type="submit" class="btn-glow w-full text-white font-black py-4 rounded-2xl uppercase tracking-[0.3em] text-[11px] active:scale-95 transition-all">
+                <i class="fa-solid fa-shield-check mr-2"></i> {% trans "Activate Profile" %}
+            </button>
+        </form>
+
+        <div class="mt-8 pt-6 border-t border-green-50">
+            <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest leading-relaxed">
+                {% trans "Didn't receive the code?" %} 
+                <a href="#" class="text-green-700 hover:underline block mt-2">{% trans "Resend Transmitted Code" %}</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Styling for the large OTP input digits */
+    input[name="otp"]::placeholder {
+        color: #E8F5E9;
+    }
+
+    /* Agri Background Pattern */
+    .agri-bg {
+        background-color: #F1F8E9;
+        background-image: radial-gradient(circle at 2px 2px, rgba(46, 125, 50, 0.05) 1px, transparent 0);
+        background-size: 30px 30px;
+    }
+</style>
+{% endblock %}

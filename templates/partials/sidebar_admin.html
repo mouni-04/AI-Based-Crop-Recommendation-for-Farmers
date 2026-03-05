@@ -1,0 +1,35 @@
+{% load i18n %}
+
+<p class="nav-header text-[9px] font-black text-gray-400 uppercase tracking-[0.2em] ml-2 mb-3">
+    {% translate "Core Operations" %}
+</p>
+
+<a href="{% url 'admin_dashboard' %}" 
+   class="nav-item flex items-center gap-3 p-3.5 rounded-2xl text-gray-600 hover:bg-green-50 transition-all font-bold text-xs {% if request.resolver_match.url_name == 'admin_dashboard' %}active-link{% endif %}">
+    <i class="fa-solid fa-gauge-high text-lg"></i> 
+    <span class="nav-text">{% translate "Command Center" %}</span>
+</a>
+
+<a href="{% url 'accounts:user_directory' %}" 
+   class="nav-item flex items-center gap-3 p-3.5 rounded-2xl text-gray-600 hover:bg-green-50 transition-all font-bold text-xs {% if request.resolver_match.url_name == 'user_directory' %}active-link{% endif %}">
+    <i class="fa-solid fa-users text-lg"></i> 
+    <span class="nav-text">{% translate "Farmer Nodes" %}</span>
+</a>
+
+<a href="{% url 'schemes:bulk_upload' %}" 
+   class="nav-item flex items-center gap-3 p-3.5 rounded-2xl text-gray-600 hover:bg-green-50 transition-all font-bold text-xs {% if request.resolver_match.url_name == 'bulk_upload' %}active-link{% endif %}">
+    <i class="fa-solid fa-file-import text-lg"></i> 
+    <span class="nav-text">{% translate "Scheme Bulk Upload" %}</span>
+</a>
+
+<a href="{% url 'admin_chat_logs' %}" 
+   class="nav-item flex items-center gap-3 p-3.5 rounded-2xl text-gray-600 hover:bg-green-50 transition-all font-bold text-xs {% if request.resolver_match.url_name == 'admin_chat_logs' %}active-link{% endif %}">
+    <i class="fa-solid fa-comment-dots text-lg"></i> 
+    <span class="nav-text">{% translate "AI Chat Logs" %}</span>
+</a>
+
+<a href="/admin/" 
+   class="nav-item flex items-center gap-3 p-3.5 rounded-2xl text-gray-600 hover:bg-green-50 transition-all font-bold text-xs">
+    <i class="fa-solid fa-server text-lg"></i> 
+    <span class="nav-text">{% translate "System Database" %}</span>
+</a>

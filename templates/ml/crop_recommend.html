@@ -1,0 +1,92 @@
+{% extends 'base2.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Crop Recommendation | AgriTech" %}{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-700">
+    
+    <div class="mb-10">
+        <h2 class="text-3xl font-black text-green-900 uppercase tracking-tight">
+            {% translate "Soil Analysis" %} & <span class="text-green-600">{% translate "Suggestion" %}</span>
+        </h2>
+        <p class="text-gray-400 text-[10px] font-bold uppercase tracking-[0.3em]">
+            {% translate "Input soil parameters to receive AI-driven crop recommendations" %}
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2">
+            <form method="POST" class="bg-white p-8 md:p-12 rounded-[3rem] shadow-xl border border-green-50 space-y-8">
+                {% csrf_token %}
+                <input type="hidden" name="temp" value="{{ weather.temp|default:25 }}">
+                <input type="hidden" name="hum" value="{{ weather.humidity|default:80 }}">
+
+                <div>
+                    <h4 class="text-[10px] font-black text-green-700 uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-flask"></i> {% translate "Macronutrients (mg/kg)" %}
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-[11px] font-bold text-gray-500 uppercase ml-2">{% translate "Nitrogen (N)" %}</label>
+                            <input type="number" name="n" step="any" required placeholder="0-140"
+                                   class="w-full px-5 py-4 bg-green-50/30 border border-green-100 rounded-2xl focus:border-green-500 focus:ring-4 focus:ring-green-500/5 outline-none font-bold text-green-900 transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[11px] font-bold text-gray-500 uppercase ml-2">{% translate "Phosphorus (P)" %}</label>
+                            <input type="number" name="p" step="any" required placeholder="0-145"
+                                   class="w-full px-5 py-4 bg-green-50/30 border border-green-100 rounded-2xl focus:border-green-500 focus:ring-4 focus:ring-green-500/5 outline-none font-bold text-green-900 transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[11px] font-bold text-gray-500 uppercase ml-2">{% translate "Potassium (K)" %}</label>
+                            <input type="number" name="k" step="any" required placeholder="0-205"
+                                   class="w-full px-5 py-4 bg-green-50/30 border border-green-100 rounded-2xl focus:border-green-500 focus:ring-4 focus:ring-green-500/5 outline-none font-bold text-green-900 transition-all">
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-[10px] font-black text-green-700 uppercase tracking-[0.2em] mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-cloud-sun-rain"></i> {% translate "Environmental Factors" %}
+                    </h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-[11px] font-bold text-gray-500 uppercase ml-2">{% translate "Soil pH Level" %}</label>
+                            <input type="number" name="ph" step="0.1" min="0" max="14" required placeholder="0.0 - 14.0"
+                                   class="w-full px-5 py-4 bg-green-50/30 border border-green-100 rounded-2xl focus:border-green-500 focus:ring-4 focus:ring-green-500/5 outline-none font-bold text-green-900 transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[11px] font-bold text-gray-500 uppercase ml-2">{% translate "Avg Rainfall (mm)" %}</label>
+                            <input type="number" name="rainfall" step="any" required placeholder="e.g. 200"
+                                   class="w-full px-5 py-4 bg-green-50/30 border border-green-100 rounded-2xl focus:border-green-500 focus:ring-4 focus:ring-green-500/5 outline-none font-bold text-green-900 transition-all">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-glow w-full text-white py-5 rounded-2xl font-black uppercase tracking-[0.3em] text-[11px] shadow-lg flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> {% translate "Generate Recommendation" %}
+                </button>
+            </form>
+        </div>
+
+        <div class="space-y-6">
+            <div class="bg-green-900 p-8 rounded-[2.5rem] shadow-xl text-white relative overflow-hidden">
+                <i class="fa-solid fa-circle-info absolute -right-4 -top-4 text-7xl opacity-10"></i>
+                <h4 class="text-[10px] font-black uppercase tracking-widest text-green-400 mb-4">{% translate "Why these values?" %}</h4>
+                <p class="text-xs leading-relaxed text-green-100 mb-4">
+                    {% translate "Our ML model analyzes the chemical composition of your soil to predict which crop will thrive most efficiently in these specific conditions." %}
+                </p>
+                <div class="p-4 bg-white/10 rounded-2xl border border-white/10">
+                    <p class="text-[10px] font-bold text-green-300 uppercase mb-1">{% translate "Pro Tip" %}</p>
+                    <p class="text-[10px] text-white">{% translate "Use a soil testing kit for accurate N-P-K readings to get the best results." %}</p>
+                </div>
+            </div>
+
+            <div id="loading-state" class="hidden bg-white p-10 rounded-[2.5rem] border border-green-100 text-center">
+                <div class="w-12 h-12 border-4 border-green-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                <p class="text-[10px] font-black text-green-800 uppercase tracking-widest">{% translate "Processing Soil Data..." %}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
